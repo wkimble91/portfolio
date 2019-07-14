@@ -1,2 +1,2 @@
 # wkimble91.github.io
-Website
+Just a simple website made with Gitfolio
