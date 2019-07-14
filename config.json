@@ -5,7 +5,7 @@
   "userimg": "https://avatars2.githubusercontent.com/u/52891225?v=4",
   "sort": "created",
   "order": "asc",
-  "includeFork": false,
+  "includeFork": true,
   "theme": "dark.css"
  }
 ]
