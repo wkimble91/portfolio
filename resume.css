@@ -41,6 +41,11 @@ li {
     flex-direction: row;
     position: relative;
 }
+@media (max-width: 869px) {
+    .resumeTable {
+        flex-wrap: wrap;
+    }
+}
 
 .resumeHeader {
     font-size: 1.8rem;
@@ -57,14 +62,26 @@ li {
     border-radius: 0.6rem;
     box-shadow: 0 1rem 2rem #bbbbbb;
 }
-.resumeLeft {
-    flex: 55%;
+
+@media (max-width: 869px) {
+    .resumeLeft {
+        flex: 100%;
+    }
+    .resumeRight {
+        flex: 100%;
+    }
 }
-.resumeRight {
-    display: flex;
-    flex-direction: column;
-    flex: 45%;
+@media (min-width: 870px) {
+    .resumeLeft {
+        flex: 55%;
+    }
+    .resumeRight {
+        display: flex;
+        flex-direction: column;
+        flex: 45%;
+    }
 }
+
 .span {
     font-size: 1.5rem;
     display: flex;
