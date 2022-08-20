@@ -74,12 +74,20 @@ ul {
 
 /* Individual Variables */
 
-@media only screen and (max-width: 869px) {
+@media only screen and (max-width: 1069px) {
     .container {
         padding: 25px;
+        max-width: 100%;
     }
 }
-@media only screen and (min-width: 870px) {
+@media only screen and (min-width: 1070px) {
+    .container {
+        padding: var(--section-spacing) 15px 0;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (min-width: 1570px) {
     .container {
         padding: var(--section-spacing) 15px 0;
         max-width: 60%;
