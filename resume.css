@@ -1,0 +1,113 @@
+.resumeSpacing {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.horizontalBar {
+    width: 95%;
+    height: 0.25rem;
+    margin: auto;
+    background-color: #141414;
+    border-radius: 1rem;
+    border: 1px solid #bbbbbb;
+}
+li {
+    font-size: 0.9rem;
+    line-height: 1.7rem;
+}
+
+.aboutMe {
+    width: 90%;
+    margin: 2rem auto;
+}
+@media (max-width: 770px) {
+    .aboutMe {
+        width: 80%;
+    }
+}
+.aboutMeHeader {
+    font-size: 3rem;
+    letter-spacing: 0.6rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.aboutMeBody {
+    font-size: 1.25rem;
+}
+
+.resumeTable {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.resumeHeader {
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.resumeSection {
+    padding: 1.5rem;
+    margin: 1rem;
+    background-color: #141414;
+    border-radius: 0.6rem;
+    box-shadow: 0 1rem 2rem #bbbbbb;
+}
+.resumeLeft {
+    flex: 55%;
+}
+.resumeRight {
+    display: flex;
+    flex-direction: column;
+    flex: 45%;
+}
+.span {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+}
+.experienceCompany {
+    color: #fffafa;
+}
+.experienceYears {
+    font-size: 1.3rem;
+    color: #fffafa;
+    margin-left: auto;
+}
+.experienceTitle {
+    font-size: 1.2rem;
+    color: #606060;
+}
+
+.skills {
+    padding: 1.5rem 3rem;
+}
+.skillsList {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.githubLink {
+    font-size: 1rem;
+    margin-left: auto;
+}
+
+.projectsDescription {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+}
+
+.education p {
+    font-size: 0.9rem;
+    line-height: 0.8rem;
+}
+
+.educationSpan {
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+}
