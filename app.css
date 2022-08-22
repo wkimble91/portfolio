@@ -75,6 +75,7 @@ header {
 @media (max-width: 869px) {
     header {
         flex-direction: column-reverse;
+        text-align: center;
     }
 }
 
