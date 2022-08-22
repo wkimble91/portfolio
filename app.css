@@ -74,6 +74,7 @@ header {
 }
 @media (max-width: 869px) {
     header {
+        margin-left: 2rem;
         flex-direction: column-reverse;
     }
     .headerColumn {
@@ -89,6 +90,10 @@ header {
 @media (max-width: 869px) {
     .avatarAndNameContainer {
         flex-direction: column;
+        margin-right: 2rem;
+    }
+    .nameContainer {
+        margin-right: 1.2rem;
     }
 }
 
