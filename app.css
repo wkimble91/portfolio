@@ -14,13 +14,11 @@
 
 /* Global Variables */
 :root {
-    --transition: 150ms ease-in-out;
     --avatar-size: 90px;
     --avatar-circle-size: 90px;
     --avatar-circle-margin: calc(
         var(--avatar-size) - var(--avatar-circle-size)
     );
-    --avatar-size: 100px;
     --inlay-shadow: rgba(0, 0, 0, 0.08) 0 2px 4px inset;
     --standard-border-radius: 4px;
 }
@@ -38,27 +36,6 @@
         --font-size: 20px;
         --org-logo-size: 70px;
         --org-logo-right-margin: 24px;
-    }
-}
-
-@media only screen and (max-width: 1069px) {
-    .container {
-        padding: 25px;
-        max-width: 100%;
-    }
-}
-@media only screen and (min-width: 1070px) {
-    .container {
-        padding: var(--section-spacing) 15px 0;
-        max-width: 80%;
-        margin: 0 auto;
-    }
-}
-@media only screen and (min-width: 1570px) {
-    .container {
-        padding: var(--section-spacing) 15px 0;
-        max-width: 60%;
-        margin: 0 auto;
     }
 }
 
@@ -94,6 +71,28 @@ ul {
 }
 
 /* Individual Variables */
+
+@media only screen and (max-width: 1069px) {
+    .container {
+        padding: 25px;
+        max-width: 100%;
+    }
+}
+@media only screen and (min-width: 1070px) {
+    .container {
+        padding: var(--section-spacing) 15px 0;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (min-width: 1570px) {
+    .container {
+        padding: var(--section-spacing) 15px 0;
+        max-width: 60%;
+        margin: 0 auto;
+    }
+}
+
 header,
 section {
     margin-bottom: var(--section-spacing);
@@ -186,9 +185,10 @@ nav {
 }
 @media only screen and (max-width: 869px) {
     nav {
-        justify-content: space-between;
+        justify-content: space-evenly;
         width: 100%;
-        margin-bottom: 32px;
+        margin-bottom: 22px;
+        margin-right: 6rem;
         flex-wrap: wrap;
     }
 }
@@ -436,4 +436,5 @@ blockquote {
     height: 25px;
     width: auto;
     margin: 0px;
+    background-size: contain;
 }
