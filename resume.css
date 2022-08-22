@@ -12,7 +12,7 @@
 li {
     font-size: 0.9rem;
     line-height: 1.7rem;
-    margin-top: 0.5rem;
+    margin-top: 0.2rem;
 }
 
 .aboutMe {
@@ -107,18 +107,20 @@ li {
     color: #fffafa;
     margin-left: auto;
 }
-
-@media (max-width: 569px) {
-    .experienceCompany {
-        font-size: 1.2rem;
-    }
-    .experienceYears {
-        font-size: 1rem;
-    }
-}
 .experienceTitle {
     font-size: 1.2rem;
     color: #606060;
+}
+@media (max-width: 869px) {
+    .experienceCompany {
+        font-size: 1.1rem;
+    }
+    .experienceYears {
+        font-size: 0.7rem;
+    }
+    .experienceTitle {
+        font-size: 0.8rem;
+    }
 }
 
 .skills {
@@ -130,7 +132,7 @@ li {
     margin-top: 1rem;
 }
 
-.githubLink {
+.resumeSubtitle {
     font-size: 1rem;
     margin-left: auto;
 }
@@ -139,13 +141,25 @@ li {
     font-size: 0.9rem;
     line-height: 1.3rem;
 }
+.projectsProject p {
+    margin-top: -1.3rem;
+}
 
 .education p {
     font-size: 0.9rem;
-    line-height: 0.8rem;
-}
-
-.educationSpan {
-    font-size: 1.1rem;
     line-height: 1.1rem;
+    margin-bottom: 0rem;
+    margin-top: -1.3rem;
+}
+.educationTitle {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+}
+.break {
+    display: none;
+}
+@media (max-width: 1670px) {
+    .break {
+        display: block;
+    }
 }
