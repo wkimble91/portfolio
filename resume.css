@@ -1,7 +1,5 @@
 .resumeSpacing {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 .horizontalBar {
     width: 95%;
@@ -14,6 +12,7 @@
 li {
     font-size: 0.9rem;
     line-height: 1.7rem;
+    margin-top: 0.5rem;
 }
 
 .aboutMe {
@@ -60,7 +59,14 @@ li {
     margin: 1rem;
     background-color: #141414;
     border-radius: 0.6rem;
+    box-shadow: 0 1rem 1.5rem #8f8f8f;
+    transition-property: all;
+    transition-duration: 200ms;
+}
+.resumeSection:hover {
     box-shadow: 0 1rem 2rem #bbbbbb;
+    transition-property: all;
+    transition-duration: 200ms;
 }
 
 @media (max-width: 869px) {
