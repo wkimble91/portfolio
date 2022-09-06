@@ -141,6 +141,7 @@ h1 {
     }
     .headerColumn {
         margin-left: 0px;
+        text-align: center;
     }
     .headerColumn p {
         text-align: center;
