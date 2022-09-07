@@ -100,7 +100,43 @@ li {
         flex: 45%;
     }
 }
+@media (min-width: 1070px) {
+    .resumeLeft {
+        animation: moveInLeft 0.5s ease-out;
+    }
+    .resumeLeft:hover {
+        transform: translateX(-3px);
+    }
+    .resumeRight {
+        animation: moveInRight 0.5s ease-out;
+    }
+    .skills:hover,
+    .projects:hover,
+    .education:hover {
+        transform: translateX(3px);
+    }
+}
 
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 .span {
     font-size: 1.5rem;
     display: flex;
