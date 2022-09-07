@@ -75,7 +75,6 @@ header {
 @media (max-width: 869px) {
     header {
         flex-direction: column;
-        margin-left: 1rem;
     }
 }
 
@@ -130,7 +129,7 @@ h1 {
     justify-content: flex-end;
 }
 .headerColumn {
-    margin-left: 5em;
+    margin-left: 5rem;
     align-items: start;
 }
 @media (max-width: 869px) {
