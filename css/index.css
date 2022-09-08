@@ -1,35 +1,18 @@
-h2 {
-    font-size: 80%;
-    font-weight: 500;
-    margin-bottom: 25px;
-    text-transform: uppercase;
-    color: var(--subtle-text-color);
-}
-@media (max-width: 869px) {
-    h2 {
-        margin-bottom: 15px;
-    }
-}
-
 blockquote {
-    line-height: 4rem;
+    line-height: 6rem;
     color: var(--emphasis-text-color);
     font-size: 3rem;
-    margin: 20px 0 0;
+    margin: 2.5rem 0;
 }
 @media (max-width: 869px) {
     blockquote {
-        line-height: 2.5rem;
+        line-height: 4rem;
         font-size: 2rem;
-        margin: 16px 0 0;
+        margin: 10rem 0;
         text-align: center;
     }
 }
-@media only screen and (max-width: 1077px) {
-    blockquote br {
-        display: none;
-    }
-}
+
 span {
     display: block;
 }
