@@ -3,16 +3,19 @@
 }
 .horizontalBar {
     width: 95%;
-    height: 0.25rem;
+    height: 0.3rem;
     margin: auto;
-    background-color: #141414;
-    border-radius: 1rem;
-    border: 1px solid #bbbbbb;
+    background-color: var(--background-color);
+    border-radius: 2rem;
+    border: 0.1rem solid #bbbbbb;
 }
 li {
-    font-size: 0.9rem;
-    line-height: 1.7rem;
-    margin-top: 0.2rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-top: 0.8rem;
+}
+ul {
+    margin-bottom: 1rem;
 }
 
 .aboutMe {
@@ -25,7 +28,7 @@ li {
     }
 }
 .aboutMeHeader {
-    font-size: 3rem;
+    font-size: 5rem;
     letter-spacing: 0.6rem;
     line-height: 3rem;
     font-weight: 500;
@@ -39,11 +42,12 @@ li {
     }
 }
 .aboutMeBody {
-    font-size: 1.25rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
 }
 @media (max-width: 770px) {
     .aboutMeBody {
-        font-size: 1rem;
+        font-size: 1.4rem;
         text-align: center;
     }
 }
@@ -60,24 +64,25 @@ li {
 }
 
 .resumeHeader {
-    font-size: 1.8rem;
-    letter-spacing: 0.2rem;
+    font-size: 2.8rem;
+    letter-spacing: 0.3rem;
+    line-height: 3rem;
     font-weight: 400;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .resumeSection {
-    padding: 1.5rem;
-    margin: 1rem;
-    background-color: #141414;
+    padding: 2rem;
+    margin: 1.5rem;
+    background-color: var(--background-color);
     border-radius: 0.6rem;
     box-shadow: 0 1rem 1.5rem #8f8f8f;
     transition-property: all;
     transition-duration: 200ms;
 }
 .resumeSection:hover {
-    box-shadow: 0 1rem 2rem #bbbbbb;
+    box-shadow: 0 1rem 1.8rem #bbbbbb;
     transition-property: all;
     transition-duration: 200ms;
 }
@@ -105,7 +110,7 @@ li {
         animation: moveInLeft 0.5s ease-out;
     }
     .resumeLeft:hover {
-        transform: translateX(-3px);
+        transform: translateX(-0.3rem);
     }
     .resumeRight {
         animation: moveInRight 0.5s ease-out;
@@ -113,14 +118,14 @@ li {
     .skills:hover,
     .projects:hover,
     .education:hover {
-        transform: translateX(3px);
+        transform: translateX(0.3rem);
     }
 }
 
 @keyframes moveInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translateX(-10rem);
     }
     100% {
         opacity: 1;
@@ -130,7 +135,7 @@ li {
 @keyframes moveInRight {
     0% {
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(10rem);
     }
     100% {
         opacity: 1;
@@ -138,31 +143,34 @@ li {
     }
 }
 .span {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     display: flex;
     flex-direction: row;
 }
 .experienceCompany {
-    color: #fffafa;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: #ffffff;
 }
 .experienceYears {
-    font-size: 1.3rem;
-    color: #fffafa;
+    font-size: 1.8rem;
+    color: #ffffff;
     margin-left: auto;
 }
 .experienceTitle {
-    font-size: 1.2rem;
-    color: #606060;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    color: #d6d6d6;
 }
 @media (max-width: 869px) {
     .experienceCompany {
-        font-size: 1.1rem;
+        font-size: 1.8rem;
     }
     .experienceYears {
-        font-size: 0.7rem;
+        font-size: 1.5rem;
     }
     .experienceTitle {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -176,27 +184,27 @@ li {
 }
 
 .resumeSubtitle {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-left: auto;
 }
 
 .projectsDescription {
-    font-size: 0.9rem;
-    line-height: 1.3rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
 }
 .projectsProject p {
     margin-top: -1.3rem;
 }
 
 .education p {
-    font-size: 0.9rem;
-    line-height: 1.1rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
     margin-bottom: 0rem;
-    margin-top: -1.3rem;
+    margin-top: -1.8rem;
 }
 .educationTitle {
-    font-size: 1.1rem;
-    line-height: 1.3rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
 }
 .break {
     display: none;

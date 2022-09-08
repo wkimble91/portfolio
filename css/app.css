@@ -8,20 +8,21 @@
 
 /* Body & Container */
 :root {
-    --section-spacing: 150px;
-    --font-size: 20px;
+    font-size: 62.5%;
+    --font-size: 1rem;
+    --section-spacing: 15rem;
 }
 @media (max-width: 869px) {
     :root {
         --section-spacing: 64px;
-        --font-size: 17px;
+        --font-size: 1.7rem;
     }
 }
 body {
     font-family: Arial, sans-serif;
     font-weight: 300;
-    font-size: var(--font-size);
-    line-height: 1.5em;
+    font-size: 4rem;
+    line-height: 1.75rem;
     margin: 0;
     background-color: var(--background-color);
     color: var(--default-text-color);
@@ -34,15 +35,17 @@ body {
 @media only screen and (max-width: 1069px) {
     .container {
         max-width: 95%;
+        font-size: 1.75rem;
     }
 }
 @media only screen and (min-width: 1070px) {
     .container {
         max-width: 70%;
+        font-size: 2rem;
     }
 }
 
-/* Header */
+/* Navbar */
 a {
     color: inherit;
     text-decoration: none;
@@ -52,7 +55,7 @@ a:hover {
     text-decoration: underline;
     text-decoration-style: solid;
     text-underline-position: under;
-    text-underline-offset: 0.5px;
+    text-underline-offset: -1px;
     text-decoration-thickness: 1px;
     text-decoration-color: var(--underline-color);
 }
@@ -92,35 +95,35 @@ header {
 }
 
 .avatarContainer {
-    width: 90px;
-    height: 90px;
-    margin-right: 20px;
+    width: 9rem;
+    height: 9rem;
+    margin-right: 2rem;
     position: relative;
     clip-path: circle();
 }
 @media (max-width: 869px) {
     .avatarContainer {
-        margin-bottom: 8px;
-        margin-right: 0px;
+        margin-bottom: 0.8rem;
+        margin-right: 0rem;
     }
 }
 
 .avatarImage {
     position: absolute;
     bottom: 0;
-    width: 90px;
-    height: 90px;
+    width: 9rem;
+    height: 9rem;
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 2.5rem;
     font-weight: 500;
     margin: 0;
     color: var(--emphasis-text-color);
 }
 @media (max-width: 869px) {
     h1 {
-        font-size: 20px;
+        font-size: 2rem;
     }
 }
 
@@ -150,9 +153,9 @@ h1 {
 
 .svg {
     text-align: right;
-    height: 1rem;
+    height: 2rem;
     width: auto;
-    margin: 0px;
+    margin: 0rem;
     background-size: contain;
 }
 @media (max-width: 869px) {
@@ -175,8 +178,8 @@ nav {
 }
 
 nav label {
-    font-size: 0;
-    line-height: 0;
+    font-size: 0rem;
+    line-height: 0rem;
 }
 nav ul {
     display: flex;
@@ -189,76 +192,11 @@ nav ul {
     }
 }
 nav a {
-    padding: 0px 16px;
+    padding: 0px 1.6rem;
 }
 @media (max-width: 869px) {
     nav a {
         display: block;
-        padding: 6px 0;
-    }
-}
-
-/* Content */
-h2 {
-    font-size: 80%;
-    font-weight: 500;
-    margin-bottom: 25px;
-    text-transform: uppercase;
-    color: var(--subtle-text-color);
-}
-@media (max-width: 869px) {
-    h2 {
-        margin-bottom: 15px;
-    }
-}
-
-blockquote {
-    line-height: 1.56em;
-    color: var(--emphasis-text-color);
-    font-size: 32px;
-    margin: 20px 0 0;
-}
-@media (max-width: 869px) {
-    blockquote {
-        font-size: 1.2rem;
-        margin: 16px 0 0;
-        text-align: center;
-    }
-}
-@media only screen and (max-width: 1077px) {
-    blockquote br {
-        display: none;
-    }
-}
-span {
-    display: block;
-}
-.IndexLineOne {
-    animation: moveInLeft 0.5s ease-out;
-}
-.IndexLineTwo {
-    animation: moveInLeft 0.5s ease-out 0.5s;
-    animation-fill-mode: backwards;
-}
-.IndexLineThree {
-    animation: moveInLeft 0.5s ease-out 1s;
-    animation-fill-mode: backwards;
-}
-.IndexLineFour {
-    animation: moveInLeft 0.5s ease-out 1.5s;
-    animation-fill-mode: backwards;
-}
-.IndexLineFive {
-    animation: moveInLeft 0.5s ease-out 2s;
-    animation-fill-mode: backwards;
-}
-@keyframes moveInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
+        padding: 0.6rem 0;
     }
 }
