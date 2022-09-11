@@ -1,0 +1,19 @@
+{
+    "name": "personal-site",
+    "version": "1.0.0",
+    "description": "personal landing page",
+    "main": "index.js",
+    "scripts": {
+        "start": "sass sass/main.scss css/style.css -w"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wkimble91/wkimble91.github.io.git"
+    },
+    "author": "Will Kimble",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/wkimble91/wkimble91.github.io/issues"
+    },
+    "homepage": "https://github.com/wkimble91/wkimble91.github.io#readme"
+}

@@ -1,0 +1,32 @@
+:root {
+    box-sizing: border-box;
+    font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
+    --background-color: #141414;
+    --default-text-color: #a0a0a0;
+    --emphasis-text-color: #d5d5d5;
+    --underline-color: #545454;
+    --font-size: 1rem;
+    --section-spacing: 15rem;
+}
+@media (max-width: 869px) {
+    :root {
+        --section-spacing: 64px;
+        --font-size: 1.7rem;
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-weight: 300;
+    font-size: 4rem;
+    line-height: 1.75rem;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--default-text-color);
+}

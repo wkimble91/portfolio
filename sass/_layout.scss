@@ -1,0 +1,145 @@
+.container {
+    padding: var(--section-spacing) 15px 0;
+    max-width: 60%;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 1069px) {
+    .container {
+        max-width: 95%;
+        font-size: 1.75rem;
+    }
+}
+@media only screen and (min-width: 1070px) {
+    .container {
+        max-width: 70%;
+        font-size: 2rem;
+    }
+}
+
+.header {
+    margin-bottom: var(--section-spacing);
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 869px) {
+    .header {
+        flex-direction: column;
+    }
+}
+
+.resume-table {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 0;
+}
+@media (max-width: 869px) {
+    .resume-table {
+        flex-wrap: wrap;
+    }
+}
+
+.resume-table__header {
+    font-size: 2.8rem;
+    letter-spacing: 0.3rem;
+    line-height: 3rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+}
+
+.resume-table_section {
+    padding: 2rem;
+    margin: 1.5rem;
+    background-color: var(--background-color);
+    border-radius: 0.6rem;
+    box-shadow: 0 1rem 1.5rem #8f8f8f;
+    transition-property: all;
+    transition-duration: 200ms;
+
+    &:hover {
+        box-shadow: 0 1rem 1.8rem #bbbbbb;
+        transition-property: all;
+        transition-duration: 200ms;
+    }
+}
+
+.resume-subtitle {
+    font-size: 1.2rem;
+    margin-left: auto;
+}
+
+.resume-table__left {
+    flex: 55%;
+}
+@media (max-width: 869px) {
+    .resume-table__left {
+        flex: 100%;
+    }
+}
+.resume-table__right {
+    display: flex;
+    flex-direction: column;
+    flex: 45%;
+}
+@media (max-width: 869px) {
+    .resume-table__right {
+        flex: 100%;
+    }
+}
+
+@media (min-width: 869px) {
+    .resume-table__left {
+        animation: moveInLeft 0.5s ease-out;
+    }
+    .resume-table__left:hover {
+        transform: translateX(-0.2rem);
+    }
+    .resume-table__right {
+        animation: moveInRight 0.5s ease-out;
+    }
+    .skills:hover,
+    .projects:hover,
+    .education:hover {
+        transform: translateX(0.2rem);
+    }
+}
+
+@media (min-width: 1070px) {
+    .resume-table__left {
+        animation: moveInLeft 0.5s ease-out;
+    }
+    .resume-table__left:hover {
+        transform: translateX(-0.3rem);
+    }
+    .resume-table__right {
+        animation: moveInRight 0.5s ease-out;
+    }
+    .skills:hover,
+    .projects:hover,
+    .education:hover {
+        transform: translateX(0.3rem);
+    }
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
