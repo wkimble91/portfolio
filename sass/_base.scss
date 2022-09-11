@@ -1,7 +1,8 @@
 :root {
     box-sizing: border-box;
     font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
-    --background-color: #141414;
+    --background-color-light: #292929;
+    --background-color-dark: #141414;
     --default-text-color: #a0a0a0;
     --emphasis-text-color: #d5d5d5;
     --underline-color: #545454;
@@ -27,6 +28,13 @@ body {
     font-size: 4rem;
     line-height: 1.75rem;
     margin: 0;
-    background-color: var(--background-color);
+    background-image: linear-gradient(
+        to right bottom,
+        var(--background-color-light),
+        var(--background-color-dark)
+    );
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
     color: var(--default-text-color);
 }
