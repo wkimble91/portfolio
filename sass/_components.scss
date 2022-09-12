@@ -327,10 +327,13 @@ span {
 
 /////////////////////////////////////////////////////
 /* Projects */
+
 .projects-entry__name {
     display: flex;
     align-items: center;
+    margin-top: -1rem;
 }
+
 .projects-entry__title {
     font-size: 2.5rem;
 }
@@ -343,12 +346,7 @@ span {
 .projects-entry__description {
     font-size: 1.2rem;
     line-height: 1.5rem;
-}
-
-.projects__entry {
-    & p {
-        margin-top: -1.3rem;
-    }
+    margin-top: -1.3rem;
 }
 
 /////////////////////////////////////////////////////
