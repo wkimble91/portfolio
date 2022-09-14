@@ -413,13 +413,20 @@ span {
   }
 }
 /* Professional Experience */
-.experience__entry {
+.experience {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.experience__company {
   display: flex;
   align-items: center;
   padding: 0;
 }
 
-.experience__entry-company {
+.experience__company-name {
   font-size: 2.5rem;
   color: #ffffff;
   line-height: 3rem;
@@ -427,19 +434,19 @@ span {
 }
 
 @media (max-width: 869px) {
-  .experience__entry-company {
+  .experience__company-name {
     font-size: 1.8rem;
     line-height: 3rem;
   }
 }
-.experience__entry-years {
+.experience__company-years {
   font-size: 1.8rem;
   color: #ffffff;
   margin: 0 0 0 auto;
 }
 
 @media (max-width: 869px) {
-  .experience__entry-years {
+  .experience__company-years {
     font-size: 1.5rem;
   }
 }
