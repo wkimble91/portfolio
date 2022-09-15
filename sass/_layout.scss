@@ -72,10 +72,12 @@
 
 .resume-table__left {
     flex: 55%;
+    padding-bottom: 4rem;
 }
 @media (max-width: 869px) {
     .resume-table__left {
         flex: 100%;
+        padding-bottom: 8rem;
     }
 }
 .resume-table__right {
