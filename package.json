@@ -4,7 +4,11 @@
     "description": "personal landing page",
     "main": "index.js",
     "scripts": {
-        "start": "sass sass/main.scss css/style.css -w"
+        "watch": "sass sass/main.scss css/style.css -w",
+        "compile": "sass sass/main.scss css/style.comp.css",
+        "prefix": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css",
+        "compress": "sass css/style.prefix.css css/style.css --style compressed",
+        "build": "npm-run-all compile  prefix compress"
     },
     "repository": {
         "type": "git",
@@ -15,5 +19,12 @@
     "bugs": {
         "url": "https://github.com/wkimble91/wkimble91.github.io/issues"
     },
-    "homepage": "https://github.com/wkimble91/wkimble91.github.io#readme"
+    "homepage": "https://github.com/wkimble91/wkimble91.github.io#readme",
+    "devDependencies": {
+        "autoprefixer": "^10.4.11",
+        "concat": "^1.0.3",
+        "npm-run-all": "^4.1.5",
+        "postcss-cli": "^10.0.0",
+        "sass": "^1.54.9"
+    }
 }
