@@ -135,10 +135,10 @@ a:hover {
 /* Index Blockquotes */
 
 blockquote {
-    line-height: 6rem;
+    line-height: 8rem;
     color: var(--emphasis-text-color);
     font-size: 3rem;
-    margin: 2.5rem 0;
+    margin: 15rem 0;
 }
 @media (max-width: 869px) {
     blockquote {
@@ -146,6 +146,11 @@ blockquote {
         font-size: 2rem;
         margin: 10rem 0;
         text-align: center;
+    }
+}
+@media (min-width: 2000px) {
+    blockquote {
+        margin: 26rem 0;
     }
 }
 
