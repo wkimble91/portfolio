@@ -1,0 +1,85 @@
+.header {
+    grid-column: 1 / -1;
+    grid-row: 1 / span 1;
+    width: 100%;
+
+    position: fixed;
+    z-index: 200;
+    background-color: $background-color-light;
+    color: $body-text-light;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+
+    &-box {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        @media only screen and (max-width: $bp-large) {
+            width: 100%;
+        }
+    }
+
+    &__logo {
+        background-image: url(../img/logo_black.png);
+        background-size: cover;
+        background-position: top;
+
+        //Alignment
+        display: flex;
+        align-items: center;
+        margin: 1.5rem 0 0.5rem;
+        height: 7rem;
+        width: 7rem;
+
+        //Decoration
+        z-index: 40;
+        color: $body-text-light;
+        text-decoration: none;
+        font-size: 2.5rem;
+        transition: all 0.3s;
+        cursor: pointer;
+
+        @media only screen and (max-width: $bp-large) {
+            margin-left: 1rem;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        margin: 0 10rem;
+
+        @media only screen and (max-width: $bp-large) {
+            margin: 0 1rem;
+        }
+
+        & button {
+            margin-left: 5.8rem;
+        }
+
+        & a {
+            text-decoration: none;
+            font-size: 1.4rem;
+            transition: all 0.1s;
+            &:not(:last-child) {
+                margin-right: 6rem;
+                @media only screen and (max-width: $bp-medium) {
+                    margin-right: 3rem;
+                }
+                @media only screen and (max-width: $bp-small) {
+                    margin-right: 2rem;
+                }
+            }
+        }
+    }
+
+    &-scrolled {
+        border-bottom: 1px solid $color-grey-light;
+    }
+}

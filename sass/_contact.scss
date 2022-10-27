@@ -1,0 +1,114 @@
+.contact {
+    grid-column: 1 / -1;
+    grid-row: 4 / span 1;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        width: 70%;
+        margin: 0 5rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 15vh 0;
+
+        @media only screen and (max-width: $bp-large) {
+            width: 100%;
+        }
+        @media only screen and (max-width: $bp-medium) {
+            flex-direction: column;
+        }
+
+        &-left {
+            flex: 1 1 50%;
+            display: flex;
+            flex-direction: column;
+        }
+        &-right {
+            flex: 1 1 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    }
+
+    &-socials {
+        display: flex;
+
+        & a:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+
+    &-svg {
+        height: 3.6rem;
+        margin: 1rem 0;
+        transition: all 0.1s;
+
+        &:hover {
+            scale: 1.1;
+        }
+    }
+
+    &-header {
+        h2 {
+            font-size: 3rem;
+            color: $color-primary-dark;
+        }
+        h3 {
+            font-size: 1.4rem;
+            color: $color-primary-dark;
+            margin-top: 6rem;
+        }
+        p {
+            margin: 0.5rem 6rem 2rem 0;
+            font-size: 2rem;
+            font-weight: 300;
+            @media only screen and (max-width: $bp-medium) {
+                margin: 0.5rem 0 2rem;
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    &-form {
+        display: flex;
+        flex-direction: column;
+        width: 50rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 100%;
+        }
+
+        & label {
+            font-size: 1.5rem;
+        }
+
+        & input {
+            border: 1px solid $color-grey-dark;
+            border-radius: 5px;
+            padding: 0.8rem;
+            margin-bottom: 2rem;
+
+            &:focus {
+                border: 1px solid $color-grey-dark;
+            }
+        }
+
+        & textarea {
+            border: 1px solid $color-grey-dark;
+            border-radius: 5px;
+            padding: 0.8rem;
+
+            &:focus {
+                border: 1px solid $color-grey-dark;
+            }
+        }
+
+        & button {
+            margin-top: 2rem;
+            border-radius: 5px;
+        }
+    }
+}

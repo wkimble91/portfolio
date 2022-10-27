@@ -1,0 +1,226 @@
+/* Dark Mode Toggle */
+.dark-mode-button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    height: 4rem;
+    width: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.top-dark-mode-button {
+    top: 6rem;
+    right: 1.5rem;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    z-index: 1000;
+}
+
+.top-dark-mode-button .dark-toggle {
+    background: rgb(230, 230, 230);
+    border-color: rgb(230, 230, 230);
+    width: 3.5rem;
+}
+
+.top-dark-mode-button:after {
+    content: 'Light.';
+    position: absolute;
+    font-size: 1.5rem;
+    color: $body-text-light;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: -5px;
+    top: -5rem;
+    transition: all 0.1s;
+}
+
+body.dark-mode .top-dark-mode-button:after {
+    content: 'Dark.';
+    color: $body-text-dark;
+    font-size: 1.5rem;
+    top: -5rem;
+    transition: all 0.1s;
+}
+
+.dark-toggle {
+    margin: 0;
+    width: 3rem;
+    height: 1.6rem;
+    z-index: 20;
+    border-radius: 1rem;
+    background: transparent;
+    border: 3px solid #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: 1000;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    align-items: center;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+body.dark-mode .dark-toggle {
+    background: rgb(140, 19, 164);
+    background: -o-linear-gradient(
+        left,
+        rgba(140, 19, 164, 1) 0%,
+        rgba(93, 13, 109, 1) 40%
+    );
+    background: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(rgba(140, 19, 164, 1)),
+        to(rgba(93, 13, 109, 1))
+    );
+    background: linear-gradient(
+        90deg,
+        rgba(140, 19, 164, 1) 0%,
+        rgba(93, 13, 109, 1) 40%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8C13A4",endColorstr="#5D0D6E",GradientType=1);
+    border: none;
+}
+
+.dark-toggle span {
+    height: 2rem;
+    width: 2rem;
+    left: -0.8rem;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+body.dark-mode .dark-toggle span {
+    left: 1.5rem;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.top-dark-mode-button .dark-toggle {
+    background: rgb(230, 230, 230);
+    border-color: rgb(230, 230, 230);
+    width: 3.5rem;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: $background-color-dark;
+    color: $body-text-dark;
+
+    .header {
+        background-color: $background-color-dark;
+        color: $body-text-dark;
+        &__logo {
+            background-image: url(../img/logo_white.png);
+        }
+        &__nav a {
+            color: $body-text-dark;
+        }
+    }
+
+    .hero {
+        background-color: $background-color-dark;
+        &__title {
+            color: $background-color-light;
+        }
+        &__subtitle {
+            color: $body-text-dark;
+        }
+        &__image {
+            background-image: url(../img/forest-night.png);
+        }
+    }
+
+    .contact {
+        background-color: $background-color-dark;
+        &-svg {
+            filter: invert(1);
+        }
+        &-header {
+            h2 {
+                color: $color-primary-light;
+            }
+            h3 {
+                color: $color-primary-light;
+            }
+        }
+    }
+
+    .projects {
+        &__card {
+            background-color: #3a2d3d;
+        }
+        &__details {
+            h3 {
+                color: $background-color-light;
+            }
+            p {
+                color: $background-color-light;
+            }
+        }
+    }
+
+    .footer {
+        background-color: $background-color-dark;
+        color: $body-text-dark;
+
+        &__logo-box {
+            background-image: url(../img/logo_tree-light.png);
+        }
+        &__copyright {
+            color: $body-text-dark;
+        }
+    }
+
+    .btn {
+        &-work {
+            box-shadow: 0 0.5rem 2.5rem rgba(255, 255, 255, 0.25);
+        }
+
+        &-contact {
+            background-color: $color-primary-dark;
+            color: $body-text-dark;
+        }
+    }
+    ::selection {
+        color: $body-text-light;
+        background-color: $body-text-dark;
+    }
+}

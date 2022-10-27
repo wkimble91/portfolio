@@ -1,0 +1,38 @@
+.footer {
+    grid-column: 1 / -1;
+    grid-row: 5 / span 1;
+
+    background-color: $background-color-light;
+    color: $body-text-light;
+    display: flex;
+    justify-content: center;
+
+    &-box {
+        width: 70%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 2rem 0;
+    }
+
+    &__logo-box {
+        background-image: url(../img/logo_tree-dark.png);
+        background-size: cover;
+        background-position: top;
+        text-align: center;
+        margin-left: 2rem;
+        height: 4rem;
+        width: 4rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+
+    &__copyright {
+        font-size: 1.3rem;
+        color: $body-text-light;
+        text-align: center;
+    }
+}

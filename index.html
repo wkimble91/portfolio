@@ -4,59 +4,162 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400;1,600;1,800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Will Kimble</title>
 </head>
 
-<body>
-    <div class="container">
-        <header class="header">
-            <div class="name-container">
-                <div class="name-container__avatar">
-                    <img class="name-container__avatar-image"
-                        src="https://avatars2.githubusercontent.com/u/52891225?v=4" alt="Picture of Will">
-                </div>
-                <h1 class="name-container__name">Will Kimble</h1>
-            </div>
-            <nav class="nav-links">
-                <div class="nav-links__column">
-                    <p class="nav-links__entry">
-                        <img class="svg" src="https://cdn-icons-png.flaticon.com/512/942/942748.png">
-                        <a class="nav-links__link" href="./resume.html" rel="noreferrer noopener nofollow">Resume</a>
-                    </p>
-                    <p class="nav-links__entry">
-                        <img class="svg" src="https://cdn-icons-png.flaticon.com/512/733/733553.png">
-                        <a class="nav-links__link" target="_blank" href="https://github.com/wkimble91"
-                            rel="noreferrer noopener nofollow">Github</a>
-                    </p>
-                </div>
-                <div class="nav-links__column">
-                    <p class="nav-links__entry">
-                        <img class="svg" src="https://cdn-icons-png.flaticon.com/512/726/726623.png">
-                        <a class="nav-links__link" target=" _blank" label="email link"
-                            href="mailto:mail@willkimble.com">Email</a>
-                    </p>
-                    <p class="nav-links__entry">
-                        <img class="svg" src="https://cdn-icons-png.flaticon.com/512/174/174857.png">
-                        <a class="nav-links__link" target="_blank"
-                            href="https://www.linkedin.com/in/william-ian-kimble/" label="linkedin link"
-                            rel="noreferrer noopener nofollow">LinkedIn</a>
-                    </p>
-                </div>
+<body id="home">
+    <header id="header" class="header">
+        <div class="header-box">
+            <a href="./index.html" rel="home" class="header__logo"></a>
+            <nav class="header__nav">
+                <a href="#home">Home.</a>
+                <a href="#projects">Projects.</a>
+                <a class="btn-contact" href="#contact">Contact.</a>
+                <button class="dark-mode-button top-dark-mode-button" aria-label="dark mode toggle">
+                    <span aria-hidden="true" class="dark-toggle">
+                        <span class="DTspan"></span>
+                    </span>
+                </button>
             </nav>
-        </header>
-        <section class="bio">
-            <blockquote>
-                <span class="bio__line-one">Hello 😊</span>
-                <span class="bio__line-two">I'm a Front-End Web Developer</span>
-                <span class="bio__line-three">Currently looking for the place to start my career.</span>
-                <span class="bio__line-four">Located in the DFW area but looking to relocate and for remote work.</span>
-                <span class="bio__line-five">My passion is building simple yet beautiful web interfaces.</span>
-            </blockquote>
-        </section>
-    </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-left">
+            <h1 class="hero__title">REALIZE YOUR VISION</h1>
+            <h2 class="hero__subtitle">Front-end Web Developer with a passion for beautiful design</h2>
+        </div>
+        <div class="hero-right">
+            <div class="hero__image-box">
+                <div class="hero__image"></div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="projects">
+        <div class="projects__box">
+            <div class="projects__card">
+                <div class="projects__description">
+                    <div class="projects__details">
+                        <div class="projects__title">
+                            <h3>Minimalist Nomad</h3>
+                            <p>Styling | Code</p>
+                        </div>
+                        <div class="projects-buttons">
+                            <a class="btn btn-work bg-blue" href="https://willkimble.com/minimalist_nomad/"
+                                target="_blank">View Webpage</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects__image-box bg-blue">
+                    <img src="img/minimalist.png">
+                </div>
+            </div>
+            <div class="projects__card">
+                <div class="projects__image-box bg-green">
+                    <img src="img/trailpages.png">
+                </div>
+                <div class="projects__description">
+                    <div class="projects__details">
+                        <div class="projects__title">
+                            <h3>TrailPages</h3>
+                            <p>Styling | Code</p>
+                        </div>
+                        <div class="projects-buttons">
+                            <a class="btn btn-work bg-green" href="https://trail-pages.onrender.com/"
+                                target="_blank">View Webpage</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects__card">
+                <div class="projects__description">
+                    <div class="projects__details">
+                        <div class="projects__title">
+                            <h3>Organizr</h3>
+                            <p>Code</p>
+                        </div>
+                        <div class="projects-buttons">
+                            <a class="btn btn-work bg-orange" href="https://willkimble.com/organizr/"
+                                target="_blank">View Webpage</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects__image-box bg-orange">
+                    <img src="img/organizr.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="contact__container">
+            <div class="contact__container-left">
+                <div class="contact-header">
+                    <h2>Get in touch</h2>
+                    <p>I'm always happy to hear about exciting opportunities, and build valuable connections.</p>
+                    <p>Feel free to send me an e-mail or fill out the form.</p>
+                    <h3>Let's connect!</h3>
+                    <div class="contact-socials">
+                        <a href="https://www.linkedin.com/in/william-ian-kimble/" target="_blank"
+                            rel="noopener noreferrer">
+                            <img class="contact-svg" src="img/linkedin.svg" alt="Linkedin"></a>
+                        <a href="https://github.com/wkimble91/" target="_blank" rel="noopener noreferrer">
+                            <img class="contact-svg" src="img/github.svg" alt="Github"></a>
+                        <a href="https://codepen.io/wkimble91" target="_blank" rel="noopener noreferrer">
+                            <img class="contact-svg" src="img/codepen.svg" alt="Codepen"></a>
+                        <a href="mailto:wkimble91@proton.me">
+                            <img class="contact-svg" src="img/mail.svg" alt="Email"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact__container-right">
+                <form class="contact-form" action="https://formsubmit.co/31f93465b64fc3bf45697f90e9728cdd" method="post"
+                    autocomplete="off" id="contactForm">
+                    <input type="hidden" name="form_type" value="contact">
+
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" minlength="3" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="25" rows="4" minlength="10" required></textarea>
+
+                    <button type="submit" class="btn btn-work"><span>Send message</span></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-box">
+            <p class="footer__copyright">Copyright &copy; Design and code by Will Kimble.</p>
+            <div class="footer__logo-box"></div>
+        </div>
+    </footer>
+    <script src="js/darkmode.js"></script>
+    <!-- jQuery for the header scroll function -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav=$("#header");
+                $nav.toggleClass("header-scrolled", $(this).scrollTop()>$nav.height());
+            });
+        });
+    </script>
 </body>
+
 
 </html>

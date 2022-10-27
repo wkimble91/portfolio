@@ -1,0 +1,110 @@
+.hero {
+    background-color: $background-color-light;
+    width: 100%;
+    //Parent Grid
+    grid-row: 2 / span 1;
+    height: calc(110vh - 7rem);
+    //Flexbox
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media only screen and (max-width: $bp-largest) {
+        flex-direction: column-reverse;
+        height: 100vh;
+    }
+
+    &-left {
+        height: 100%;
+        width: 55%;
+        //Flexbox
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        @media only screen and (max-width: $bp-largest) {
+            width: 100%;
+            height: auto;
+            align-items: center;
+        }
+    }
+    &-right {
+        height: 100%;
+        width: 45%;
+        //Flexbox
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 6rem;
+        @media only screen and (max-width: $bp-largest) {
+            padding: 0 6rem;
+            min-height: 80rem;
+            height: auto;
+            width: 100%;
+            justify-content: center;
+        }
+        @media only screen and (max-width: $bp-small) {
+            padding: 0 6rem;
+            min-height: 50rem;
+            height: auto;
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
+    &__title {
+        font-size: 6rem;
+        font-weight: 300;
+        letter-spacing: 0.8rem;
+        line-height: 1;
+        color: $background-color-dark;
+        margin-bottom: 4rem;
+        animation: moveInLeft 0.8s ease-out;
+        text-align: right;
+
+        @media only screen and (max-width: $bp-largest) {
+            text-align: center;
+        }
+        @media only screen and (max-width: $bp-small) {
+            font-size: 3rem;
+            letter-spacing: 0.4rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__subtitle {
+        font-size: 2.2rem;
+        font-weight: 400;
+        letter-spacing: 0.2rem;
+        line-height: 1;
+        color: $body-text-light;
+        margin-bottom: 20vh;
+        animation: moveInLeft 0.8s ease-out 0.8s;
+        animation-fill-mode: backwards;
+        text-align: right;
+
+        @media only screen and (max-width: $bp-largest) {
+            text-align: center;
+            margin: 0 1rem;
+        }
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.2rem;
+            letter-spacing: 0.1rem;
+            font-weight: 300;
+        }
+    }
+    &__image {
+        height: 100%;
+        background-image: url(../img/forest-day.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        @media only screen and (max-width: $bp-largest) {
+            background-position: center;
+        }
+        &-box {
+            width: 100%;
+            height: 100%;
+            padding: 6rem 0 3rem;
+        }
+    }
+}
