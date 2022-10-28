@@ -112,6 +112,9 @@
                 left: -5%;
             }
         }
+        @media only screen and (max-width: $bp-smallest) {
+            height: 22rem;
+        }
 
         & button {
             //Spacing
