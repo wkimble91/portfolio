@@ -3,14 +3,13 @@
     width: 100%;
     //Parent Grid
     grid-row: 2 / span 1;
-    height: calc(110vh - 7rem);
+    height: calc(105vh - 7rem);
     //Flexbox
     display: flex;
     justify-content: center;
     align-items: center;
     @media only screen and (max-width: $bp-largest) {
         flex-direction: column-reverse;
-        height: 100vh;
     }
 
     &-left {
