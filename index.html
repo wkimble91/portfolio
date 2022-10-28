@@ -27,19 +27,24 @@
     <!-- Nav Bar -->
 
     <header id="header" class="header">
-        <div class="header-box">
+        <nav class="header-box">
             <a href="./index.html" rel="home" class="header__logo"></a>
-            <nav class="header__nav">
-                <a href="#home">Home.</a>
-                <a href="#projects">Projects.</a>
-                <a class="btn-contact" href="#contact">Contact.</a>
-                <button class="dark-mode-button" aria-label="dark mode toggle">
-                    <span aria-hidden="true" class="dark-toggle">
-                        <span class="dark-toggle-span"></span>
-                    </span>
-                </button>
-            </nav>
-        </div>
+            <ul class="header__nav">
+                <li class="header__nav-item"><a href="#home">Home.</a></li>
+                <li class="header__nav-item"><a href="#projects">Projects.</a></li>
+                <li class="header__nav-item"><a class="btn-contact" href="#contact">Contact.</a></li>
+                <li class="header__nav-item"><button class="dark-mode-button" aria-label="dark mode toggle">
+                        <span aria-hidden="true" class="dark-toggle">
+                            <span class="dark-toggle-span"></span>
+                        </span>
+                    </button></li>
+            </ul>
+            <div class="header__hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
     </header>
 
     <!-- Hero Section -->
@@ -77,7 +82,7 @@
                     </div>
                 </div>
                 <div class="projects__image-box bg-blue">
-                    <img src="img/minimalist.png">
+                    <img srcset="img/minimalist1x.png 500w, img/minimalist2x.png 1000w" media="(min-width: 500px)">
                 </div>
             </div>
 
@@ -85,7 +90,7 @@
 
             <div class="projects__card">
                 <div class="projects__image-box bg-green">
-                    <img src="img/trailpages.png">
+                    <img srcset="img/trailpages1x.png 500w, img/trailpages2x.png 1000w" media="(min-width: 500px)">
                 </div>
                 <div class="projects__description">
                     <div class="projects__details">
@@ -117,7 +122,7 @@
                     </div>
                 </div>
                 <div class="projects__image-box bg-orange">
-                    <img src="img/organizr.png">
+                    <img srcset="img/organizr1x.png 500w, img/organizr2x.png 1000w" media="(min-width: 500px)">
                 </div>
             </div>
         </div>
@@ -185,6 +190,9 @@
 
     <!-- Script for Dark Mode -->
     <script src="js/darkmode.js"></script>
+
+    <!-- Script for Hamburger Menu -->
+    <script src="js/navbar.js"></script>
 
     <!-- jQuery for the Header Scroll Function -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

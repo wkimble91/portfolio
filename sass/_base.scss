@@ -55,6 +55,14 @@ body {
     overflow-x: hidden;
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 ::selection {
     background-color: $color-primary-dark;
     color: #fff;

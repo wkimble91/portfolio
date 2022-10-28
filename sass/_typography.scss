@@ -42,7 +42,22 @@
         text-align: center;
 
         @media only screen and (max-width: $bp-largest) {
-            margin-left: -1.2rem !important;
+            margin-left: -1.2rem;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            //Spacing
+            padding: 0;
+            margin: 0;
+            //Styling
+            background-color: transparent;
+            color: $color-primary-dark;
+            border-radius: 0;
+            box-shadow: none;
+
+            &:hover {
+                transform: none;
+            }
         }
 
         &:hover {

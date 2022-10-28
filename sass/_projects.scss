@@ -16,12 +16,7 @@
         @media only screen and (max-width: $bp-medium) {
             //Spacing
             width: 100%;
-            margin: 0 3rem;
-        }
-        @media only screen and (max-width: $bp-small) {
-            //Spacing
-            width: 100%;
-            margin: 0 1rem;
+            padding: 0 2rem;
         }
     }
     &__card {
@@ -115,7 +110,7 @@
 
         //Spacing
         position: relative;
-        height: 47rem;
+        height: 50rem;
         width: 50%;
 
         //Image Styling
@@ -123,7 +118,9 @@
 
         @media only screen and (max-width: $bp-smallest) {
             //Spacing
+            height: 32rem;
             width: 100%;
+            margin: auto;
 
             //Border Styling
             border-radius: 12px 12px 0 0 !important;

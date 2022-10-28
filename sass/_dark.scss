@@ -55,13 +55,18 @@
     transform: rotate(90deg);
     transition: 0.3s ease;
 
+    @media only screen and (max-width: $bp-smallest) {
+        //Spacing
+        display: none;
+    }
+
     /* White Toggle inside Pill */
     &-span {
         //Spacing
         position: absolute;
         height: 2rem;
         width: 2rem;
-        left: -0.8rem;
+        left: -8px;
 
         //Color Styling
         background: #fff;
@@ -77,12 +82,12 @@
 
 /* Light Mode Label */
 .dark-mode-button:after {
-    content: 'Light.';
+    content: 'Day.';
 
     //Spacing
     position: absolute;
-    right: -5px;
-    top: -5rem;
+    right: 22px;
+    top: 8px;
 
     //Font Styling
     font-size: 1.5rem;
@@ -93,14 +98,36 @@
     //Animations
     transform: rotate(90deg);
     transition: all 0.1s;
+
+    @media only screen and (max-width: $bp-smallest) {
+        content: 'Night Mode.';
+
+        //Spacing
+        width: 20rem;
+        padding: 0.5rem;
+        right: -70px;
+        top: -17px;
+
+        //Font Styling
+        font-size: 3rem;
+        font-weight: 300;
+
+        //Color Styling
+        color: white;
+        background-color: $color-primary-dark;
+
+        //Border Styling
+        border-radius: 2.5rem;
+    }
 }
 
 /* Dark Mode Label */
 body.dark-mode .dark-mode-button:after {
-    content: 'Dark.';
+    content: 'Night.';
 
     //Spacing
-    top: -5rem;
+    right: 16px;
+    top: 10px;
 
     //Font Styling
     font-size: 1.5rem;
@@ -110,6 +137,25 @@ body.dark-mode .dark-mode-button:after {
 
     //Animations
     transition: all 0.1s;
+
+    @media only screen and (max-width: $bp-smallest) {
+        content: 'Day Mode.';
+
+        //Spacing
+        width: 20rem;
+        padding: 0.5rem;
+        right: -70px;
+        top: -17px;
+
+        //Font Styling
+        font-size: 3rem;
+        font-weight: 300;
+
+        //Color Styling
+        background-color: $color-primary;
+
+        border-radius: 2.5rem;
+    }
 }
 
 /* Pill Background in Light Mode */
@@ -165,9 +211,31 @@ body.dark-mode {
             //Image Styling
             background-image: url(../img/logo_white.png);
         }
-        &__nav a {
+        &__nav {
+            @media only screen and (max-width: $bp-smallest) {
+                //Color Styling
+                background-color: #3a2d3d;
+                box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.35);
+
+                //Border Styling
+                border-bottom: 1px solid $color-grey-dark;
+            }
+        }
+        & a {
             //Color Styling
             color: $body-text-dark;
+        }
+
+        &__hamburger {
+            & .bar {
+                //Color Styling
+                background-color: $body-text-dark;
+            }
+        }
+
+        &-scrolled {
+            //Border Styling
+            border-bottom: 1px solid $color-grey-dark;
         }
     }
 
@@ -184,7 +252,12 @@ body.dark-mode {
         }
         &__image {
             //Image Styling
-            background-image: url(../img/forest-night.png);
+            background-image: url(../img/forest-night2x.png);
+
+            @media only screen and (max-width: $bp-small) {
+                //Image Styling
+                background-image: url(../img/forest-night1x.png);
+            }
         }
     }
 
@@ -240,15 +313,16 @@ body.dark-mode {
     }
 
     .btn {
-        &-work {
-            //Color Styling
-            box-shadow: 0 0.5rem 2.5rem rgba(255, 255, 255, 0.25);
-        }
-
         &-contact {
             //Color Styling
             background-color: $color-primary-dark;
             color: $body-text-dark;
+
+            @media only screen and (max-width: $bp-smallest) {
+                //Color Styling
+                background-color: transparent;
+                color: $body-text-light;
+            }
         }
     }
     ::selection {

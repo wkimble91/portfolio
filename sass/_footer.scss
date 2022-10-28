@@ -41,6 +41,7 @@
             //Spacing
             width: 3rem;
             height: 3rem;
+            margin-right: 2rem;
         }
     }
 
@@ -51,5 +52,10 @@
 
         //Color Styling
         color: $body-text-light;
+
+        @media only screen and (max-width: $bp-medium) {
+            //Font Styling
+            font-size: 1rem;
+        }
     }
 }

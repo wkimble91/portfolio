@@ -13,7 +13,7 @@
 
     //Color Styling
     background-color: $background-color-light;
-    color: $body-text-light;
+    color: $color-primary-dark;
 
     &-box {
         //Display
@@ -46,9 +46,6 @@
         text-decoration: none;
         font-size: 2.5rem;
 
-        //Color Styling
-        color: $body-text-light;
-
         //Image Styling
         background-image: url(../img/logo_black.png);
         background-size: cover;
@@ -60,6 +57,11 @@
         @media only screen and (max-width: $bp-large) {
             //Spacing
             margin-left: 1rem;
+        }
+        @media only screen and (max-width: $bp-small) {
+            //Spacing
+            height: 5rem;
+            width: 5rem;
         }
 
         &:hover {
@@ -80,32 +82,126 @@
             //Spacing
             margin: 0 1rem;
         }
+        @media only screen and (max-width: $bp-smallest) {
+            //Display
+            flex-direction: column;
+            justify-content: space-around;
+
+            //Spacing
+            position: fixed;
+            width: 110%;
+            top: 7rem;
+            left: -120%;
+            height: 28rem;
+
+            //Font Styling
+            text-align: center;
+            font-weight: 300;
+
+            //Color Styling
+            background-color: #fff;
+            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+
+            //Border Styling
+            border-bottom: 1px solid $color-grey-light;
+
+            //Animations
+            transition: 0.3s;
+
+            &.active {
+                //Spacing
+                left: -5%;
+            }
+        }
 
         & button {
             //Spacing
             margin-left: 5.8rem;
+
+            @media only screen and (max-width: $bp-medium) {
+                //Spacing
+                margin-right: 3rem;
+            }
+            @media only screen and (max-width: $bp-small) {
+                //Spacing
+                margin-right: 2rem;
+            }
         }
 
         & a {
+            //Spacing
+            margin-right: 6rem;
+
             //Font Styling
-            text-decoration: none;
             font-size: 1.4rem;
 
             //Animations
             transition: all 0.1s;
 
-            &:not(:last-child) {
+            @media only screen and (max-width: $bp-medium) {
                 //Spacing
-                margin-right: 6rem;
+                margin-right: 3rem;
+            }
+            @media only screen and (max-width: $bp-small) {
+                //Spacing
+                margin-right: 2rem;
+            }
 
-                @media only screen and (max-width: $bp-medium) {
-                    //Spacing
-                    margin-right: 3rem;
-                }
-                @media only screen and (max-width: $bp-small) {
-                    //Spacing
-                    margin-right: 2rem;
-                }
+            @media only screen and (max-width: $bp-smallest) {
+                //Spacing
+                width: 100%;
+                margin: auto;
+
+                //Font Styling
+                font-size: 3rem;
+            }
+        }
+    }
+
+    &__hamburger {
+        //Display
+        display: none;
+
+        @media only screen and (max-width: $bp-smallest) {
+            cursor: pointer;
+
+            //Display
+            display: block;
+
+            //Spacing
+            margin: auto 2rem;
+        }
+
+        & .bar {
+            //Display
+            display: block;
+
+            //Spacing
+            width: 4rem;
+            height: 1px;
+            margin: 8px auto;
+
+            //Color Styling
+            background-color: $body-text-light;
+
+            //Animations
+            transition: all 0.3s ease-in-out;
+        }
+
+        &.active {
+            & .bar:nth-child(2) {
+                //Image Styling
+                opacity: 0;
+            }
+
+            & .bar:nth-child(1) {
+                //Animations
+                transform: translateY(9px) rotate(45deg);
+            }
+
+            & .bar:nth-child(3) {
+                //Animations
+                transform: translateY(-9px) rotate(-45deg);
             }
         }
     }
