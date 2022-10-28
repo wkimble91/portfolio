@@ -1,183 +1,207 @@
-/* Dark Mode Toggle */
+/*-- -------------------------- -->
+<---      Styles for            -->
+<---      Dark  Mode Toggle     -->
+<--- -------------------------- -*/
+
+/* General Button */
 .dark-mode-button {
     cursor: pointer;
-    background: transparent;
-    border: none;
+
+    //Display
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    //Spacing
     height: 4rem;
     width: 3rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-.top-dark-mode-button {
     top: 6rem;
     right: 1.5rem;
-    -webkit-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg);
     z-index: 1000;
-}
 
-.top-dark-mode-button .dark-toggle {
-    background: rgb(230, 230, 230);
-    border-color: rgb(230, 230, 230);
-    width: 3.5rem;
-}
-
-.top-dark-mode-button:after {
-    content: 'Light.';
-    position: absolute;
-    font-size: 1.5rem;
-    color: $body-text-light;
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-    right: -5px;
-    top: -5rem;
-    transition: all 0.1s;
-}
-
-body.dark-mode .top-dark-mode-button:after {
-    content: 'Dark.';
-    color: $body-text-dark;
-    font-size: 1.5rem;
-    top: -5rem;
-    transition: all 0.1s;
-}
-
-.dark-toggle {
-    margin: 0;
-    width: 3rem;
-    height: 1.6rem;
-    z-index: 20;
-    border-radius: 1rem;
+    //Image Styling
     background: transparent;
-    border: 3px solid #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
+
+    //Border Styling
+    border: none;
+
+    //Animations
+    transform: rotate(-90deg);
+}
+
+/* Pill Spacing and Location */
+.dark-toggle {
+    //Display
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-transition: 0.3s ease;
-    -o-transition: 0.3s ease;
-    transition: 0.3s ease;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    z-index: 1000;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
     align-items: center;
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
+    justify-content: center;
+
+    //Spacing
+    width: 3rem;
+    height: 1.6rem;
+    margin: 0;
+    z-index: 1000;
+
+    //Image Styling
+    background: transparent;
+
+    //Border Styling
+    border: 3px solid #fff;
+    border-radius: 1rem;
+
+    //Animations
     transform: rotate(90deg);
+    transition: 0.3s ease;
+
+    /* White Toggle inside Pill */
+    &-span {
+        //Spacing
+        position: absolute;
+        height: 2rem;
+        width: 2rem;
+        left: -0.8rem;
+
+        //Color Styling
+        background: #fff;
+
+        //Border Styling
+        border-radius: 50%;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+
+        //Animations
+        transition: 0.3s ease;
+    }
 }
 
+/* Light Mode Label */
+.dark-mode-button:after {
+    content: 'Light.';
+
+    //Spacing
+    position: absolute;
+    right: -5px;
+    top: -5rem;
+
+    //Font Styling
+    font-size: 1.5rem;
+
+    //Color Styling
+    color: $body-text-light;
+
+    //Animations
+    transform: rotate(90deg);
+    transition: all 0.1s;
+}
+
+/* Dark Mode Label */
+body.dark-mode .dark-mode-button:after {
+    content: 'Dark.';
+
+    //Spacing
+    top: -5rem;
+
+    //Font Styling
+    font-size: 1.5rem;
+
+    //Color Styling
+    color: $body-text-dark;
+
+    //Animations
+    transition: all 0.1s;
+}
+
+/* Pill Background in Light Mode */
+.dark-mode-button .dark-toggle {
+    //Spacing
+    width: 3.5rem;
+
+    //Color Styling
+    background: rgb(230, 230, 230);
+
+    //Border Styling
+    border-color: rgb(230, 230, 230);
+}
+
+/* Pill Background in Dark Mode */
 body.dark-mode .dark-toggle {
+    //Color Styling
     background: rgb(140, 19, 164);
-    background: -o-linear-gradient(
-        left,
-        rgba(140, 19, 164, 1) 0%,
-        rgba(93, 13, 109, 1) 40%
-    );
-    background: -webkit-gradient(
-        linear,
-        left top,
-        right top,
-        from(rgba(140, 19, 164, 1)),
-        to(rgba(93, 13, 109, 1))
-    );
     background: linear-gradient(
         90deg,
         rgba(140, 19, 164, 1) 0%,
         rgba(93, 13, 109, 1) 40%
     );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8C13A4",endColorstr="#5D0D6E",GradientType=1);
+
+    //Border Styling
     border: none;
 }
 
-.dark-toggle span {
-    height: 2rem;
-    width: 2rem;
-    left: -0.8rem;
-    border-radius: 50%;
-    background: #fff;
-    position: absolute;
-    -webkit-transition: 0.3s ease;
-    -o-transition: 0.3s ease;
-    transition: 0.3s ease;
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-}
-
+/* Pill Animation */
 body.dark-mode .dark-toggle span {
+    //Spacing
     left: 1.5rem;
-    -webkit-transition: 0.3s ease;
-    -o-transition: 0.3s ease;
+
+    //Animations
     transition: 0.3s ease;
 }
 
-.top-dark-mode-button .dark-toggle {
-    background: rgb(230, 230, 230);
-    border-color: rgb(230, 230, 230);
-    width: 3.5rem;
-}
+/*-- -------------------------- -->
+<---         Styles for         -->
+<---         Dark Mode          -->
+<--- -------------------------- -*/
 
-/* Dark Mode Styles */
 body.dark-mode {
+    //Color Styling
     background-color: $background-color-dark;
     color: $body-text-dark;
 
     .header {
+        //Color Styling
         background-color: $background-color-dark;
         color: $body-text-dark;
         &__logo {
+            //Image Styling
             background-image: url(../img/logo_white.png);
         }
         &__nav a {
+            //Color Styling
             color: $body-text-dark;
         }
     }
 
     .hero {
+        //Color Styling
         background-color: $background-color-dark;
         &__title {
+            //Color Styling
             color: $background-color-light;
         }
         &__subtitle {
+            //Color Styling
             color: $body-text-dark;
         }
         &__image {
+            //Image Styling
             background-image: url(../img/forest-night.png);
         }
     }
 
     .contact {
+        //Color Styling
         background-color: $background-color-dark;
         &-svg {
+            //Color Styling
             filter: invert(1);
         }
         &-header {
             h2 {
+                //Color Styling
                 color: $color-primary-light;
             }
             h3 {
+                //Color Styling
                 color: $color-primary-light;
             }
         }
@@ -185,41 +209,50 @@ body.dark-mode {
 
     .projects {
         &__card {
+            //Color Styling
             background-color: #3a2d3d;
         }
         &__details {
             h3 {
+                //Color Styling
                 color: $background-color-light;
             }
             p {
+                //Color Styling
                 color: $background-color-light;
             }
         }
     }
 
     .footer {
+        //Color Styling
         background-color: $background-color-dark;
         color: $body-text-dark;
 
         &__logo-box {
+            //Image Styling
             background-image: url(../img/logo_tree-light.png);
         }
         &__copyright {
+            //Color Styling
             color: $body-text-dark;
         }
     }
 
     .btn {
         &-work {
+            //Color Styling
             box-shadow: 0 0.5rem 2.5rem rgba(255, 255, 255, 0.25);
         }
 
         &-contact {
+            //Color Styling
             background-color: $color-primary-dark;
             color: $body-text-dark;
         }
     }
     ::selection {
+        //Color Styling
         color: $body-text-light;
         background-color: $body-text-dark;
     }

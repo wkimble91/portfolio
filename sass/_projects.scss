@@ -1,112 +1,159 @@
 .projects {
-    grid-column: 1 / -1;
-    grid-row: 3 / span 1;
-    width: 100%;
-    margin: auto;
+    //Display
     display: flex;
     justify-content: center;
     align-items: center;
+
+    //Spacing
+    width: 100%;
+    margin: auto;
     padding: 10vh 0;
 
     &__box {
+        //Spacing
         width: 60%;
-        justify-content: center;
-        align-items: center;
 
         @media only screen and (max-width: $bp-medium) {
+            //Spacing
             width: 100%;
             margin: 0 3rem;
         }
         @media only screen and (max-width: $bp-small) {
+            //Spacing
             width: 100%;
             margin: 0 1rem;
         }
     }
     &__card {
-        background-color: white;
+        //Display
         display: flex;
+
+        //Color Styling
+        background-color: white;
+
+        //Border Styling
         border-radius: 12px;
+
         &:not(:last-child) {
+            //Spacing
             margin-bottom: 10rem;
         }
 
         @media only screen and (max-width: $bp-smallest) {
+            //Display
             flex-direction: column;
+
             &:nth-child(2n + 1) {
+                //Display
                 flex-direction: column-reverse;
             }
         }
     }
     &__description {
+        //Spacing
         width: 50%;
         padding: 9.5rem 8rem;
+
         @media only screen and (max-width: $bp-medium) {
+            //Spacing
             padding: 0;
             margin: 0;
         }
 
         @media only screen and (max-width: $bp-smallest) {
+            //Spacing
             width: 100%;
         }
     }
     &__details {
-        height: 100%;
+        //Display
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
+        //Spacing
+        height: 100%;
+
         @media only screen and (max-width: $bp-medium) {
+            //Display
             justify-content: space-evenly;
         }
 
         h3 {
+            //Font Styling
             font-size: 4rem;
             font-weight: 600;
             letter-spacing: 0.2rem;
+
+            //Color Styling
             color: $background-color-dark;
         }
         p {
-            color: $color-grey-dark;
+            //Spacing
+            margin-top: 1.5rem;
+
+            //Font Styling
             font-size: 1.4rem;
             font-weight: 300;
-            margin-top: 1.5rem;
+
+            //Color Styling
+            color: $color-grey-dark;
         }
     }
     &__title {
+        //Font Styling
         text-align: center;
+
         @media only screen and (max-width: $bp-smallest) {
+            //Spacing
             padding-top: 4rem;
         }
     }
     &__image-box {
-        position: relative;
+        //Display
         display: flex;
+
+        //Spacing
+        position: relative;
         height: 47rem;
         width: 50%;
+
+        //Image Styling
         overflow: hidden;
 
         @media only screen and (max-width: $bp-smallest) {
+            //Spacing
             width: 100%;
+
+            //Border Styling
             border-radius: 12px 12px 0 0 !important;
         }
 
         &:nth-child(2n) {
+            //Border Styling
             border-radius: 0 12px 12px 0;
         }
         &:nth-child(2n + 1) {
+            //Border Styling
             border-radius: 12px 0 0 12px;
+
             &::before {
+                //Image Styling
                 transform: rotate(180deg);
             }
         }
         &::before {
+            content: '';
+
+            //Spacing
+            position: absolute;
             width: 100%;
             height: 100%;
-            content: '';
-            position: absolute;
-            z-index: 0;
             top: 0;
             right: 0;
+            z-index: 0;
+
+            //Image Styling
             background-image: url(../img/project-pattern.png);
             background-repeat: no-repeat;
             background-size: cover;
@@ -114,28 +161,37 @@
         }
 
         & img {
+            //Spacing
             z-index: 2;
             width: 100%;
             margin: auto;
         }
     }
     &-buttons {
+        //Display
         display: flex;
         flex-direction: column;
-        width: 75%;
         align-self: center;
+
+        //Spacing
+        width: 75%;
+
         @media only screen and (max-width: $bp-smallest) {
+            //Spacing
             padding: 6rem 0;
         }
     }
 }
 
 .bg-blue {
+    //Color Styling
     background: linear-gradient(to right, #6e7bfb, #41e4dc);
 }
 .bg-green {
+    //Color Styling
     background: linear-gradient(to right, #00b09b, #96c93d);
 }
 .bg-orange {
+    //Color Styling
     background: linear-gradient(to right, #ff512f, #f09819);
 }

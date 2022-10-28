@@ -1,41 +1,55 @@
 .footer {
-    grid-column: 1 / -1;
-    grid-row: 5 / span 1;
-
-    background-color: $background-color-light;
-    color: $body-text-light;
+    //Display
     display: flex;
     justify-content: center;
 
+    //Color Styling
+    background-color: $background-color-light;
+    color: $body-text-light;
+
     &-box {
-        width: 70%;
+        //Display
         display: flex;
         justify-content: flex-end;
         align-items: center;
+
+        //Spacing
+        width: 70%;
         margin: 2rem 0;
+
         @media only screen and (max-width: $bp-large) {
+            //Spacing
             width: 100%;
         }
     }
 
     &__logo-box {
+        //Spacing
+        height: 4rem;
+        width: 4rem;
+        margin-left: 2rem;
+
+        //Font Styling
+        text-align: center;
+
+        //Image Styling
         background-image: url(../img/logo_tree-dark.png);
         background-size: cover;
         background-position: top;
-        text-align: center;
-        margin-left: 2rem;
-        height: 4rem;
-        width: 4rem;
 
         @media only screen and (max-width: $bp-medium) {
+            //Spacing
             width: 3rem;
             height: 3rem;
         }
     }
 
     &__copyright {
-        font-size: 1.3rem;
-        color: $body-text-light;
+        //Font Styling
         text-align: center;
+        font-size: 1.3rem;
+
+        //Color Styling
+        color: $body-text-light;
     }
 }

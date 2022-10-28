@@ -1,8 +1,7 @@
 /*-- -------------------------- -->
-<---        Core Styles         -->
+<---       Color Schemes        -->
 <--- -------------------------- -*/
 
-/* Color scheme */
 $color-primary-light: #c524e5;
 $color-primary: #8c13a4;
 $color-primary-dark: #5d0d6e;
@@ -17,12 +16,19 @@ $background-color-dark-2: #1a041f;
 $body-text-light: #16031a;
 $body-text-dark: #ebebeb;
 
-/* Breakpoints */
+/*-- -------------------------- -->
+<---        Breakpoints         -->
+<--- -------------------------- -*/
+
 $bp-largest: 87.5em; //1400px
 $bp-large: 75em; //1200px
 $bp-medium: 56.25em; //900px
 $bp-small: 37.5em; //600px
 $bp-smallest: 31.25em; //500px
+
+/*-- -------------------------- -->
+<---     General Formatting     -->
+<--- -------------------------- -*/
 
 *,
 *::before,
@@ -53,3 +59,15 @@ body {
     background-color: $color-primary-dark;
     color: #fff;
 }
+
+/*-- -------------------------- -->
+<---       Comment order        -->
+<--- -------------------------- -*/
+//Parent
+//Display
+//Spacing
+//Font Styling
+//Color Styling
+//Image Styling
+//Border Styling
+//Animations
