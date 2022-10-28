@@ -34,7 +34,7 @@
             margin-bottom: 10rem;
         }
 
-        @media only screen and (max-width: $bp-smallest) {
+        @media only screen and (max-width: $bp-small) {
             //Display
             flex-direction: column;
 
@@ -55,7 +55,7 @@
             margin: 0;
         }
 
-        @media only screen and (max-width: $bp-smallest) {
+        @media only screen and (max-width: $bp-small) {
             //Spacing
             width: 100%;
         }
@@ -99,7 +99,7 @@
         //Font Styling
         text-align: center;
 
-        @media only screen and (max-width: $bp-smallest) {
+        @media only screen and (max-width: $bp-small) {
             //Spacing
             padding-top: 4rem;
         }
@@ -116,7 +116,7 @@
         //Image Styling
         overflow: hidden;
 
-        @media only screen and (max-width: $bp-smallest) {
+        @media only screen and (max-width: $bp-small) {
             //Spacing
             height: 32rem;
             width: 100%;
@@ -173,7 +173,7 @@
         //Spacing
         width: 75%;
 
-        @media only screen and (max-width: $bp-smallest) {
+        @media only screen and (max-width: $bp-small) {
             //Spacing
             padding: 6rem 0;
         }
