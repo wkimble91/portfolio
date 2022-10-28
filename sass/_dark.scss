@@ -212,7 +212,7 @@ body.dark-mode {
             background-image: url(../img/logo_white.png);
         }
         &__nav {
-            @media only screen and (max-width: $bp-smallest) {
+            @media only screen and (max-width: $bp-small) {
                 //Color Styling
                 background-color: #3a2d3d;
                 box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.35);
@@ -318,7 +318,7 @@ body.dark-mode {
             background-color: $color-primary-dark;
             color: $body-text-dark;
 
-            @media only screen and (max-width: $bp-smallest) {
+            @media only screen and (max-width: $bp-small) {
                 //Color Styling
                 background-color: transparent;
                 color: $body-text-light;
