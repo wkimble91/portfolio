@@ -1,31 +1,48 @@
 .btn {
-    border: none;
+    cursor: pointer;
+
+    //Spacing
+    width: auto;
+
+    //Font Styling
     text-transform: uppercase;
     text-decoration: none;
-    cursor: pointer;
+
+    //Border Styling
+    border: none;
+
+    //Animations
     transition: all 0.2s;
-    width: auto;
 
     &-work {
         //Spacing
-        font-size: 1.5rem;
-        font-weight: 600;
         padding: 1.8rem 3rem;
         letter-spacing: 0.25rem;
 
-        //Styling
+        //Font Styling
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 600;
+
+        //Color Styling
         background-color: $color-primary;
         color: $body-text-dark;
-        border-radius: 5rem;
         box-shadow: 0 0.8rem 2.5rem rgba(0, 0, 0, 0.25);
+
+        //Border Styling
+        border-radius: 5rem;
+
+        //Animations
         transition: all 0.2s;
-        text-align: center;
 
         @media only screen and (max-width: $bp-medium) {
-            font-size: 1.2rem;
-            font-weight: 400;
+            //Spacing
             padding: 1.8rem 3rem;
             letter-spacing: 0;
+
+            //Font Styling
+            font-size: 1.2rem;
+            font-weight: 400;
         }
     }
 
@@ -33,15 +50,29 @@
         //Spacing
         padding: 1.2rem 2rem;
         margin: -1.2rem -2rem;
-        //Styling
-        background-color: $color-primary;
-        color: $body-text-dark;
-        border-radius: 5rem;
-        box-shadow: 0 0.8rem 2.5rem rgba(0, 0, 0, 0.25);
-        transition: all 0.2s;
+
+        //Font Styling
         text-align: center;
 
+        //Color Styling
+        box-shadow: 0 0.8rem 2.5rem rgba(0, 0, 0, 0.25);
+
+        //Border Styling
+        border-radius: 5rem;
+
+        //Animations
+        transition: all 0.2s;
+
+        &,
+        &:link,
+        &:visited {
+            //Color Styling
+            background-color: $color-primary;
+            color: $body-text-dark;
+        }
+
         @media only screen and (max-width: $bp-largest) {
+            //Spacing
             margin-left: -1.2rem;
         }
 
@@ -49,36 +80,33 @@
             //Spacing
             padding: 0;
             margin: 0;
-            //Styling
-            background-color: transparent;
-            color: $color-primary-dark;
-            border-radius: 0;
-            box-shadow: none;
+
+            &,
+            &:link,
+            &:visited {
+                //Color Styling
+                background-color: transparent;
+                color: $color-primary-dark;
+                box-shadow: none;
+
+                //Border Styling
+                border-radius: 0;
+            }
 
             &:hover {
+                //Animations
                 transform: none;
             }
         }
 
         &:hover {
+            //Animations
             transform: scale(1.1);
         }
     }
 
     &:hover {
+        //Animations
         transform: scale(1.05);
     }
-}
-
-.mb-sm {
-    margin-bottom: 2rem;
-}
-.mb-md {
-    margin-bottom: 3rem;
-}
-.mb-lg {
-    margin-bottom: 4rem;
-}
-.mb-hg {
-    margin-bottom: 8rem;
 }
