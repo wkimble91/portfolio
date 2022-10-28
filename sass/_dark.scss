@@ -55,7 +55,7 @@
     transform: rotate(90deg);
     transition: 0.3s ease;
 
-    @media only screen and (max-width: $bp-smallest) {
+    @media only screen and (max-width: $bp-small) {
         //Spacing
         display: none;
     }
@@ -99,7 +99,7 @@
     transform: rotate(90deg);
     transition: all 0.1s;
 
-    @media only screen and (max-width: $bp-smallest) {
+    @media only screen and (max-width: $bp-small) {
         content: 'Night Mode.';
 
         //Spacing
@@ -138,7 +138,7 @@ body.dark-mode .dark-mode-button:after {
     //Animations
     transition: all 0.1s;
 
-    @media only screen and (max-width: $bp-smallest) {
+    @media only screen and (max-width: $bp-small) {
         content: 'Day Mode.';
 
         //Spacing
