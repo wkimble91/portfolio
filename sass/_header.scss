@@ -126,11 +126,12 @@
             }
             @media only screen and (max-width: $bp-small) {
                 //Spacing
-                margin-right: 2rem;
+                margin-right: 0;
+                margin-left: 0;
             }
         }
 
-        & a {
+        & li a {
             //Spacing
             margin-right: 6rem;
 
@@ -140,10 +141,8 @@
             //Animations
             transition: all 0.1s;
 
-            flex-grow: 1;
-            &:last-child {
-                flex-grow: 3;
-            }
+            //Color Styling
+            color: $color-primary;
 
             @media only screen and (max-width: $bp-medium) {
                 //Spacing
@@ -154,22 +153,11 @@
                 width: 100%;
                 margin: auto;
 
-                //Font Styling
-                font-size: 2.5rem;
-            }
-
-            &,
-            &:link,
-            &:visited {
                 //Color Styling
                 color: $color-primary-dark;
-            }
 
-            & li {
-                flex-grow: 1;
-                &:last-child {
-                    flex-grow: 3;
-                }
+                //Font Styling
+                font-size: 2.5rem;
             }
         }
     }
