@@ -14,6 +14,11 @@
     //Color Styling
     background-color: $background-color-light;
 
+    @media only screen and (max-width: $bp-small) {
+        //Spacing
+        z-index: 10;
+    }
+
     &-box {
         //Display
         display: flex;
@@ -25,6 +30,10 @@
         @media only screen and (max-width: $bp-large) {
             //Spacing
             width: 100%;
+        }
+        @media only screen and (max-width: $bp-small) {
+            //Color Styling
+            background-color: $background-color-light;
         }
     }
 
@@ -39,7 +48,7 @@
         height: 7rem;
         width: 7rem;
         margin: 1.5rem 0 0.5rem;
-        z-index: 40;
+        z-index: 200;
 
         //Font Styling
         text-decoration: none;
@@ -89,9 +98,10 @@
             //Spacing
             position: fixed;
             width: 110%;
-            top: 7rem;
-            left: -120%;
+            top: -30%;
+            left: -5%;
             height: 28rem;
+            z-index: -1;
 
             //Font Styling
             text-align: center;
@@ -105,11 +115,11 @@
             border-bottom: 1px solid $color-grey-light;
 
             //Animations
-            transition: 0.3s;
+            transition: 0.6s ease;
 
             &.active {
                 //Spacing
-                left: -5%;
+                top: 7rem;
             }
         }
         @media only screen and (max-width: $bp-smallest) {
@@ -174,6 +184,7 @@
 
             //Spacing
             margin: auto 2rem;
+            z-index: 20;
         }
 
         & .bar {

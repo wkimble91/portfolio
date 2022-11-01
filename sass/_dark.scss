@@ -220,6 +220,12 @@ body.dark-mode {
         //Color Styling
         background-color: $background-color-dark;
         color: $body-text-dark;
+        &-box {
+            @media only screen and (max-width: $bp-small) {
+                //Color Styling
+                background-color: $background-color-dark;
+            }
+        }
         &__logo {
             //Image Styling
             background-image: url(../img/logo_white.png);
@@ -334,7 +340,7 @@ body.dark-mode {
             @media only screen and (max-width: $bp-small) {
                 //Color Styling
                 background-color: transparent;
-                color: $body-text-light;
+                color: $body-text-dark !important;
             }
         }
     }
