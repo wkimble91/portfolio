@@ -3,207 +3,194 @@
 <---      Dark  Mode Toggle     -->
 <--- -------------------------- -*/
 
-/* General Button */
-.dark-mode-button {
-    cursor: pointer;
-
-    //Display
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    //Spacing
-    height: 4rem;
-    width: 3rem;
-    top: 6rem;
-    right: 1.5rem;
-    z-index: 1000;
-
-    //Image Styling
-    background: transparent;
+.toggle-wrapper {
+    //Color Styling
+    background-color: inherit;
 
     //Border Styling
     border: none;
 
-    //Animations
-    transform: rotate(-90deg);
-
-    @media only screen and (max-width: $bp-small) {
-        //Animations
-        transform: rotate(0deg);
-        top: 0;
-        right: 0;
-    }
-}
-
-/* Pill Spacing and Location */
-.dark-toggle {
-    //Display
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-    //Spacing
-    width: 3rem;
-    height: 1.6rem;
-    margin: 0;
-    z-index: 1000;
-
-    //Image Styling
-    background: transparent;
-
-    //Border Styling
-    border: 3px solid #fff;
-    border-radius: 1rem;
-
-    //Animations
-    transform: rotate(90deg);
-    transition: 0.3s ease;
-
-    @media only screen and (max-width: $bp-small) {
-        //Spacing
+    & .toggle {
+        //Display
         display: none;
+
+        & + .toggle-btn {
+            cursor: pointer;
+            user-select: none;
+
+            //Display
+            display: block;
+
+            //Spacing
+            width: 8rem;
+            height: 4rem;
+            position: relative;
+
+            //Border Styling
+            outline: 0;
+
+            @media only screen and (max-width: $bp-small) {
+                width: 14rem;
+            }
+
+            &:after,
+            &:before {
+                content: '';
+
+                //Display
+                display: block;
+
+                //Spacing
+                position: relative;
+                width: 50%;
+                height: 100%;
+            }
+            &:after {
+                //Spacing
+                left: 0;
+            }
+            &:before {
+                //Display
+                display: none;
+            }
+        }
+
+        &:checked + .toggle-btn:after {
+            //Spacing
+            left: 50%;
+        }
+
+        &-skewed {
+            & + .toggle-btn {
+                //Spacing
+                overflow: hidden;
+                backface-visibility: hidden;
+
+                //Font Styling
+                font-family: sans-serif;
+
+                //Color Styling
+                background: $color-primary;
+
+                //Image Styling
+                transform: skew(-10deg);
+
+                //Animations
+                transition: all 0.2s ease;
+
+                &:after,
+                &:before {
+                    //Display
+                    display: inline-block;
+
+                    //Spacing
+                    position: absolute;
+                    width: 100%;
+
+                    //Font Styling
+                    line-height: 4rem;
+                    text-align: center;
+                    font-weight: bold;
+
+                    //Image Styling
+                    transform: skew(10deg);
+
+                    //Border Styling
+                    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+
+                    //Animations
+                    transition: all 0.2s ease;
+                }
+
+                /* After = Night */
+                &:after {
+                    content: attr(data-tg-on);
+
+                    //Spacing
+                    left: 100%;
+
+                    //Font Styling
+                    font-weight: normal;
+
+                    //Color Styling
+                    color: $color-primary;
+
+                    @media only screen and (max-width: $bp-small) {
+                        //Font Styling
+                        font-size: 2.5rem;
+                        font-weight: 300;
+                    }
+                }
+
+                /* Before = Day */
+                &:before {
+                    content: attr(data-tg-off);
+
+                    //Spacing
+                    left: 0;
+
+                    //Color Styling
+                    color: $body-text-dark;
+
+                    @media only screen and (max-width: $bp-small) {
+                        //Font Styling
+                        font-weight: normal;
+                        font-size: 2.5rem;
+                        font-weight: 300;
+                    }
+                }
+                &:active {
+                    //Color Styling
+                    background: $color-primary;
+                }
+                &:active:before {
+                    //Spacing
+                    left: -10%;
+                }
+            }
+
+            &:checked {
+                & + .toggle-btn {
+                    //Color Styling
+                    background: $background-color-light;
+
+                    &:before {
+                        //Spacing
+                        left: -100%;
+                    }
+                    &:after {
+                        //Spacing
+                        left: 0;
+                    }
+                    &:active:after {
+                        //Spacing
+                        left: 10%;
+                    }
+                }
+            }
+        }
+
+        &,
+        &:after,
+        &:before,
+        & *,
+        & *:after,
+        & *:before,
+        & + .toggle-btn {
+            //Spacing
+            box-sizing: border-box;
+        }
+        &::selection,
+        &:after::selection,
+        &:before::selection,
+        & *::selection,
+        & *:after::selection,
+        & *:before::selection,
+        & + .toggle-btn::selection {
+            //Color Styling
+            background: none;
+        }
     }
-
-    /* White Toggle inside Pill */
-    &-span {
-        //Spacing
-        position: absolute;
-        height: 2rem;
-        width: 2rem;
-        left: -8px;
-
-        //Color Styling
-        background: #fff;
-
-        //Border Styling
-        border-radius: 50%;
-        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-
-        //Animations
-        transition: 0.3s ease;
-    }
-}
-
-/* Light Mode Label */
-.dark-mode-button:after {
-    content: 'Day.';
-
-    //Spacing
-    position: absolute;
-    right: 22px;
-    top: 8px;
-
-    //Font Styling
-    font-size: 1.5rem;
-
-    //Color Styling
-    color: $body-text-light;
-
-    //Animations
-    transition: all 0.1s;
-    transform: rotate(90deg);
-
-    @media only screen and (max-width: $bp-small) {
-        content: 'Night Mode.';
-
-        //Spacing
-        position: relative;
-        width: 20rem;
-        padding: 0.8rem;
-        right: 0;
-        top: 0;
-
-        //Font Styling
-        font-size: 2.5rem;
-        font-weight: 300;
-
-        //Color Styling
-        color: white;
-        background-color: $color-primary-dark;
-
-        //Border Styling
-        border-radius: 2.5rem;
-
-        //Animations
-        transform: rotate(0deg);
-    }
-}
-
-/* Dark Mode Label */
-body.dark-mode .dark-mode-button:after {
-    content: 'Night.';
-
-    //Spacing
-    right: 16px;
-    top: 10px;
-
-    //Font Styling
-    font-size: 1.5rem;
-
-    //Color Styling
-    color: $body-text-dark;
-
-    //Animations
-    transition: all 0.1s;
-
-    @media only screen and (max-width: $bp-small) {
-        content: 'Day Mode.';
-
-        //Spacing
-        position: relative;
-
-        width: 18rem;
-        padding: 0.8rem;
-        right: 0;
-        top: 0;
-
-        //Font Styling
-        font-size: 2.5rem;
-        font-weight: 300;
-
-        //Color Styling
-        background-color: $color-primary;
-
-        border-radius: 2.5rem;
-    }
-}
-
-/* Pill Background in Light Mode */
-.dark-mode-button .dark-toggle {
-    //Spacing
-    width: 3.5rem;
-
-    //Color Styling
-    background: rgb(230, 230, 230);
-
-    //Border Styling
-    border-color: rgb(230, 230, 230);
-}
-
-/* Pill Background in Dark Mode */
-body.dark-mode .dark-toggle {
-    //Color Styling
-    background: rgb(140, 19, 164);
-    background: linear-gradient(
-        90deg,
-        rgba(140, 19, 164, 1) 0%,
-        rgba(93, 13, 109, 1) 40%
-    );
-
-    //Border Styling
-    border: none;
-}
-
-/* Pill Animation */
-body.dark-mode .dark-toggle span {
-    //Spacing
-    left: 1.5rem;
-
-    //Animations
-    transition: 0.3s ease;
 }
 
 /*-- -------------------------- -->

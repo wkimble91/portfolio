@@ -126,48 +126,47 @@
             height: 22rem;
         }
 
-        & button {
-            //Spacing
-            margin-left: 5.8rem;
-
-            @media only screen and (max-width: $bp-medium) {
-                //Spacing
-                margin-right: 3rem;
+        & * {
+            & button {
+                @media only screen and (max-width: $bp-large) {
+                    //Spacing
+                    margin-right: 3rem;
+                }
+                @media only screen and (max-width: $bp-small) {
+                    //Spacing
+                    margin-right: 0;
+                    margin-left: 0;
+                }
             }
-            @media only screen and (max-width: $bp-small) {
+
+            & a {
                 //Spacing
-                margin-right: 0;
-                margin-left: 0;
-            }
-        }
-
-        & li a {
-            //Spacing
-            margin-right: 6rem;
-
-            //Font Styling
-            font-size: 1.4rem;
-
-            //Animations
-            transition: all 0.1s;
-
-            //Color Styling
-            color: $color-primary;
-
-            @media only screen and (max-width: $bp-medium) {
-                //Spacing
-                margin-right: 3rem;
-            }
-            @media only screen and (max-width: $bp-small) {
-                //Spacing
-                width: 100%;
-                margin: auto;
-
-                //Color Styling
-                color: $color-primary-dark;
+                margin-right: 6rem;
 
                 //Font Styling
-                font-size: 2.5rem;
+                font-size: 1.4rem;
+
+                //Animations
+                transition: all 0.1s;
+
+                //Color Styling
+                color: $color-primary;
+
+                @media only screen and (max-width: $bp-medium) {
+                    //Spacing
+                    margin-right: 3rem;
+                }
+                @media only screen and (max-width: $bp-small) {
+                    //Spacing
+                    width: 100%;
+                    margin: auto;
+
+                    //Color Styling
+                    color: $color-primary-dark;
+
+                    //Font Styling
+                    font-size: 2.5rem;
+                }
             }
         }
     }

@@ -37,15 +37,14 @@
                     <a href="#projects">Projects.</a>
                 </li>
                 <li class="header__nav-item">
-                    <a class="btn-contact" href="#contact">Contact.</a>
+                    <a href="#contact">Contact.</a>
                 </li>
-                <li class="header__nav-item">
-                    <button class="dark-mode-button" aria-label="dark mode toggle">
-                        <span aria-hidden="true" class="dark-toggle">
-                            <span class="dark-toggle-span"></span>
-                        </span>
+                <div class="header__nav-toggle">
+                    <button class="toggle-wrapper">
+                        <input class="toggle toggle-skewed dark-mode-button" id="toggle" type="checkbox" />
+                        <label class="toggle-btn" data-tg-off="Day." data-tg-on="Night." for="toggle"></label>
                     </button>
-                </li>
+                </div>
             </ul>
             <div class="header__hamburger">
                 <span class="bar"></span>
