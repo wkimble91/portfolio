@@ -21,18 +21,9 @@ if (darkMode == 'enabled') {
     enableDarkMode();
 }
 
+disableDarkMode();
 // Desktop Button
 darkModeToggle.addEventListener('click', () => {
-    darkMode = localStorage.getItem('darkMode');
-    if (darkMode !== 'enabled') {
-        enableDarkMode();
-    } else {
-        disableDarkMode();
-    }
-});
-
-//Ensure the button is inside the footer tag, and it will be linked to this function.
-darkModeToggleFooter.addEventListener('click', () => {
     darkMode = localStorage.getItem('darkMode');
     if (darkMode !== 'enabled') {
         enableDarkMode();
