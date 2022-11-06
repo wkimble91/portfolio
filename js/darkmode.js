@@ -4,7 +4,6 @@ const body = document.querySelector('body');
 // Dark Mode Action
 let darkMode = localStorage.getItem('darkMode');
 const darkModeToggle = document.querySelector('.dark-mode-button');
-const darkModeToggleFooter = document.querySelector('footer .dark-mode-button');
 
 // Enable Dark Mode
 const enableDarkMode = () => {
