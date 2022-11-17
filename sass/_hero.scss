@@ -14,6 +14,7 @@
     @media only screen and (max-width: $bp-largest) {
         //Display
         flex-direction: column-reverse;
+        height: 100vh;
     }
 
     &-left {
@@ -33,7 +34,11 @@
 
             //Spacing
             width: 100%;
-            height: auto;
+            height: 30vh;
+        }
+        @media only screen and (max-width: $bp-small) {
+            //Display
+            justify-content: start;
         }
     }
     &-right {
@@ -63,9 +68,9 @@
             justify-content: center;
 
             //Spacing
-            padding: 0 6rem;
+            padding: 0 3rem;
             min-height: 50rem;
-            height: auto;
+            height: 80vh;
             width: 100%;
         }
     }
@@ -149,6 +154,7 @@
         @media only screen and (max-width: $bp-small) {
             //Image Styling
             background-image: url(../img/forest-day1x.png);
+            background-position: bottom center;
         }
 
         &-box {
