@@ -34,7 +34,7 @@
 
             //Spacing
             width: 100%;
-            height: 30vh;
+            height: 35vh;
         }
         @media only screen and (max-width: $bp-small) {
             //Display
@@ -70,7 +70,7 @@
             //Spacing
             padding: 0 3rem;
             min-height: 50rem;
-            height: 80vh;
+            height: 65vh;
             width: 100%;
         }
     }
@@ -102,6 +102,11 @@
             margin: 0 0 2rem;
 
             //Font Styling
+            font-size: 3.6rem;
+            letter-spacing: 0.5rem;
+        }
+        @media only screen and (max-width: $bp-smallest) {
+            //Font Styling
             font-size: 3rem;
             letter-spacing: 0.4rem;
         }
@@ -131,9 +136,13 @@
         }
         @media only screen and (max-width: $bp-small) {
             //Font Styling
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             font-weight: 300;
             letter-spacing: 0.1rem;
+        }
+        @media only screen and (max-width: $bp-smallest) {
+            //Font Styling
+            font-size: 1.1rem;
         }
     }
 
