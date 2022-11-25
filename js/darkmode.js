@@ -19,9 +19,12 @@ const disableDarkMode = () => {
 
 if (darkMode == 'enabled') {
     enableDarkMode();
+    document.getElementById('night-toggle').checked = true;
+} else {
+    disableDarkMode();
+    document.getElementById('night-toggle').checked = false;
 }
 
-disableDarkMode();
 // Desktop Button
 darkModeToggle.addEventListener('click', () => {
     darkMode = localStorage.getItem('darkMode');
