@@ -41,10 +41,11 @@
         display: none;
         @media only screen and (max-width: $bp-small) {
             display: inline-block;
-            width: 60%;
+            width: 70%;
             height: 1px;
             margin: 0 auto;
-            color: $color-grey-light;
+            background-color: $color-grey-light;
+            border: none;
         }
     }
 
@@ -151,8 +152,8 @@
 
             & a {
                 //Spacing
-                margin-right: 6rem;
-
+                margin-right: 3rem;
+                padding: 1rem 2rem;
                 //Font Styling
                 font-size: 1.4rem;
 
@@ -170,6 +171,7 @@
                     //Spacing
                     width: 100%;
                     margin: auto;
+                    padding: 1rem 3rem;
 
                     //Color Styling
                     color: $color-primary-dark;
