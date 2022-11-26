@@ -17,6 +17,10 @@
         //Spacing
         width: 60%;
 
+        @media only screen and (max-width: $bp-large) {
+            //Spacing
+            width: 80%;
+        }
         @media only screen and (max-width: $bp-medium) {
             //Spacing
             width: 100%;
@@ -91,6 +95,19 @@
 
             //Color Styling
             color: $background-color-dark;
+
+            @media only screen and (max-width: $bp-large) {
+                //Font Styling
+                font-size: 3rem;
+            }
+            @media only screen and (max-width: $bp-medium) {
+                //Font Styling
+                font-size: 3.2rem;
+            }
+            @media only screen and (max-width: $bp-small) {
+                //Font Styling
+                font-size: 3.6rem;
+            }
         }
         h4 {
             //Spacing
@@ -211,7 +228,7 @@
 }
 .bg-green {
     //Color Styling
-    background: linear-gradient(to right, #18a848, #169960);
+    background: linear-gradient(to right, #0ba360, #3cba92);
 }
 .bg-teal {
     //Color Styling
