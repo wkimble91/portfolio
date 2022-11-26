@@ -47,7 +47,7 @@
     &__description {
         //Spacing
         width: 50%;
-        padding: 9.5rem 8rem;
+        padding: 9.5rem 5rem;
 
         @media only screen and (max-width: $bp-medium) {
             //Spacing
@@ -76,20 +76,29 @@
 
         h3 {
             //Font Styling
-            font-size: 4rem;
+            font-size: 3.6rem;
             font-weight: 600;
             letter-spacing: 0.2rem;
 
             //Color Styling
             color: $background-color-dark;
         }
-        p {
+        h4 {
             //Spacing
-            margin-top: 1.5rem;
+            margin-bottom: 3rem;
 
             //Font Styling
+            font-size: 1.8rem;
+            font-weight: 400;
+            letter-spacing: 0.2rem;
+
+            //Color Styling
+            color: $background-color-dark;
+        }
+        p {
+            //Font Styling
             font-size: 1.4rem;
-            font-weight: 300;
+            font-weight: 200;
 
             //Color Styling
             color: $color-grey-dark;
@@ -182,13 +191,19 @@
 
 .bg-blue {
     //Color Styling
-    background: linear-gradient(to right, #6e7bfb, #41e4dc);
+    background: linear-gradient(71deg, rgb(110, 123, 251), rgb(65, 228, 220));
+    background-size: 120% 120%;
+    animation: gradient-animation 6s ease infinite;
 }
 .bg-green {
     //Color Styling
-    background: linear-gradient(to right, #00b09b, #96c93d);
+    background: linear-gradient(71deg, #18a848, #169960);
+    background-size: 120% 120%;
+    animation: gradient-animation 6s ease infinite;
 }
-.bg-orange {
+.bg-teal {
     //Color Styling
-    background: linear-gradient(to right, #ff512f, #f09819);
+    background: linear-gradient(71deg, rgb(55, 168, 192), rgb(103, 187, 125));
+    background-size: 120% 120%;
+    animation: gradient-animation 6s ease infinite;
 }
