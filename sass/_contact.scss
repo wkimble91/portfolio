@@ -26,6 +26,7 @@
             flex-direction: column;
         }
         @media only screen and (max-width: $bp-small) {
+            //Spacing
             height: 100vh;
         }
 
@@ -34,6 +35,9 @@
             flex: 1 1 50%;
             display: flex;
             flex-direction: column;
+
+            //Spacing
+            width: 100%;
         }
         &-right {
             //Display
@@ -41,6 +45,9 @@
             display: flex;
             flex-direction: column;
             align-items: flex-end;
+
+            //Spacing
+            width: 100%;
         }
     }
 
