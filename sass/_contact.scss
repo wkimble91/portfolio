@@ -25,6 +25,9 @@
             //Display
             flex-direction: column;
         }
+        @media only screen and (max-width: $bp-small) {
+            height: 100vh;
+        }
 
         &-left {
             //Display

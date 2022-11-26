@@ -9,6 +9,10 @@
     margin: auto;
     padding: 10vh 0;
 
+    @media only screen and (max-width: $bp-small) {
+        padding: 0;
+    }
+
     &__box {
         //Spacing
         width: 60%;
@@ -31,12 +35,17 @@
 
         &:not(:last-child) {
             //Spacing
-            margin-bottom: 10rem;
+            margin-bottom: 16rem;
         }
 
         @media only screen and (max-width: $bp-small) {
             //Display
             flex-direction: column;
+
+            &:not(:last-child) {
+                //Spacing
+                margin-bottom: 6rem;
+            }
 
             &:nth-child(2n + 1) {
                 //Display
@@ -189,21 +198,46 @@
     }
 }
 
+/*-- -------------------------- -->
+<---       Card Gradients       -->
+<--- -------------------------- -*/
 .bg-blue {
     //Color Styling
-    background: linear-gradient(71deg, rgb(110, 123, 251), rgb(65, 228, 220));
-    background-size: 120% 120%;
-    animation: gradient-animation 6s ease infinite;
+    background: linear-gradient(
+        to right,
+        rgb(110, 123, 251),
+        rgb(65, 228, 220)
+    );
 }
 .bg-green {
     //Color Styling
-    background: linear-gradient(71deg, #18a848, #169960);
-    background-size: 120% 120%;
-    animation: gradient-animation 6s ease infinite;
+    background: linear-gradient(to right, #18a848, #169960);
 }
 .bg-teal {
     //Color Styling
-    background: linear-gradient(71deg, rgb(55, 168, 192), rgb(103, 187, 125));
-    background-size: 120% 120%;
-    animation: gradient-animation 6s ease infinite;
+    background: linear-gradient(
+        to right,
+        rgb(55, 168, 192),
+        rgb(103, 187, 125)
+    );
+}
+
+/*-- -------------------------- -->
+<---   Card Animation Classes   -->
+<--- -------------------------- -*/
+.revealRight {
+    transform: translateX(15rem);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.revealLeft {
+    transform: translateX(-15rem);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.revealRight.active,
+.revealLeft.active {
+    transform: translateY(0);
+    opacity: 1;
 }
