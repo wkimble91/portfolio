@@ -38,13 +38,22 @@
     }
 
     &__divider {
+        //Display
         display: none;
+
         @media only screen and (max-width: $bp-small) {
+            //Display
             display: inline-block;
+
+            //Spacing
             width: 70%;
             height: 1px;
             margin: 0 auto;
+
+            //Color Styling
             background-color: $color-grey-light;
+
+            //Border Styling
             border: none;
         }
     }

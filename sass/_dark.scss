@@ -210,6 +210,7 @@ body.dark-mode {
 
         &__divider {
             @media only screen and (max-width: $bp-small) {
+                //Color Styling
                 background-color: $color-grey-dark;
             }
         }

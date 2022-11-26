@@ -9,6 +9,7 @@
     margin: auto;
 
     @media only screen and (max-width: $bp-small) {
+        //Spacing
         padding: 0;
     }
 
@@ -247,11 +248,13 @@
 <---   Card Animation Classes   -->
 <--- -------------------------- -*/
 .revealRight {
+    //Animations
     transform: translateX(15rem);
     opacity: 0;
     transition: 1s all ease;
 }
 .revealLeft {
+    //Animations
     transform: translateX(-15rem);
     opacity: 0;
     transition: 1s all ease;
@@ -259,6 +262,7 @@
 
 .revealRight.active,
 .revealLeft.active {
+    //Animations
     transform: translateY(0);
     opacity: 1;
 }
