@@ -24,6 +24,7 @@ function revealLeft() {
         }
     }
 }
-
+revealLeft();
+revealRight();
 window.addEventListener('scroll', revealRight);
 window.addEventListener('scroll', revealLeft);
