@@ -37,6 +37,17 @@
         }
     }
 
+    &__divider {
+        display: none;
+        @media only screen and (max-width: $bp-small) {
+            display: inline-block;
+            width: 60%;
+            height: 1px;
+            margin: 0 auto;
+            color: $color-grey-light;
+        }
+    }
+
     &__logo {
         cursor: pointer;
 
@@ -93,7 +104,7 @@
             width: 110%;
             top: -30%;
             left: -5%;
-            height: 28rem;
+            height: 32rem;
             z-index: -1;
 
             //Font Styling
@@ -117,6 +128,12 @@
         }
         @media only screen and (max-width: $bp-smallest) {
             height: 22rem;
+        }
+
+        &-toggle {
+            @media only screen and (max-width: $bp-small) {
+                padding: 2rem 0;
+            }
         }
 
         & * {

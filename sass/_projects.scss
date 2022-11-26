@@ -7,7 +7,6 @@
     //Spacing
     width: 100%;
     margin: auto;
-    padding: 10vh 0;
 
     @media only screen and (max-width: $bp-small) {
         padding: 0;
@@ -16,6 +15,7 @@
     &__box {
         //Spacing
         width: 60%;
+        padding: 10vh 0;
 
         @media only screen and (max-width: $bp-large) {
             //Spacing
@@ -24,7 +24,7 @@
         @media only screen and (max-width: $bp-medium) {
             //Spacing
             width: 100%;
-            padding: 0 2rem;
+            padding: 10vh 2rem;
         }
     }
     &__card {
