@@ -274,9 +274,35 @@ body.dark-mode {
         }
     }
 
+    .about {
+        &__header {
+            //Color Styling
+            color: $background-color-light;
+        }
+
+        &__line {
+            &--dash {
+                border-bottom: 1px solid $background-color-light;
+            }
+            &--svg {
+                fill: $background-color-light;
+            }
+        }
+
+        &__info-bar {
+            .item {
+                h3 {
+                    color: $background-color-light;
+                }
+            }
+        }
+    }
+
     .contact {
         //Color Styling
         background-color: $background-color-dark;
+        background-image: url(../img/Worldmapdark.svg);
+
         &-svg {
             //Color Styling
             filter: invert(1);
@@ -294,6 +320,18 @@ body.dark-mode {
     }
 
     .projects {
+        &__header {
+            //Color Styling
+            color: $background-color-light;
+        }
+        &__line {
+            &--dash {
+                border-bottom: 1px solid $background-color-light;
+            }
+            &--svg {
+                fill: $background-color-light;
+            }
+        }
         &__card {
             //Color Styling
             background-color: #3a2d3d;

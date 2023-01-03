@@ -9,3 +9,30 @@
         transform: translateX(0);
     }
 }
+
+/*-- -------------------------- -->
+<---   Card Animation Classes   -->
+<--- -------------------------- -*/
+.revealRight {
+    //Animations
+    transform: translateX(15rem);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.revealLeft {
+    //Animations
+    transform: translateX(-15rem);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.revealFade {
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.revealRight.active,
+.revealLeft.active,
+.revealFade.active {
+    transform: translateY(0);
+    opacity: 1;
+}

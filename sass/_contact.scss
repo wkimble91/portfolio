@@ -7,6 +7,16 @@
     width: 100%;
     margin: auto;
 
+    background-image: url(../img/Worldmap.svg);
+    background-size: auto 90%;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @media only screen and (max-width: $bp-medium) {
+        //Display
+        background-image: none;
+    }
+
     &__container {
         //Display
         display: flex;
@@ -38,6 +48,12 @@
 
             //Spacing
             width: 100%;
+
+            @media only screen and (max-width: $bp-medium) {
+                background-image: url(../img/Worldmap.svg);
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+            }
         }
         &-right {
             //Display

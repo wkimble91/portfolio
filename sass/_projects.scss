@@ -28,6 +28,54 @@
             padding: 0 2rem;
         }
     }
+    &__header {
+        //Font Styling
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 0.2rem;
+        line-height: 1;
+        text-align: center;
+
+        //Color Styling
+        color: $color-primary-dark;
+
+        @media only screen and (max-width: $bp-small) {
+            //Font Styling
+            font-size: 5rem;
+        }
+        @media only screen and (max-width: $bp-smallest) {
+            //Font Styling
+            font-size: 4rem;
+        }
+    }
+
+    &__line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4rem 0 10rem;
+
+        @media only screen and (max-width: $bp-smallest) {
+            //Font Styling
+            margin: 4rem 0;
+        }
+
+        &--dash {
+            margin: 0 3rem;
+            width: 6rem;
+            height: 3px;
+            border-bottom: 1px solid $color-primary-dark;
+        }
+        &--svg {
+            display: inline-block;
+            width: 4rem;
+            height: 4rem;
+            stroke-width: 0;
+            stroke: $color-primary-dark;
+            fill: $color-primary-dark;
+        }
+    }
+
     &__card {
         //Display
         display: flex;
@@ -242,27 +290,4 @@
         rgb(55, 168, 192),
         rgb(103, 187, 125)
     );
-}
-
-/*-- -------------------------- -->
-<---   Card Animation Classes   -->
-<--- -------------------------- -*/
-.revealRight {
-    //Animations
-    transform: translateX(15rem);
-    opacity: 0;
-    transition: 1s all ease;
-}
-.revealLeft {
-    //Animations
-    transform: translateX(-15rem);
-    opacity: 0;
-    transition: 1s all ease;
-}
-
-.revealRight.active,
-.revealLeft.active {
-    //Animations
-    transform: translateY(0);
-    opacity: 1;
 }
