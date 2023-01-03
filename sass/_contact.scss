@@ -51,8 +51,9 @@
 
             @media only screen and (max-width: $bp-medium) {
                 background-image: url(../img/Worldmap.svg);
-                background-size: 100% auto;
+                background-size: 110% auto;
                 background-repeat: no-repeat;
+                background-position: center;
             }
         }
         &-right {

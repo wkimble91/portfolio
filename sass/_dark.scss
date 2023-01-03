@@ -303,6 +303,19 @@ body.dark-mode {
         background-color: $background-color-dark;
         background-image: url(../img/Worldmapdark.svg);
 
+        @media only screen and (max-width: $bp-medium) {
+            //Display
+            background-image: none;
+        }
+
+        &__container {
+            &-left {
+                @media only screen and (max-width: $bp-medium) {
+                    background-image: url(../img/Worldmapdark.svg);
+                }
+            }
+        }
+
         &-svg {
             //Color Styling
             filter: invert(1);

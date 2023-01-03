@@ -857,8 +857,9 @@ a {
 @media only screen and (max-width: 56.25em) {
   .contact__container-left {
     background-image: url(../img/Worldmap.svg);
-    background-size: 100% auto;
+    background-size: 110% auto;
     background-repeat: no-repeat;
+    background-position: center;
   }
 }
 .contact__container-right {
@@ -1168,6 +1169,16 @@ body.dark-mode .about__info-bar .item h3 {
 body.dark-mode .contact {
   background-color: #16031a;
   background-image: url(../img/Worldmapdark.svg);
+}
+@media only screen and (max-width: 56.25em) {
+  body.dark-mode .contact {
+    background-image: none;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  body.dark-mode .contact__container-left {
+    background-image: url(../img/Worldmapdark.svg);
+  }
 }
 body.dark-mode .contact-svg {
   filter: invert(1);
