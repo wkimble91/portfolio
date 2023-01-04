@@ -54,6 +54,12 @@ body {
     line-height: 1.6;
     width: 100vw;
     overflow-x: hidden;
+
+    background-image: url(../img/Lineday.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 1;
 }
 
 li {

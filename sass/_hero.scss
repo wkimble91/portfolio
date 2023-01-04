@@ -9,7 +9,7 @@
     width: 100%;
 
     //Color Styling
-    background-color: $background-color-light;
+    // background-color: $background-color-light;
 
     @media only screen and (max-width: $bp-largest) {
         //Display
@@ -152,6 +152,7 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
+        z-index: 20;
 
         @media only screen and (max-width: $bp-largest) {
             //Image Styling

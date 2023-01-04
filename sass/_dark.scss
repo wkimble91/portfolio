@@ -202,6 +202,7 @@ body.dark-mode {
     //Color Styling
     background-color: $background-color-dark;
     color: $body-text-dark;
+    background-image: url(../img/Linenight.svg);
 
     .header {
         //Color Styling
@@ -253,8 +254,6 @@ body.dark-mode {
     }
 
     .hero {
-        //Color Styling
-        background-color: $background-color-dark;
         &__title {
             //Color Styling
             color: $background-color-light;
@@ -300,8 +299,8 @@ body.dark-mode {
 
     .contact {
         //Color Styling
-        background-color: $background-color-dark;
         background-image: url(../img/Worldmapdark.svg);
+        background-color: $background-color-dark;
 
         @media only screen and (max-width: $bp-medium) {
             //Display
