@@ -174,14 +174,15 @@
                 //Color Styling
                 color: $color-primary;
 
+                // Hover Lines
                 &:before {
                     position: absolute;
                     content: '';
                     width: 0%;
                     height: 1px;
                     border-bottom: 2px solid $color-primary;
-                    bottom: 6px;
-                    transition: all 0.2s ease-in-out;
+                    bottom: 4px;
+                    transition: width 0.3s;
                 }
 
                 &:hover:before {
