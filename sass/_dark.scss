@@ -115,6 +115,10 @@
                     //Color Styling
                     color: $color-primary;
 
+                    &:hover {
+                        left: 10%;
+                    }
+
                     @media only screen and (max-width: $bp-small) {
                         //Font Styling
                         font-size: 2.5rem;
@@ -143,7 +147,7 @@
                     //Color Styling
                     background: $color-primary;
                 }
-                &:active:before {
+                &:hover:before {
                     //Spacing
                     left: -10%;
                 }
@@ -162,7 +166,7 @@
                         //Spacing
                         left: 0;
                     }
-                    &:active:after {
+                    &:hover:after {
                         //Spacing
                         left: 10%;
                     }

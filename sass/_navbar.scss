@@ -163,6 +163,8 @@
                 //Spacing
                 margin-right: 3rem;
                 padding: 1rem 2rem;
+                position: relative;
+
                 //Font Styling
                 font-size: 1.4rem;
 
@@ -171,6 +173,20 @@
 
                 //Color Styling
                 color: $color-primary;
+
+                &:before {
+                    position: absolute;
+                    content: '';
+                    width: 0%;
+                    height: 1px;
+                    border-bottom: 2px solid $color-primary;
+                    bottom: 6px;
+                    transition: all 0.2s ease-in-out;
+                }
+
+                &:hover:before {
+                    width: 25%;
+                }
 
                 @media only screen and (max-width: $bp-medium) {
                     //Spacing

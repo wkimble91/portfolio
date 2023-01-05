@@ -280,9 +280,22 @@ a {
 .header__nav * a {
   margin-right: 3rem;
   padding: 1rem 2rem;
+  position: relative;
   font-size: 1.4rem;
   transition: all 0.1s;
   color: #8c13a4;
+}
+.header__nav * a:before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 1px;
+  border-bottom: 2px solid #8c13a4;
+  bottom: 6px;
+  transition: all 0.2s ease-in-out;
+}
+.header__nav * a:hover:before {
+  width: 25%;
 }
 @media only screen and (max-width: 56.25em) {
   .header__nav * a {
@@ -1059,6 +1072,9 @@ a {
   font-weight: normal;
   color: #8c13a4;
 }
+.toggle-wrapper .toggle-skewed + .toggle-btn:after:hover {
+  left: 10%;
+}
 @media only screen and (max-width: 37.5em) {
   .toggle-wrapper .toggle-skewed + .toggle-btn:after {
     font-size: 2.5rem;
@@ -1080,7 +1096,7 @@ a {
 .toggle-wrapper .toggle-skewed + .toggle-btn:active {
   background: #8c13a4;
 }
-.toggle-wrapper .toggle-skewed + .toggle-btn:active:before {
+.toggle-wrapper .toggle-skewed + .toggle-btn:hover:before {
   left: -10%;
 }
 .toggle-wrapper .toggle-skewed:checked + .toggle-btn {
@@ -1092,7 +1108,7 @@ a {
 .toggle-wrapper .toggle-skewed:checked + .toggle-btn:after {
   left: 0;
 }
-.toggle-wrapper .toggle-skewed:checked + .toggle-btn:active:after {
+.toggle-wrapper .toggle-skewed:checked + .toggle-btn:hover:after {
   left: 10%;
 }
 .toggle-wrapper .toggle, .toggle-wrapper .toggle:after, .toggle-wrapper .toggle:before, .toggle-wrapper .toggle *, .toggle-wrapper .toggle *:after, .toggle-wrapper .toggle *:before, .toggle-wrapper .toggle + .toggle-btn {
