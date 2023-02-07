@@ -16,3 +16,11 @@ Run the SCSS server:
 ```bash
 npm watch
 ```
+
+## Building
+
+Compile, prefix, and compress the SCSS:
+
+```bash
+npm build
+```
