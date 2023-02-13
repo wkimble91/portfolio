@@ -12,10 +12,14 @@
         align-items: center;
         width: 60%;
         padding: 6rem 8rem 4rem;
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 0.75);
         box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
         border-radius: 3rem;
-        transition: all 0.3s;
+        transition: all 0.2s;
+
+        &:hover {
+            background-color: rgb(255, 255, 255);
+        }
 
         @media only screen and (max-width: $bp-large) {
             //Spacing
@@ -129,6 +133,7 @@
             box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
             border-radius: 3rem;
             padding: 6rem 2rem;
+            transition: all 0.2s;
 
             @media only screen and (max-width: $bp-largest) {
                 //Spacing
@@ -207,6 +212,10 @@
                     margin: 0rem;
                 }
             }
+        }
+
+        .item:hover {
+            background-color: rgb(255, 255, 255);
         }
         .item:hover svg {
             width: 3.5rem;

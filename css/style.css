@@ -74,13 +74,12 @@ a {
   font-weight: 600;
   background-color: #588157;
   color: #ebebeb;
-  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.25);
   border-radius: 5rem;
   transition: all 0.2s;
 }
 .btn-code {
-  padding: 1rem 3rem;
-  letter-spacing: 0.25rem;
+  padding: 0.5rem 2rem;
   width: fit-content;
   margin: 0 auto;
   text-align: center;
@@ -88,20 +87,12 @@ a {
   font-weight: 400;
   background-color: #525252;
   color: #ebebeb;
-  box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.25);
-  border-radius: 5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 2rem;
   transition: all 0.2s;
 }
 .btn-code:hover {
   transform: scale(1.03) !important;
-}
-@media only screen and (max-width: 56.25em) {
-  .btn-code {
-    padding: 1.2rem 2rem;
-    letter-spacing: 0;
-    font-size: 1.2rem;
-    font-weight: 400;
-  }
 }
 .btn-contact {
   padding: 1.2rem 2rem;
@@ -577,10 +568,13 @@ a {
   align-items: center;
   width: 60%;
   padding: 6rem 8rem 4rem;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.75);
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
   border-radius: 3rem;
-  transition: all 0.3s;
+  transition: all 0.2s;
+}
+.about__box:hover {
+  background-color: rgb(255, 255, 255);
 }
 @media only screen and (max-width: 75em) {
   .about__box {
@@ -691,6 +685,7 @@ a {
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
   border-radius: 3rem;
   padding: 6rem 2rem;
+  transition: all 0.2s;
 }
 @media only screen and (max-width: 87.5em) {
   .about__info-bar .item {
@@ -774,6 +769,9 @@ a {
   .about__info-bar .item p {
     margin: 0rem;
   }
+}
+.about__info-bar .item:hover {
+  background-color: rgb(255, 255, 255);
 }
 .about__info-bar .item:hover svg {
   width: 3.5rem;
@@ -1092,6 +1090,10 @@ a {
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
   border-radius: 3rem;
   padding: 4rem 2rem 4rem 6rem;
+  transition: all 0.3s;
+}
+.contact-header:hover {
+  background-color: rgb(255, 255, 255);
 }
 .contact-header h2 {
   margin-bottom: 2rem;
@@ -1387,6 +1389,9 @@ body.dark-mode .about__box {
   background-color: rgba(34, 34, 43, 0.6);
   box-shadow: 3px 3px 6px rgba(255, 255, 255, 0.02);
 }
+body.dark-mode .about__box:hover {
+  background-color: rgb(34, 34, 43);
+}
 body.dark-mode .about__header {
   color: #3b6986;
 }
@@ -1399,6 +1404,9 @@ body.dark-mode .about__line--svg {
 body.dark-mode .about__info-bar .item {
   background-color: rgba(34, 34, 43, 0.6);
   box-shadow: 3px 3px 6px rgba(255, 255, 255, 0.02);
+}
+body.dark-mode .about__info-bar .item:hover {
+  background-color: rgb(34, 34, 43);
 }
 body.dark-mode .about__info-bar .item__svg {
   background: #3b6986;
@@ -1453,6 +1461,9 @@ body.dark-mode .contact-svg {
 body.dark-mode .contact-header {
   background-color: rgba(30, 30, 40, 0.5);
   box-shadow: 3px 3px 6px rgba(255, 255, 255, 0.02);
+}
+body.dark-mode .contact-header:hover {
+  background-color: rgb(30, 30, 40);
 }
 body.dark-mode .contact-header h2 {
   color: #80cacc;

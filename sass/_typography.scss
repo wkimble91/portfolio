@@ -27,7 +27,7 @@
         //Color Styling
         background-color: $color-primary;
         color: $body-text-dark;
-        box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.25);
+        box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.25);
 
         //Border Styling
         border-radius: 5rem;
@@ -38,8 +38,7 @@
 
     &-code {
         //Spacing
-        padding: 1rem 3rem;
-        letter-spacing: 0.25rem;
+        padding: 0.5rem 2rem;
         width: fit-content;
         margin: 0 auto;
 
@@ -51,10 +50,10 @@
         //Color Styling
         background-color: $color-grey-dark;
         color: $body-text-dark;
-        box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.25);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 
         //Border Styling
-        border-radius: 5rem;
+        border-radius: 2rem;
 
         //Animations
         transition: all 0.2s;
@@ -62,16 +61,6 @@
         &:hover {
             //Animations
             transform: scale(1.03) !important;
-        }
-
-        @media only screen and (max-width: $bp-medium) {
-            //Spacing
-            padding: 1.2rem 2rem;
-            letter-spacing: 0;
-
-            //Font Styling
-            font-size: 1.2rem;
-            font-weight: 400;
         }
     }
 

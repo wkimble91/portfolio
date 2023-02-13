@@ -300,6 +300,9 @@ body.dark-mode {
         &__box {
             background-color: rgba(34, 34, 43, 0.6);
             box-shadow: 3px 3px 6px rgba(255, 255, 255, 0.02);
+            &:hover {
+                background-color: rgb(34, 34, 43);
+            }
         }
         &__header {
             //Color Styling
@@ -319,6 +322,10 @@ body.dark-mode {
             .item {
                 background-color: rgba(34, 34, 43, 0.6);
                 box-shadow: 3px 3px 6px rgba(255, 255, 255, 0.02);
+
+                &:hover {
+                    background-color: rgb(34, 34, 43);
+                }
                 &__svg {
                     background: $color-darkmode-primary;
                 }
@@ -394,6 +401,10 @@ body.dark-mode {
         &-header {
             background-color: rgba(30, 30, 40, 0.5);
             box-shadow: 3px 3px 6px rgba(255, 255, 255, 0.02);
+
+            &:hover {
+                background-color: rgb(30, 30, 40);
+            }
             h2 {
                 //Color Styling
                 color: $color-darkmode-primary-light;
