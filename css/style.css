@@ -458,7 +458,7 @@ a {
   letter-spacing: 0.4rem;
   line-height: 1.4;
   background-attachment: scroll;
-  background-image: url(../img/background-text.jpg);
+  background-image: url(../img/hero-text-day.jpg);
   background-size: cover;
   background-position: center center;
   background-clip: text;
@@ -510,6 +510,11 @@ a {
   width: 80%;
   animation: moveInLeft 0.8s ease-out 0.8s;
   animation-fill-mode: backwards;
+}
+@media only screen and (min-width: 87.5em) {
+  .hero__subtitle span.avoidwrap {
+    display: inline-block;
+  }
 }
 @media only screen and (max-width: 87.5em) {
   .hero__subtitle {
@@ -1362,7 +1367,7 @@ body.dark-mode .header-scrolled {
   border-bottom: 1px solid #525252;
 }
 body.dark-mode .hero__title {
-  background-image: url(../img/background-title.jpg);
+  background-image: url(../img/hero-text-night.jpg);
 }
 body.dark-mode .hero__title-part::selection {
   background-color: rgba(0, 80, 180, 0.3);
