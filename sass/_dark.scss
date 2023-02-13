@@ -30,7 +30,8 @@
             outline: 0;
 
             @media only screen and (max-width: $bp-small) {
-                width: 14rem;
+                height: 6rem;
+                width: 20rem;
             }
 
             &:after,
@@ -100,6 +101,11 @@
 
                     //Animations
                     transition: all 0.2s ease;
+
+                    @media only screen and (max-width: $bp-small) {
+                        //Font Styling
+                        line-height: 5.3rem;
+                    }
                 }
 
                 /* After = Night */
@@ -113,7 +119,7 @@
                     font-weight: normal;
 
                     //Color Styling
-                    color: $color-primary;
+                    color: $color-darkmode-primary-dark;
 
                     &:hover {
                         left: 10%;
@@ -122,7 +128,7 @@
                     @media only screen and (max-width: $bp-small) {
                         //Font Styling
                         font-size: 2.5rem;
-                        font-weight: 300;
+                        font-weight: 600;
                     }
                 }
 
@@ -140,7 +146,7 @@
                         //Font Styling
                         font-weight: normal;
                         font-size: 2.5rem;
-                        font-weight: 300;
+                        font-weight: 600;
                     }
                 }
                 &:active {
@@ -156,7 +162,7 @@
             &:checked {
                 & + .toggle-btn {
                     //Color Styling
-                    background: $background-color-light;
+                    background: $color-darkmode-primary-light;
 
                     &:before {
                         //Spacing
@@ -206,7 +212,10 @@ body.dark-mode {
     //Color Styling
     background-color: $background-color-dark;
     color: $body-text-dark;
-    background-image: url(../img/Linenight.svg);
+
+    .line {
+        background-image: url(../img/Linenight.svg);
+    }
 
     .header {
         //Color Styling
@@ -230,18 +239,22 @@ body.dark-mode {
             background-image: url(../img/logo_white.png);
         }
         &__nav {
+            & * {
+                & a {
+                    // Hover Lines
+                    &:before {
+                        border-bottom: 2px solid $color-darkmode-primary;
+                    }
+                }
+            }
             @media only screen and (max-width: $bp-small) {
                 //Color Styling
-                background-color: #3a2d3d;
-                box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.35);
-
-                //Border Styling
-                border-bottom: 1px solid $color-grey-dark;
+                background-color: $background-color-dark-menu;
             }
         }
         & a {
             //Color Styling
-            color: $body-text-dark;
+            color: $color-darkmode-primary-light;
         }
 
         &__hamburger {
@@ -260,7 +273,13 @@ body.dark-mode {
     .hero {
         &__title {
             //Color Styling
-            color: $background-color-light;
+            background-image: url(../img/background-title.jpg);
+
+            &-part {
+                &::selection {
+                    background-color: rgba(0, 80, 180, 0.3);
+                }
+            }
         }
         &__subtitle {
             //Color Styling
@@ -278,25 +297,74 @@ body.dark-mode {
     }
 
     .about {
+        &__box {
+            background-color: rgba(34, 34, 43, 0.6);
+            box-shadow: 3px 3px 6px rgba(255, 255, 255, 0.02);
+        }
         &__header {
             //Color Styling
-            color: $background-color-light;
+            color: $color-darkmode-primary;
         }
 
         &__line {
             &--dash {
-                border-bottom: 1px solid $background-color-light;
+                border-bottom: 1px solid $color-darkmode-primary;
             }
             &--svg {
-                fill: $background-color-light;
+                fill: $color-darkmode-primary;
             }
         }
 
         &__info-bar {
             .item {
-                h3 {
-                    color: $background-color-light;
+                background-color: rgba(34, 34, 43, 0.6);
+                box-shadow: 3px 3px 6px rgba(255, 255, 255, 0.02);
+                &__svg {
+                    background: $color-darkmode-primary;
                 }
+                h3 {
+                    color: $color-darkmode-primary;
+                }
+            }
+
+            .item:hover svg {
+                fill: whitesmoke;
+            }
+            .item:hover .item__svg {
+                background: $color-darkmode-primary-dark;
+            }
+        }
+    }
+
+    .projects {
+        &__header {
+            //Color Styling
+            color: $color-darkmode-primary;
+        }
+        &__line {
+            &--dash {
+                border-bottom: 1px solid $color-darkmode-primary;
+            }
+            &--svg {
+                fill: $color-darkmode-primary;
+            }
+        }
+        &__card {
+            //Color Styling
+            background-color: rgba(34, 34, 43, 0.9);
+        }
+        &__details {
+            h3 {
+                //Color Styling
+                color: $background-color-light;
+            }
+            h4 {
+                //Color Styling
+                color: $background-color-light;
+            }
+            p {
+                //Color Styling
+                color: $background-color-light;
             }
         }
     }
@@ -324,48 +392,42 @@ body.dark-mode {
             filter: invert(1);
         }
         &-header {
+            background-color: rgba(30, 30, 40, 0.5);
+            box-shadow: 3px 3px 6px rgba(255, 255, 255, 0.02);
             h2 {
                 //Color Styling
-                color: $color-primary-light;
+                color: $color-darkmode-primary-light;
             }
             h3 {
                 //Color Styling
-                color: $color-primary-light;
+                color: $color-darkmode-primary;
             }
         }
     }
 
-    .projects {
-        &__header {
-            //Color Styling
-            color: $background-color-light;
-        }
-        &__line {
-            &--dash {
-                border-bottom: 1px solid $background-color-light;
-            }
-            &--svg {
-                fill: $background-color-light;
-            }
-        }
-        &__card {
-            //Color Styling
-            background-color: #3a2d3d;
-        }
-        &__details {
-            h3 {
-                //Color Styling
-                color: $background-color-light;
-            }
-            h4 {
-                //Color Styling
-                color: $background-color-light;
-            }
-            p {
-                //Color Styling
-                color: $background-color-light;
-            }
-        }
+    .bg-blue {
+        //Color Styling
+        background: linear-gradient(
+            to right,
+            rgb(80, 93, 191),
+            rgb(25, 168, 150)
+        );
+    }
+    .bg-green {
+        //Color Styling
+        background: linear-gradient(
+            to right,
+            rgb(11, 123, 66),
+            rgb(12, 136, 96)
+        );
+    }
+    .bg-teal {
+        //Color Styling
+        background: linear-gradient(
+            to right,
+            rgb(35, 138, 152),
+            rgb(83, 157, 95)
+        );
     }
 
     .footer {
@@ -384,9 +446,14 @@ body.dark-mode {
     }
 
     .btn {
+        &-work {
+            //Color Styling
+            background-color: $color-darkmode-primary;
+        }
+
         &-contact {
             //Color Styling
-            background-color: $color-primary-dark;
+            background-color: $color-darkmode-primary-dark;
             color: $body-text-dark;
 
             @media only screen and (max-width: $bp-small) {
@@ -396,6 +463,7 @@ body.dark-mode {
             }
         }
     }
+
     ::selection {
         //Color Styling
         color: $body-text-light;

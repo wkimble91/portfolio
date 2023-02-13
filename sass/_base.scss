@@ -2,16 +2,20 @@
 <---       Color Schemes        -->
 <--- -------------------------- -*/
 
-$color-primary-light: #c524e5;
-$color-primary: #8c13a4;
-$color-primary-dark: #5d0d6e;
+$color-primary-light: #a3b18a;
+$color-primary: #588157;
+$color-primary-dark: #3a5a40;
+
+$color-darkmode-primary-light: #80cacc;
+$color-darkmode-primary: #3b6986;
+$color-darkmode-primary-dark: #1d3557;
 
 $color-grey-light: #d6d6d6;
 $color-grey-dark: #525252;
 
 $background-color-light: #f5f5f9;
-$background-color-dark: #16031a;
-$background-color-dark-2: #1a041f;
+$background-color-dark: #0b0b0b;
+$background-color-dark-menu: #181818;
 
 $body-text-light: #16031a;
 $body-text-dark: #ebebeb;
@@ -54,12 +58,6 @@ body {
     line-height: 1.6;
     width: 100vw;
     overflow-x: hidden;
-
-    background-image: url(../img/Lineday.svg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    z-index: 1;
 }
 
 li {
@@ -68,6 +66,15 @@ li {
 
 a {
     text-decoration: none;
+}
+
+//SVG Line down middle of body
+.line {
+    background-image: url(../img/Lineday.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 1;
 }
 
 ::selection {

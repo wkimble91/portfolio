@@ -11,7 +11,7 @@
     //Color Styling
     // background-color: $background-color-light;
 
-    @media only screen and (max-width: $bp-largest) {
+    @media only screen and (max-width: $bp-large) {
         //Display
         flex-direction: column-reverse;
         height: 100vh;
@@ -27,8 +27,9 @@
         //Spacing
         height: 100%;
         width: 55%;
+        padding: 0 5%;
 
-        @media only screen and (max-width: $bp-largest) {
+        @media only screen and (max-width: $bp-large) {
             //Display
             align-items: center;
             justify-content: start;
@@ -50,7 +51,7 @@
         width: 45%;
         padding: 6rem;
 
-        @media only screen and (max-width: $bp-largest) {
+        @media only screen and (max-width: $bp-large) {
             //Display
             justify-content: center;
 
@@ -58,12 +59,21 @@
             padding: 0 6rem;
             min-height: 80rem;
             height: auto;
+            width: 40%;
+        }
+        @media only screen and (max-width: $bp-large) {
+            //Spacing
+            min-height: 70rem;
+            height: auto;
+            width: 100%;
+        }
+        @media only screen and (max-width: $bp-medium) {
+            //Spacing
+            min-height: 60rem;
+            height: auto;
             width: 100%;
         }
         @media only screen and (max-width: $bp-small) {
-            //Display
-            justify-content: center;
-
             //Spacing
             padding: 0 3rem;
             min-height: 50rem;
@@ -74,24 +84,51 @@
 
     &__title {
         //Spacing
-        margin: 4rem 0;
+        margin: 4rem 0 10rem;
         text-align: right;
 
         //Font Styling
-        font-size: 6rem;
-        font-weight: 300;
+        font-size: 12rem;
+        font-weight: 900;
         text-align: right;
         letter-spacing: 0.4rem;
-        line-height: 1;
+        line-height: 1.4;
+
+        background-attachment: scroll;
+        background-image: url(../img/background-text.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-clip: text;
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 
         //Color Styling
-        color: $color-primary-dark;
+        // color: $color-primary-dark;
 
         //Animations
         animation: moveInLeft 0.8s ease-out;
 
+        &-part {
+            font-family: 'Montserrat', sans-serif;
+
+            &::selection {
+                background-color: rgba(0, 80, 0, 0.5);
+            }
+        }
+
         @media only screen and (max-width: $bp-largest) {
             //Spacing
+            margin: 1rem 0 10rem;
+
+            //Font Styling
+            font-size: 9rem;
+        }
+        @media only screen and (max-width: $bp-medium) {
+            //Spacing
+            margin: 1rem 0 10rem;
+
+            //Font Styling
             text-align: center;
         }
         @media only screen and (max-width: $bp-small) {
@@ -99,26 +136,29 @@
             margin: 0 0 2rem;
 
             //Font Styling
-            font-size: 3.6rem;
+            font-size: 6rem;
             letter-spacing: 0.5rem;
+            line-height: 1.3;
         }
         @media only screen and (max-width: $bp-smallest) {
             //Font Styling
-            font-size: 3rem;
+            font-size: 4rem;
             letter-spacing: 0.4rem;
+            line-height: 1.2;
         }
     }
 
     &__subtitle {
         //Font Styling
         text-align: right;
-        font-size: 2rem;
-        font-weight: 300;
+        font-size: 2.6rem;
+        font-weight: 200;
         letter-spacing: 0.2rem;
         line-height: 1.5;
 
         //Color Styling
         color: $body-text-light;
+        width: 80%;
 
         //Animations
         animation: moveInLeft 0.8s ease-out 0.8s;
@@ -156,12 +196,11 @@
 
         @media only screen and (max-width: $bp-largest) {
             //Image Styling
-            background-position: center;
+            background-position: bottom center;
         }
         @media only screen and (max-width: $bp-small) {
             //Image Styling
             background-image: url(../img/forest-day1x.png);
-            background-position: bottom center;
         }
 
         &-box {
@@ -169,6 +208,12 @@
             width: 100%;
             height: 100%;
             padding: 6rem 0 3rem;
+            @media only screen and (max-width: $bp-largest) {
+                //Spacing
+                width: 100%;
+                height: 90%;
+                padding: 6rem 0 0;
+            }
         }
     }
 }
