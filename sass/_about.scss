@@ -3,21 +3,28 @@
     display: flex;
     flex-direction: column;
     padding: 30rem 0 30rem;
-    // justify-content: center;
     align-items: center;
 
     &__box {
+        //Display
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        //Spacing
         width: 60%;
         padding: 6rem 8rem 4rem;
+
+        //Color Styling
         background-color: rgba(255, 255, 255, 0.75);
         box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
         border-radius: 3rem;
+
+        //Animations
         transition: all 0.2s;
 
         &:hover {
+            //Color Styling
             background-color: rgb(255, 255, 255);
         }
 
@@ -39,8 +46,6 @@
     }
 
     &__header {
-        //Spacing
-
         //Font Styling
         font-size: 6rem;
         font-weight: 600;
@@ -61,21 +66,32 @@
     }
 
     &__line {
+        //Display
         display: flex;
         align-items: center;
+
+        //Spacing
         margin: 4rem 0 6rem;
 
         &--dash {
+            //Spacing
             margin: 0 3rem;
             width: 6rem;
             height: 3px;
+
+            //Border Styling
             border-bottom: 1px solid $color-primary-dark;
         }
         &--svg {
+            //Display
             display: inline-block;
+
+            //Spacing
             width: 4rem;
             height: 4rem;
             stroke-width: 0;
+
+            //Color Styling
             stroke: $color-primary-dark;
             fill: $color-primary-dark;
         }
@@ -88,6 +104,8 @@
         line-height: 2;
         text-align: left;
         text-indent: 4rem;
+
+        //Spacing
         margin-bottom: 3.5rem;
 
         @media only screen and (max-width: $bp-largest) {
@@ -95,6 +113,7 @@
             width: 80%;
         }
         @media only screen and (max-width: $bp-medium) {
+            //Font Styling
             line-height: 1.5;
 
             //Spacing
@@ -108,8 +127,11 @@
     }
 
     &__info-bar {
+        //Display
         display: flex;
         justify-content: space-around;
+
+        //Spacing
         width: 60%;
 
         @media only screen and (max-width: $bp-large) {
@@ -122,17 +144,27 @@
             padding: 0 2rem;
         }
         @media only screen and (max-width: $bp-small) {
+            //Display
             flex-direction: column;
             justify-content: space-evenly;
         }
         .item {
+            //Spacing
             width: 28%;
-            text-align: center;
             margin-top: 4rem;
+            padding: 6rem 2rem;
+
+            //Font Styling
+            text-align: center;
+
+            //Color Styling
             background-color: rgba(255, 255, 255, 0.8);
             box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+
+            //Border Styling
             border-radius: 3rem;
-            padding: 6rem 2rem;
+
+            //Animations
             transition: all 0.2s;
 
             @media only screen and (max-width: $bp-largest) {
@@ -145,38 +177,63 @@
                 padding: 2rem 1rem;
             }
             @media only screen and (max-width: $bp-small) {
-                width: 100%;
+                //Display
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+
+                //Spacing
+                width: 100%;
+
                 &:nth-child(even) {
+                    //Display
                     flex-direction: row-reverse;
                 }
             }
             &__svg {
-                background: $color-primary;
-                width: 8rem;
-                height: 8rem;
+                //Display
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                //Spacing
+                width: 8rem;
+                height: 8rem;
                 margin: auto;
+
+                //Color Styling
+                background: $color-primary;
+
+                //Border Styling
                 border-radius: 50%;
+
+                //Animations
                 transition: all 0.3s;
+
                 @media only screen and (max-width: $bp-small) {
-                    margin: 0 1rem;
+                    //Display
                     flex-shrink: 0;
+
+                    //Spacing
+                    margin: 0 1rem;
                 }
             }
             svg {
+                //Spacing
                 width: 3rem;
                 height: 3rem;
+
+                //Color Styling
                 fill: white;
+
+                //Animations
                 transition: all 0.3s;
             }
 
             h3 {
+                //Spacing
                 margin: 3rem 0 1rem;
+
                 //Font Styling
                 font-size: 1.8rem;
 
@@ -188,24 +245,34 @@
                     font-size: 1.4rem;
                 }
                 @media only screen and (max-width: $bp-small) {
-                    margin: 0 2rem;
-                    font-size: 1.8rem;
+                    //Display
                     flex-shrink: 1;
+
+                    //Spacing
+                    margin: 0 2rem;
+
+                    //Font Styling
+                    font-size: 1.8rem;
                 }
             }
             p {
-                font-size: 1.3rem;
+                //Spacing
                 margin: 0 3rem;
+
+                //Font Styling
+                font-size: 1.3rem;
 
                 @media only screen and (max-width: $bp-medium) {
                     //Spacing
                     margin: 0 2rem;
                 }
                 @media only screen and (max-width: $bp-small) {
+                    //Display
+                    flex-shrink: 1;
+
                     //Spacing
                     margin: 0 1rem;
                     width: 80%;
-                    flex-shrink: 1;
                 }
                 @media only screen and (max-width: $bp-smallest) {
                     //Spacing
@@ -215,12 +282,15 @@
         }
 
         .item:hover {
+            //Color Styling
             background-color: rgb(255, 255, 255);
         }
         .item:hover svg {
+            //Color Styling
             fill: $color-primary-dark;
         }
         .item:hover .item__svg {
+            //Color Styling
             background: $color-primary-light;
         }
     }

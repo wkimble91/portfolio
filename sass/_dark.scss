@@ -214,6 +214,7 @@ body.dark-mode {
     color: $body-text-dark;
 
     .line {
+        //Image Styling
         background-image: url(../img/Linenight.svg);
     }
 
@@ -243,6 +244,7 @@ body.dark-mode {
                 & a {
                     // Hover Lines
                     &:before {
+                        //Border Styling
                         border-bottom: 2px solid $color-darkmode-primary;
                     }
                 }
@@ -277,6 +279,7 @@ body.dark-mode {
 
             &-part {
                 &::selection {
+                    //Color Styling
                     background-color: rgba(0, 80, 180, 0.3);
                 }
             }
@@ -298,9 +301,11 @@ body.dark-mode {
 
     .about {
         &__box {
+            //Color Styling
             background-color: rgba(34, 34, 43, 0.6);
             box-shadow: 3px 3px 6px rgba(255, 255, 255, 0.02);
             &:hover {
+                //Color Styling
                 background-color: rgb(34, 34, 43);
             }
         }
@@ -311,33 +316,41 @@ body.dark-mode {
 
         &__line {
             &--dash {
+                //Border Styling
                 border-bottom: 1px solid $color-darkmode-primary;
             }
             &--svg {
+                //Color Styling
                 fill: $color-darkmode-primary;
             }
         }
 
         &__info-bar {
             .item {
+                //Color Styling
                 background-color: rgba(34, 34, 43, 0.6);
                 box-shadow: 3px 3px 6px rgba(255, 255, 255, 0.02);
 
                 &:hover {
+                    //Color Styling
                     background-color: rgb(34, 34, 43);
                 }
                 &__svg {
+                    //Color Styling
                     background: $color-darkmode-primary;
                 }
                 h3 {
+                    //Color Styling
                     color: $color-darkmode-primary;
                 }
             }
 
             .item:hover svg {
+                //Color Styling
                 fill: whitesmoke;
             }
             .item:hover .item__svg {
+                //Color Styling
                 background: $color-darkmode-primary-dark;
             }
         }
@@ -350,9 +363,11 @@ body.dark-mode {
         }
         &__line {
             &--dash {
+                //Border Styling
                 border-bottom: 1px solid $color-darkmode-primary;
             }
             &--svg {
+                //Color Styling
                 fill: $color-darkmode-primary;
             }
         }
@@ -377,8 +392,10 @@ body.dark-mode {
     }
 
     .contact {
-        //Color Styling
+        //Image Styling
         background-image: url(../img/Worldmapdark.svg);
+
+        //Color Styling
         background-color: $background-color-dark;
 
         @media only screen and (max-width: $bp-medium) {
@@ -389,6 +406,7 @@ body.dark-mode {
         &__container {
             &-left {
                 @media only screen and (max-width: $bp-medium) {
+                    //Image Styling
                     background-image: url(../img/Worldmapdark.svg);
                 }
             }
@@ -399,10 +417,12 @@ body.dark-mode {
             filter: invert(1);
         }
         &-header {
+            //Color Styling
             background-color: rgba(30, 30, 40, 0.5);
             box-shadow: 3px 3px 6px rgba(255, 255, 255, 0.02);
 
             &:hover {
+                //Color Styling
                 background-color: rgb(30, 30, 40);
             }
             h2 {

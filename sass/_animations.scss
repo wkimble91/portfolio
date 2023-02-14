@@ -2,7 +2,7 @@
 @keyframes moveInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-5rem);
+        transform: translateX(-10rem);
     }
     100% {
         opacity: 1;
@@ -14,13 +14,11 @@
 <---   Card Animation Classes   -->
 <--- -------------------------- -*/
 .revealRight {
-    //Animations
     transform: translateX(15rem);
     opacity: 0;
     transition: 1s all ease;
 }
 .revealLeft {
-    //Animations
     transform: translateX(-15rem);
     opacity: 0;
     transition: 1s all ease;

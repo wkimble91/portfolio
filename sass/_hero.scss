@@ -8,9 +8,6 @@
     height: 100vh;
     width: 100%;
 
-    //Color Styling
-    // background-color: $background-color-light;
-
     @media only screen and (max-width: $bp-large) {
         //Display
         flex-direction: column-reverse;
@@ -91,6 +88,7 @@
         letter-spacing: 0.4rem;
         line-height: 1.4;
 
+        //Image Styling
         background-attachment: scroll;
         background-image: url(../img/hero-text-day.jpg);
         background-size: cover;
@@ -100,16 +98,15 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 
-        //Color Styling
-        // color: $color-primary-dark;
-
         //Animations
         animation: moveInLeft 0.8s ease-out;
 
         &-part {
+            //Font Styling
             font-family: 'Montserrat', sans-serif;
 
             &::selection {
+                //Color Styling
                 background-color: rgba(0, 80, 0, 0.5);
             }
         }
@@ -150,6 +147,9 @@
     }
 
     &__subtitle {
+        //Spacing
+        width: 80%;
+
         //Font Styling
         text-align: right;
         font-size: 2.6rem;
@@ -159,18 +159,18 @@
 
         //Color Styling
         color: $body-text-light;
-        width: 80%;
 
         //Animations
         animation: moveInLeft 0.8s ease-out 0.8s;
         animation-fill-mode: backwards;
 
-        @media only screen and (min-width: $bp-largest) {
+        @media only screen and (min-width: $bp-large) {
+            //Creates ideal break point
             span.avoidwrap {
                 display: inline-block;
             }
         }
-        @media only screen and (max-width: $bp-largest) {
+        @media only screen and (max-width: $bp-large) {
             //Spacing
             margin: 0 1rem;
 
@@ -192,13 +192,13 @@
     &__image {
         //Spacing
         height: 100%;
+        z-index: 20;
 
         //Image Styling
         background-image: url(../img/forest-day2x.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        z-index: 20;
 
         @media only screen and (max-width: $bp-largest) {
             //Image Styling
@@ -214,6 +214,7 @@
             width: 100%;
             height: 100%;
             padding: 6rem 0 3rem;
+
             @media only screen and (max-width: $bp-largest) {
                 //Spacing
                 width: 100%;
