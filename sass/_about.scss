@@ -218,13 +218,9 @@
             background-color: rgb(255, 255, 255);
         }
         .item:hover svg {
-            width: 3.5rem;
-            height: 3.5rem;
             fill: $color-primary-dark;
         }
         .item:hover .item__svg {
-            width: 8.5rem;
-            height: 8.5rem;
             background: $color-primary-light;
         }
     }

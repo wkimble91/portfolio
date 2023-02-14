@@ -774,13 +774,9 @@ a {
   background-color: rgb(255, 255, 255);
 }
 .about__info-bar .item:hover svg {
-  width: 3.5rem;
-  height: 3.5rem;
   fill: #3a5a40;
 }
 .about__info-bar .item:hover .item__svg {
-  width: 8.5rem;
-  height: 8.5rem;
   background: #a3b18a;
 }
 
@@ -1047,7 +1043,8 @@ a {
 }
 @media only screen and (max-width: 37.5em) {
   .contact__container {
-    height: 100vh;
+    padding: 20vh 0 10vh;
+    height: min-content;
   }
 }
 .contact__container-left {
@@ -1106,7 +1103,7 @@ a {
   color: #3a5a40;
 }
 .contact-header p {
-  margin: 0.2rem 6rem 1rem 0;
+  margin: 0.2rem 6rem 2rem 0;
   font-size: 2rem;
   font-weight: 300;
 }

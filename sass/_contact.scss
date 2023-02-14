@@ -38,7 +38,8 @@
         }
         @media only screen and (max-width: $bp-small) {
             //Spacing
-            height: 100vh;
+            padding: 20vh 0 10vh;
+            height: min-content;
         }
 
         &-left {
@@ -125,7 +126,7 @@
         }
         p {
             //Spacing
-            margin: 0.2rem 6rem 1rem 0;
+            margin: 0.2rem 6rem 2rem 0;
 
             //Font Styling
             font-size: 2rem;
