@@ -16,16 +16,16 @@
 .revealRight {
     transform: translateX(15rem);
     opacity: 0;
-    transition: 1s all ease;
+    transition: 1s transform ease, 1s opacity ease;
 }
 .revealLeft {
     transform: translateX(-15rem);
     opacity: 0;
-    transition: 1s all ease;
+    transition: 1s transform ease, 1s opacity ease;
 }
 .revealFade {
     opacity: 0;
-    transition: 1s all ease;
+    transition: 1s opacity ease;
 }
 
 .revealRight.active,
