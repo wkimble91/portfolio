@@ -409,9 +409,8 @@ a {
   width: 45%;
   padding: 6rem;
 }
-@media only screen and (max-width: 75em) {
+@media only screen and (max-width: 87.5em) {
   .hero-right {
-    justify-content: center;
     padding: 0 6rem;
     min-height: 80rem;
     height: auto;
@@ -468,6 +467,11 @@ a {
   .hero__title {
     margin: 1rem 0 10rem;
     font-size: 9rem;
+  }
+}
+@media only screen and (max-width: 75em) {
+  .hero__title {
+    text-align: center;
   }
 }
 @media only screen and (max-width: 56.25em) {

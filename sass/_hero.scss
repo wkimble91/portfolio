@@ -51,10 +51,7 @@
         width: 45%;
         padding: 6rem;
 
-        @media only screen and (max-width: $bp-large) {
-            //Display
-            justify-content: center;
-
+        @media only screen and (max-width: $bp-largest) {
             //Spacing
             padding: 0 6rem;
             min-height: 80rem;
@@ -123,6 +120,10 @@
 
             //Font Styling
             font-size: 9rem;
+        }
+        @media only screen and (max-width: $bp-large) {
+            //Font Styling
+            text-align: center;
         }
         @media only screen and (max-width: $bp-medium) {
             //Spacing
