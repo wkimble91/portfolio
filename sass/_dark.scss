@@ -303,7 +303,7 @@ body.dark-mode {
         &__box {
             //Color Styling
             background-color: rgba(34, 34, 43, 0.6);
-            box-shadow: 3px 3px 6px rgba(255, 255, 255, 0.02);
+            box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.02);
             &:hover {
                 //Color Styling
                 background-color: rgb(34, 34, 43);
@@ -329,7 +329,7 @@ body.dark-mode {
             .item {
                 //Color Styling
                 background-color: rgba(34, 34, 43, 0.6);
-                box-shadow: 3px 3px 6px rgba(255, 255, 255, 0.02);
+                box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.02);
 
                 &:hover {
                     //Color Styling
@@ -374,6 +374,7 @@ body.dark-mode {
         &__card {
             //Color Styling
             background-color: rgba(34, 34, 43, 0.9);
+            box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.02);
         }
         &__details {
             h3 {
@@ -419,7 +420,7 @@ body.dark-mode {
         &-header {
             //Color Styling
             background-color: rgba(30, 30, 40, 0.5);
-            box-shadow: 3px 3px 6px rgba(255, 255, 255, 0.02);
+            box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.02);
 
             &:hover {
                 //Color Styling
