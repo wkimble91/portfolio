@@ -1,20 +1,21 @@
 # willkimble.com Portfolio
+
 ==================================================
 
- Personal portfolio site, built on [SCSS] and [Vanilla Javascript].
+Personal portfolio site, built on [SCSS] and [Vanilla Javascript].
 
 Preview images created with [Spline 3D].
 
-[SCSS]: https://sass-lang.com/documentation/syntax
-[Vanilla Javascript]: https://www.javascript.com/
-[Spline 3D]: https://spline.design/
+[scss]: https://sass-lang.com/documentation/syntax
+[vanilla javascript]: https://www.javascript.com/
+[spline 3d]: https://spline.design/
 
 ## Getting Started
 
 Run the SCSS server:
 
 ```bash
-npm watch
+npm run watch
 ```
 
 ## Building
@@ -22,5 +23,5 @@ npm watch
 Compile, prefix, and compress the SCSS:
 
 ```bash
-npm build
+npm run build
 ```
