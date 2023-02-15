@@ -52,27 +52,17 @@
             //Spacing
             padding: 0 6rem;
             min-height: 80rem;
-            height: auto;
-            width: 40%;
+            width: 50%;
         }
         @media only screen and (max-width: $bp-large) {
             //Spacing
-            min-height: 70rem;
-            height: auto;
+            min-height: 50rem;
             width: 100%;
-        }
-        @media only screen and (max-width: $bp-medium) {
-            //Spacing
-            min-height: 60rem;
-            height: auto;
-            width: 100%;
+            height: 40vh;
         }
         @media only screen and (max-width: $bp-small) {
             //Spacing
             padding: 0 3rem;
-            min-height: 50rem;
-            height: 40vh;
-            width: 100%;
         }
     }
 
@@ -200,7 +190,7 @@
         background-repeat: no-repeat;
         background-position: center;
 
-        @media only screen and (max-width: $bp-largest) {
+        @media only screen and (max-width: $bp-medium) {
             //Image Styling
             background-position: bottom center;
         }
