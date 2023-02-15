@@ -5,7 +5,7 @@
     width: 100%;
 
     //Color Styling
-    background-color: $background-color-light;
+    background-color: $color-primary-dark;
     color: $body-text-light;
 
     &-box {
@@ -34,7 +34,7 @@
         text-align: center;
 
         //Image Styling
-        background-image: url(../img/logo_tree-dark.png);
+        background-image: url(../img/logo_tree-light.png);
         background-size: cover;
         background-position: top;
 
@@ -52,7 +52,7 @@
         font-size: 1.3rem;
 
         //Color Styling
-        color: $body-text-light;
+        color: whitesmoke;
 
         @media only screen and (max-width: $bp-medium) {
             //Font Styling
