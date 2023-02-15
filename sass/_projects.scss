@@ -72,18 +72,21 @@
             //Border Styling
             border-bottom: 1px solid $color-primary-dark;
         }
-        &--svg {
+        &--kanji {
             //Display
             display: inline-block;
 
-            //Spacing
-            width: 4rem;
-            height: 4rem;
-            stroke-width: 0;
+            //Font Styling
+            font-size: 6rem;
+            font-weight: 600;
 
             //Color Styling
-            stroke: $color-primary-dark;
-            fill: $color-primary-dark;
+            color: $color-primary-dark;
+
+            @media only screen and (max-width: $bp-small) {
+                //Font Styling
+                font-size: 4.5rem;
+            }
         }
     }
 

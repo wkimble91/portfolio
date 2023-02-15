@@ -316,9 +316,9 @@ body.dark-mode {
                 //Border Styling
                 border-bottom: 1px solid $color-darkmode-primary;
             }
-            &--svg {
+            &--kanji {
                 //Color Styling
-                fill: $color-darkmode-primary;
+                color: $color-darkmode-primary;
             }
         }
 
@@ -358,9 +358,9 @@ body.dark-mode {
                 //Border Styling
                 border-bottom: 1px solid $color-darkmode-primary;
             }
-            &--svg {
+            &--kanji {
                 //Color Styling
-                fill: $color-darkmode-primary;
+                color: $color-darkmode-primary;
             }
         }
         &__card {
