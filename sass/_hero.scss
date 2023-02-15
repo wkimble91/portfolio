@@ -1,68 +1,69 @@
 .hero {
-    //Display
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    //Spacing
-    height: 105vh;
-    width: 100%;
-
-    @media only screen and (max-width: $bp-large) {
-        //Display
-        flex-direction: column-reverse;
-        height: 100vh;
-    }
-
-    &-left {
+    & &__box {
         //Display
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
-
-        //Spacing
-        height: 100%;
-        width: 55%;
-        padding: 0 5%;
-
-        @media only screen and (max-width: $bp-large) {
-            //Display
-            align-items: center;
-            justify-content: start;
-
-            //Spacing
-            width: 100%;
-            height: 35vh;
-        }
-    }
-    &-right {
-        //Display
-        display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
 
         //Spacing
-        height: 100%;
-        width: 45%;
-        padding: 6rem;
+        height: 95vh;
+        width: 100%;
 
-        @media only screen and (max-width: $bp-largest) {
-            //Spacing
-            padding: 0 6rem;
-            min-height: 80rem;
-            width: 50%;
-        }
         @media only screen and (max-width: $bp-large) {
-            //Spacing
-            min-height: 50rem;
-            width: 100%;
-            height: 40vh;
+            //Display
+            flex-direction: column-reverse;
         }
-        @media only screen and (max-width: $bp-small) {
+
+        &-left {
+            //Display
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+
             //Spacing
-            padding: 0 3rem;
+            height: 100%;
+            width: 55%;
+            padding: 0 5%;
+
+            @media only screen and (max-width: $bp-large) {
+                //Display
+                align-items: center;
+                justify-content: start;
+
+                //Spacing
+                width: 100%;
+                height: 35vh;
+            }
+        }
+        &-right {
+            //Display
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            //Spacing
+            height: 100%;
+            width: 45%;
+            padding: 6rem;
+
+            @media only screen and (max-width: $bp-largest) {
+                //Spacing
+                padding: 0 6rem;
+                min-height: 80rem;
+                width: 50%;
+            }
+            @media only screen and (max-width: $bp-large) {
+                //Spacing
+                min-height: 50rem;
+                width: 100%;
+                height: 40vh;
+            }
+            @media only screen and (max-width: $bp-small) {
+                //Spacing
+                padding: 0 3rem;
+            }
         }
     }
 
@@ -211,6 +212,26 @@
                 height: 90%;
                 padding: 6rem 0 0;
             }
+        }
+    }
+
+    &-arrow {
+        height: 15vh;
+        width: 6rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        @media only screen and (max-width: $bp-small) {
+            //Spacing
+            width: 4rem;
+        }
+
+        &__svg--hidden {
+            display: none;
+
+            // fill: white;
         }
     }
 }

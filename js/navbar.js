@@ -23,8 +23,13 @@ function closeMenu() {
 $(function () {
     $(document).scroll(function () {
         var $nav = $('#header');
+        var $arrow = $('#arrow');
         $nav.toggleClass(
             'header-scrolled',
+            $(this).scrollTop() > $nav.height()
+        );
+        $arrow.toggleClass(
+            'hero-arrow__svg--hidden',
             $(this).scrollTop() > $nav.height()
         );
     });

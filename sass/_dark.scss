@@ -297,6 +297,10 @@ body.dark-mode {
                 background-image: url(../img/forest-night1x.png);
             }
         }
+
+        & svg {
+            fill: white;
+        }
     }
 
     .about {
