@@ -69,19 +69,37 @@ a {
 
 //SVG Line down middle of body (About, Projects)
 .spacer {
+    //Spacing
     aspect-ratio: 960/99;
     width: 100%;
+
+    //Image Styling
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media only screen and (max-width: $bp-small) {
+        //Spacing
+        aspect-ratio: 400/99;
+    }
 }
 
 .layerBottom {
+    //Image Styling
     background-image: url('../img/wave-bottom-light.svg');
+
+    @media only screen and (max-width: $bp-small) {
+        //Image Styling
+        background-image: url('../img/wave-bottom-mobile-light.svg');
+    }
 }
 
 .layerTop {
     background-image: url('../img/wave-top-light.svg');
+    @media only screen and (max-width: $bp-small) {
+        //Image Styling
+        background-image: url('../img/wave-top-mobile-light.svg');
+    }
 }
 
 //Changes highlight coloring
