@@ -122,7 +122,7 @@
                     color: $background-color-dark;
 
                     &:hover {
-                        left: 10%;
+                        content: '夜';
                     }
 
                     @media only screen and (max-width: $bp-small) {
@@ -304,7 +304,7 @@ body.dark-mode {
         &__box {
             //Color Styling
             background-color: rgb(34, 34, 43);
-            box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.02);
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
         }
         &__header {
             //Color Styling
@@ -326,7 +326,7 @@ body.dark-mode {
             .item {
                 //Color Styling
                 background-color: rgb(34, 34, 43);
-                box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.02);
+                box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
                 &__svg {
                     //Color Styling
                     background: $color-darkmode-primary;
@@ -366,7 +366,7 @@ body.dark-mode {
         &__card {
             //Color Styling
             background-color: rgba(34, 34, 43, 0.9);
-            box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.02);
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
         }
         &__details {
             h3 {
@@ -405,7 +405,7 @@ body.dark-mode {
                 &--box {
                     //Color Styling
                     background-color: rgba(30, 30, 40, 0.8);
-                    box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.02);
+                    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
 
                     &:hover {
                         //Color Styling
@@ -422,7 +422,7 @@ body.dark-mode {
         &-header {
             //Color Styling
             background-color: rgba(30, 30, 40, 0.8);
-            box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.02);
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
 
             &:hover {
                 //Color Styling
