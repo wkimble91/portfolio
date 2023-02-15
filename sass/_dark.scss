@@ -300,14 +300,11 @@ body.dark-mode {
     }
 
     .about {
+        background-color: $color-darkmode-primary-dark;
         &__box {
             //Color Styling
-            background-color: rgba(34, 34, 43, 0.6);
+            background-color: rgb(34, 34, 43);
             box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.02);
-            &:hover {
-                //Color Styling
-                background-color: rgb(34, 34, 43);
-            }
         }
         &__header {
             //Color Styling
@@ -328,13 +325,8 @@ body.dark-mode {
         &__info-bar {
             .item {
                 //Color Styling
-                background-color: rgba(34, 34, 43, 0.6);
+                background-color: rgb(34, 34, 43);
                 box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.02);
-
-                &:hover {
-                    //Color Styling
-                    background-color: rgb(34, 34, 43);
-                }
                 &__svg {
                     //Color Styling
                     background: $color-darkmode-primary;
@@ -494,6 +486,15 @@ body.dark-mode {
                 color: $body-text-dark !important;
             }
         }
+    }
+
+    //SVG Waves
+    .layerBottom {
+        background-image: url('../img/wave-bottom-dark.svg');
+    }
+
+    .layerTop {
+        background-image: url('../img/wave-top-dark.svg');
     }
 
     ::selection {

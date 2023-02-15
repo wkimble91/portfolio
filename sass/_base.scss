@@ -69,14 +69,23 @@ a {
 }
 
 //SVG Line down middle of body (About, Projects)
-.line {
-    background-image: url(../img/Lineday.svg);
-    background-size: 100% 100%;
+.spacer {
+    aspect-ratio: 960/99;
+    width: 100%;
     background-repeat: no-repeat;
-    background-position: center center;
-    z-index: 1;
+    background-position: center;
+    background-size: cover;
 }
 
+.layerBottom {
+    background-image: url('../img/wave-bottom-light.svg');
+}
+
+.layerTop {
+    background-image: url('../img/wave-top-light.svg');
+}
+
+//Changes highlight coloring
 ::selection {
     background-color: $color-primary-dark;
     color: #fff;
