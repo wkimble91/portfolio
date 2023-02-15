@@ -13,6 +13,10 @@
             //Display
             flex-direction: column-reverse;
         }
+        @media only screen and (max-width: $bp-small) {
+            //Spacing
+            height: 90vh;
+        }
 
         &-left {
             //Display
@@ -225,6 +229,7 @@
 
         @media only screen and (max-width: $bp-small) {
             //Spacing
+            height: 20vh;
             width: 4rem;
         }
 
