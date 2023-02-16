@@ -504,10 +504,18 @@ body.dark-mode {
     //SVG Waves
     .layerBottom {
         background-image: url('../img/wave-bottom-dark.svg');
+        @media only screen and (max-width: $bp-small) {
+            //Image Styling
+            background-image: url('../img/wave-bottom-mobile-dark.svg');
+        }
     }
 
     .layerTop {
         background-image: url('../img/wave-top-dark.svg');
+        @media only screen and (max-width: $bp-small) {
+            //Image Styling
+            background-image: url('../img/wave-top-mobile-dark.svg');
+        }
     }
 
     ::selection {
