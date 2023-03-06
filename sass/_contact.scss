@@ -110,7 +110,7 @@
         }
     }
 
-    &-socials {
+    &__socials {
         //Display
         display: flex;
 
@@ -134,7 +134,7 @@
         }
     }
 
-    &-header {
+    &__info {
         //Spacing
         padding: 4rem 2rem 4rem 6rem;
 
@@ -150,12 +150,14 @@
             //Color Styling
             background-color: rgba(255, 255, 255, 0.9);
         }
+
         h2 {
             //Spacing
-            margin-bottom: 2rem;
+            margin: 0 auto 2rem;
+            width: auto;
 
             //Font Styling
-            font-size: 3rem;
+            font-size: 3.2rem;
 
             //Color Styling
             color: $color-primary-dark;
