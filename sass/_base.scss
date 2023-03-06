@@ -69,7 +69,7 @@ a {
     text-decoration: none;
 }
 
-//SVG Line down middle of body (About, Projects)
+//SVG mountains
 .spacer {
     //Spacing
     aspect-ratio: 960/99;
@@ -82,13 +82,14 @@ a {
 
     @media only screen and (max-width: $bp-small) {
         //Spacing
-        aspect-ratio: 400/99;
+        aspect-ratio: 400/98;
     }
 }
 
 .layerBottom {
     //Image Styling
     background-image: url('../img/wave-bottom-light.svg');
+    margin: -2px 0;
 
     @media only screen and (max-width: $bp-small) {
         //Image Styling
@@ -98,6 +99,8 @@ a {
 
 .layerTop {
     background-image: url('../img/wave-top-light.svg');
+    margin: -2px 0;
+
     @media only screen and (max-width: $bp-small) {
         //Image Styling
         background-image: url('../img/wave-top-mobile-light.svg');
