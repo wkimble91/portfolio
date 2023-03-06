@@ -16,7 +16,7 @@
     &__box {
         //Spacing
         width: 60%;
-        padding: 20vh 0 30vh;
+        padding: 10vh 0 10vh;
 
         @media only screen and (max-width: $bp-large) {
             //Spacing
@@ -107,7 +107,7 @@
 
         &:not(:last-child) {
             //Spacing
-            margin-bottom: 16rem;
+            margin-bottom: 18rem;
         }
 
         @media only screen and (max-width: $bp-small) {
@@ -128,7 +128,7 @@
     &__description {
         //Spacing
         width: 50%;
-        padding: 7rem 5rem;
+        padding: 5rem;
 
         @media only screen and (max-width: $bp-medium) {
             //Spacing
@@ -179,7 +179,7 @@
         }
         h4 {
             //Spacing
-            margin-bottom: 3rem;
+            margin-bottom: 1rem;
 
             //Font Styling
             font-size: 1.8rem;
@@ -189,14 +189,31 @@
             //Color Styling
             color: $background-color-dark;
         }
-        p {
+        h5 {
             //Font Styling
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             font-weight: 200;
             letter-spacing: 0.2rem;
 
             //Color Styling
             color: $color-grey-dark;
+        }
+        p {
+            //Spacing
+            margin: 3.5rem 0;
+
+            //Font Styling
+            font-size: 1.4rem;
+            font-weight: 300;
+            letter-spacing: 0.2rem;
+
+            //Color Styling
+            color: $background-color-dark;
+
+            @media only screen and (max-width: $bp-small) {
+                //Spacing
+                margin: 4rem 3rem;
+            }
         }
     }
     &__title {
@@ -206,6 +223,13 @@
         @media only screen and (max-width: $bp-small) {
             //Spacing
             padding-top: 4rem;
+        }
+
+        &-shrink {
+            @media only screen and (max-width: $bp-largest) {
+                //Spacing
+                font-size: 2.7rem !important;
+            }
         }
     }
     &__image-box {
@@ -306,4 +330,9 @@
         rgb(55, 168, 192),
         rgb(103, 187, 125)
     );
+}
+
+.bg-grey {
+    //Color Styling
+    background: linear-gradient(to right, #28313b, #485461);
 }
