@@ -343,7 +343,7 @@ body.dark-mode {
 
             .item:hover svg {
                 //Color Styling
-                fill: whitesmoke;
+                fill: $color-darkmode-primary-light;
             }
             .item:hover .item__svg {
                 //Color Styling
@@ -419,11 +419,7 @@ body.dark-mode {
             }
         }
 
-        &-svg {
-            //Color Styling
-            filter: invert(1);
-        }
-        &-header {
+        &__info {
             //Color Styling
             background-color: rgba(30, 30, 40, 0.8);
             box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
@@ -440,6 +436,11 @@ body.dark-mode {
                 //Color Styling
                 color: $color-darkmode-primary-light;
             }
+        }
+
+        &-svg {
+            //Color Styling
+            filter: invert(1);
         }
     }
 
