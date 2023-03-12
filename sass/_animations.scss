@@ -76,4 +76,9 @@
     animation: wave 2.1s 0.6s infinite;
     transform-origin: 75% 75%;
     display: inline-block;
+
+    @media only screen and (max-width: $bp-medium) {
+        //Spacing
+        margin: 0 0.6rem 0 -2rem;
+    }
 }
