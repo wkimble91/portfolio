@@ -9,6 +9,9 @@ function revealRight() {
         if (elementTop < windowHeight - elementVisible) {
             reveals[i].classList.add('active');
         }
+        if (elementTop > windowHeight) {
+            reveals[i].classList.remove('active');
+        }
     }
 }
 function revealLeft() {
@@ -22,6 +25,9 @@ function revealLeft() {
         if (elementTop < windowHeight - elementVisible) {
             reveals[i].classList.add('active');
         }
+        if (elementTop > windowHeight) {
+            reveals[i].classList.remove('active');
+        }
     }
 }
 function revealFade() {
@@ -34,6 +40,9 @@ function revealFade() {
 
         if (elementTop < windowHeight - elementVisible) {
             reveals[i].classList.add('active');
+        }
+        if (elementTop > windowHeight) {
+            reveals[i].classList.remove('active');
         }
     }
 }
