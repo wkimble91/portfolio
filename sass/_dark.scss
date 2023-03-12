@@ -398,13 +398,6 @@ body.dark-mode {
         }
 
         &__container {
-            &-left {
-                @media only screen and (max-width: $bp-medium) {
-                    //Image Styling
-                    background-image: url(../img/Worldmap.svg);
-                }
-            }
-
             &-right {
                 &--box {
                     //Color Styling
