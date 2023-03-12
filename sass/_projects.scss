@@ -103,7 +103,7 @@
         box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
 
         //Border Styling
-        border-radius: 12px;
+        border-radius: $card-border-radius;
 
         &:not(:last-child) {
             //Spacing
@@ -256,16 +256,16 @@
             margin: auto;
 
             //Border Styling
-            border-radius: 12px 12px 0 0 !important;
+            border-radius: $card-border-radius $card-border-radius 0 0 !important;
         }
 
         &:nth-child(2n) {
             //Border Styling
-            border-radius: 0 12px 12px 0;
+            border-radius: 0 $card-border-radius $card-border-radius 0;
         }
         &:nth-child(2n + 1) {
             //Border Styling
-            border-radius: 12px 0 0 12px;
+            border-radius: $card-border-radius 0 0 $card-border-radius;
 
             &::before {
                 //Image Styling

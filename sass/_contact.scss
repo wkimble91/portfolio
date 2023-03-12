@@ -92,9 +92,9 @@
                 flex-direction: column;
 
                 //Color Styling
-                background-color: rgba(255, 255, 255, 0.6);
+                background-color: rgba(255, 255, 255, 0.7);
                 box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
-                border-radius: 3rem;
+                border-radius: $card-border-radius;
 
                 //Spacing
                 width: 100%;
@@ -139,9 +139,9 @@
         padding: 4rem 2rem 4rem 6rem;
 
         //Color Styling
-        background-color: rgba(255, 255, 255, 0.6);
+        background-color: rgba(255, 255, 255, 0.7);
         box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
-        border-radius: 3rem;
+        border-radius: $card-border-radius;
 
         //Animations
         transition: all 0.3s;

@@ -25,7 +25,7 @@
         //Color Styling
         background-color: #fff;
         box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
-        border-radius: 3rem;
+        border-radius: $card-border-radius;
 
         //Animations
         transition: all 0.2s;
@@ -172,7 +172,7 @@
             box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
 
             //Border Styling
-            border-radius: 3rem;
+            border-radius: $card-border-radius;
 
             //Animations
             transition: background-color 0.3s, transform 1s ease,
