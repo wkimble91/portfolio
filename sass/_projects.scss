@@ -110,6 +110,10 @@
             margin-bottom: 18rem;
         }
 
+        &:hover picture img {
+            transform: scale(1.1);
+        }
+
         @media only screen and (max-width: $bp-small) {
             //Display
             flex-direction: column;
@@ -299,6 +303,9 @@
                 //Spacing
                 width: 100%;
                 height: auto;
+
+                //Animations
+                transition: all ease-out 0.5s;
             }
         }
     }
