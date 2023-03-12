@@ -219,8 +219,12 @@
                     </div>
                 </div>
                 <div class="projects__image-box bg-blue">
-                    <img srcset="img/minimalist1x.png 500w, img/minimalist2x.png 1000w" media="(min-width: 500px)"
-                        alt="Thumbnail of Minimalist Nomad Webpage">
+                    <picture aria-hidden="true">
+                        <source media="(max-width: 500px)" srcset="img/minimalist-m.webp">
+                        <source media="(min-width: 501px)" srcset="img/minimalist.png">
+                        <img loading="lazy" decoding="async" src="img/minimalist.png"
+                            alt="Thumbnail of Minimalist Nomad Webpage" width="414" height="400">
+                    </picture>
                 </div>
             </div>
 
@@ -228,8 +232,12 @@
 
             <div class="projects__card revealLeft">
                 <div class="projects__image-box bg-green">
-                    <img srcset="img/andys1x.png 500w, img/andys2x.png 1000w" media="(min-width: 500px)"
-                        alt="Thumbnail of Andys Foundations Webpage">
+                    <picture aria-hidden="true">
+                        <source media="(max-width: 500px)" srcset="img/andys-m.webp">
+                        <source media="(min-width: 501px)" srcset="img/andys.png">
+                        <img loading="lazy" decoding="async" src="img/andys.png"
+                            alt="Thumbnail of Andys Foundations Webpage" width="414" height="400">
+                    </picture>
                 </div>
                 <div class="projects__description">
                     <div class="projects__details">
@@ -273,8 +281,12 @@
                     </div>
                 </div>
                 <div class="projects__image-box bg-teal">
-                    <img srcset="img/trailpages1x.png 500w, img/trailpages2x.png 1000w" media="(min-width: 500px)"
-                        alt="Thumbnail of Trailpages Webpage">
+                    <picture aria-hidden="true">
+                        <source media="(max-width: 500px)" srcset="img/trailpages-m.webp">
+                        <source media="(min-width: 501px)" srcset="img/trailpages.png">
+                        <img loading="lazy" decoding="async" src="img/trailpages.png"
+                            alt="Thumbnail of Trailpages Webpage" width="414" height="400">
+                    </picture>
                 </div>
             </div>
 
@@ -301,13 +313,13 @@
                         <div class="contact__socials">
                             <a href="https://www.linkedin.com/in/william-ian-kimble/" target="_blank"
                                 rel="noopener noreferrer">
-                                <img class="contact-svg" src="img/linkedin.svg" alt="Linkedin"></a>
+                                <img class="contact-svg" src="img/svg/linkedin.svg" alt="Linkedin"></a>
                             <a href="https://github.com/wkimble91/" target="_blank" rel="noopener noreferrer">
-                                <img class="contact-svg" src="img/github.svg" alt="Github"></a>
+                                <img class="contact-svg" src="img/svg/github.svg" alt="Github"></a>
                             <a href="https://codepen.io/wkimble91" target="_blank" rel="noopener noreferrer">
-                                <img class="contact-svg" src="img/codepen.svg" alt="Codepen"></a>
+                                <img class="contact-svg" src="img/svg/codepen.svg" alt="Codepen"></a>
                             <a href="mailto:mail@willkimble.com">
-                                <img class="contact-svg" src="img/mail.svg" alt="Email"></a>
+                                <img class="contact-svg" src="img/svg/mail.svg" alt="Email"></a>
                         </div>
                     </div>
                 </div>

@@ -213,11 +213,6 @@ body.dark-mode {
     background-color: $background-color-dark;
     color: $body-text-dark;
 
-    .line {
-        //Image Styling
-        background-image: url(../img/Linenight.svg);
-    }
-
     .header {
         //Color Styling
         background-color: $background-color-dark;
@@ -509,18 +504,18 @@ body.dark-mode {
 
     //SVG Waves
     .layerBottom {
-        background-image: url('../img/wave-bottom-dark.svg');
+        background-image: url('../img/svg/wave-bottom-dark.svg');
         @media only screen and (max-width: $bp-small) {
             //Image Styling
-            background-image: url('../img/wave-bottom-mobile-dark.svg');
+            background-image: url('../img/svg/wave-bottom-mobile-dark.svg');
         }
     }
 
     .layerTop {
-        background-image: url('../img/wave-top-dark.svg');
+        background-image: url('../img/svg/wave-top-dark.svg');
         @media only screen and (max-width: $bp-small) {
             //Image Styling
-            background-image: url('../img/wave-top-mobile-dark.svg');
+            background-image: url('../img/svg/wave-top-mobile-dark.svg');
         }
     }
 

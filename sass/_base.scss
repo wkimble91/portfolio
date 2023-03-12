@@ -88,22 +88,22 @@ a {
 
 .layerBottom {
     //Image Styling
-    background-image: url('../img/wave-bottom-light.svg');
+    background-image: url('../img/svg/wave-bottom-light.svg');
     margin: -2px 0;
 
     @media only screen and (max-width: $bp-small) {
         //Image Styling
-        background-image: url('../img/wave-bottom-mobile-light.svg');
+        background-image: url('../img/svg/wave-bottom-mobile-light.svg');
     }
 }
 
 .layerTop {
-    background-image: url('../img/wave-top-light.svg');
+    background-image: url('../img/svg/wave-top-light.svg');
     margin: -2px 0;
 
     @media only screen and (max-width: $bp-small) {
         //Image Styling
-        background-image: url('../img/wave-top-mobile-light.svg');
+        background-image: url('../img/svg/wave-top-mobile-light.svg');
     }
 }
 

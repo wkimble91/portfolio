@@ -290,11 +290,16 @@
             overflow: hidden;
         }
 
-        & img {
+        & picture {
             //Spacing
-            z-index: 2;
-            width: 100%;
             margin: auto;
+            z-index: 2;
+
+            & img {
+                //Spacing
+                width: 100%;
+                height: auto;
+            }
         }
     }
     &-buttons {
