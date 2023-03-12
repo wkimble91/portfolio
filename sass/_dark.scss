@@ -314,6 +314,11 @@ body.dark-mode {
             //Color Styling
             color: $color-darkmode-primary;
         }
+        &__description {
+            &-arrow {
+                color: $color-darkmode-primary-light;
+            }
+        }
 
         &__line {
             &--dash {
@@ -333,7 +338,7 @@ body.dark-mode {
                 box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
                 &__svg {
                     //Color Styling
-                    background: $color-darkmode-primary;
+                    background: $color-darkmode-primary-dark;
                 }
                 h3 {
                     //Color Styling
@@ -343,11 +348,11 @@ body.dark-mode {
 
             .item:hover svg {
                 //Color Styling
-                fill: $color-darkmode-primary-light;
+                fill: $color-darkmode-primary-dark;
             }
             .item:hover .item__svg {
                 //Color Styling
-                background: $color-darkmode-primary-dark;
+                background: $color-darkmode-primary-light;
             }
         }
     }
