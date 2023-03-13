@@ -71,10 +71,10 @@
 }
 
 .waving-hand {
-    margin: 0 0.9rem 0 -2.9rem;
+    margin: 0 0.4rem 0 -3.1rem;
     font-size: 3rem;
     animation: wave 2.1s 0.6s infinite;
-    transform-origin: 75% 75%;
+    transform-origin: 95% 95%;
     display: inline-block;
 
     @media only screen and (max-width: $bp-medium) {
