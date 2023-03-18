@@ -200,17 +200,28 @@
 
                 //Spacing
                 width: 100%;
-                padding: 3rem 2rem;
+                padding: 2rem;
 
                 &:nth-child(even) {
                     //Display
                     flex-direction: row-reverse;
                 }
+
+                &:nth-child(even) p {
+                    @media only screen and (max-width: $bp-small) {
+                        padding: 0 1rem 0 0;
+                    }
+                }
+                &:nth-child(odd) p {
+                    @media only screen and (max-width: $bp-small) {
+                        padding: 0 0 0 1rem;
+                    }
+                }
             }
 
             &__header {
                 @media only screen and (max-width: $bp-small) {
-                    padding: 0 1rem;
+                    width: 30%;
                 }
             }
             &__svg {
@@ -238,6 +249,8 @@
                     flex-shrink: 0;
 
                     //Spacing
+                    width: 7rem;
+                    height: 7rem;
                     margin: 0 auto 1.5rem;
                 }
 
@@ -287,14 +300,14 @@
                     flex-shrink: 1;
 
                     //Spacing
-                    margin: 0;
+                    margin: 0 0 0.5rem;
 
                     //Font Styling
-                    font-size: 1.8rem;
+                    font-size: 1.6rem;
                 }
                 @media only screen and (max-width: $bp-smallest) {
                     //Font Styling
-                    font-size: 1.6rem;
+                    font-size: 1.2rem;
                 }
             }
             p {
@@ -320,7 +333,7 @@
                     //Spacing
                     width: 80%;
                     margin: 0;
-                    padding: 0 3rem;
+                    padding: 0 2rem;
                 }
                 @media only screen and (max-width: $bp-smallest) {
                     //Spacing
