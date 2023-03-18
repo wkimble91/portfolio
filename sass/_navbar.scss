@@ -15,8 +15,7 @@
     background-color: $background-color-light;
 
     //Animation
-    transition: box-shadow .2s;
-
+    transition: box-shadow 0.2s;
 
     @media only screen and (max-width: $bp-small) {
         //Spacing
@@ -219,8 +218,7 @@
                     bottom: 4px;
 
                     //Border Styling
-                    border-bottom: 2px solid $color-primary;
-
+                    border-bottom: 2px solid #e09e87;
 
                     //Animations
                     transition: width 0.3s;
@@ -304,6 +302,5 @@
         //Border Styling
         border-bottom: 1px solid $color-grey-light;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-
     }
 }
