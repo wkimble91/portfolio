@@ -200,10 +200,17 @@
 
                 //Spacing
                 width: 100%;
+                padding: 3rem 2rem;
 
                 &:nth-child(even) {
                     //Display
                     flex-direction: row-reverse;
+                }
+            }
+
+            &__header {
+                @media only screen and (max-width: $bp-small) {
+                    padding: 0 1rem;
                 }
             }
             &__svg {
@@ -231,7 +238,14 @@
                     flex-shrink: 0;
 
                     //Spacing
-                    margin: 0 1rem;
+                    margin: 0 auto 1.5rem;
+                }
+
+                @media only screen and (max-width: $bp-smallest) {
+                    //Spacing
+                    width: 6rem;
+                    height: 6rem;
+                    margin: auto;
                 }
             }
 
@@ -245,6 +259,12 @@
 
                 //Animations
                 transition: fill 0.3s;
+
+                @media only screen and (max-width: $bp-smallest) {
+                    //Spacing
+                    width: 2rem;
+                    height: 2rem;
+                }
             }
 
             h3 {
@@ -267,10 +287,14 @@
                     flex-shrink: 1;
 
                     //Spacing
-                    margin: 0 2rem;
+                    margin: 0;
 
                     //Font Styling
                     font-size: 1.8rem;
+                }
+                @media only screen and (max-width: $bp-smallest) {
+                    //Font Styling
+                    font-size: 1.6rem;
                 }
             }
             p {
@@ -295,10 +319,16 @@
 
                     //Spacing
                     width: 80%;
+                    margin: 0;
+                    padding: 0 3rem;
                 }
                 @media only screen and (max-width: $bp-smallest) {
                     //Spacing
-                    margin: 0rem;
+                    width: 80%;
+                    padding: 0 1rem;
+
+                    //Font Styling
+                    font-size: 1.2rem;
                 }
             }
         }
