@@ -234,6 +234,10 @@
             width: 4rem;
         }
 
+        & svg {
+            fill: $color-primary-accent-2;
+        }
+
         &__svg--hidden {
             display: none;
         }
