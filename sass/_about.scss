@@ -87,7 +87,7 @@
             height: 3px;
 
             //Border Styling
-            border-bottom: 1px solid $color-primary-dark;
+            border-bottom: 2px solid $color-primary-accent-1;
         }
         &--kanji {
             //Display
@@ -98,7 +98,7 @@
             font-weight: 600;
 
             //Color Styling
-            color: $color-primary-dark;
+            color: $color-primary;
 
             @media only screen and (max-width: $bp-small) {
                 //Font Styling
