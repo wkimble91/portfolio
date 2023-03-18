@@ -22,6 +22,11 @@
             //Spacing
             width: 100%;
         }
+
+        @media only screen and (max-width: $bp-medium) {
+            //Font Styling
+            justify-content: center;
+        }
     }
 
     &__logo-box {
