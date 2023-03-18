@@ -17,23 +17,23 @@
     }
 
     15% {
-        transform: rotate(12deg);
+        transform: rotate(8deg);
     }
 
     30% {
-        transform: rotate(-6deg);
-    }
-
-    45% {
-        transform: rotate(12deg);
-    }
-
-    60% {
         transform: rotate(-4deg);
     }
 
+    45% {
+        transform: rotate(8deg);
+    }
+
+    60% {
+        transform: rotate(-2deg);
+    }
+
     75% {
-        transform: rotate(12deg);
+        transform: rotate(8deg);
     }
 
     90% {
