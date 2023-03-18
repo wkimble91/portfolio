@@ -14,6 +14,10 @@
     //Color Styling
     background-color: $background-color-light;
 
+    //Animation
+    transition: box-shadow .2s;
+
+
     @media only screen and (max-width: $bp-small) {
         //Spacing
         z-index: 10;
@@ -68,7 +72,7 @@
         //Spacing
         height: 7rem;
         width: 7rem;
-        margin: 1.5rem 0 0.5rem;
+        margin: 1rem 0;
         z-index: 200;
 
         //Font Styling
@@ -217,6 +221,7 @@
                     //Border Styling
                     border-bottom: 2px solid $color-primary;
 
+
                     //Animations
                     transition: width 0.3s;
                 }
@@ -298,5 +303,7 @@
     &-scrolled {
         //Border Styling
         border-bottom: 1px solid $color-grey-light;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+
     }
 }
