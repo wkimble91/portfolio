@@ -319,11 +319,11 @@ body.dark-mode {
         &__line {
             &--dash {
                 //Border Styling
-                border-bottom: 1px solid $color-darkmode-primary;
+                border-bottom: 1px solid $color-darkmode-primary-light;
             }
             &--kanji {
                 //Color Styling
-                color: $color-darkmode-primary;
+                color: $color-darkmode-primary-dark;
             }
         }
 
@@ -361,11 +361,11 @@ body.dark-mode {
         &__line {
             &--dash {
                 //Border Styling
-                border-bottom: 1px solid $color-darkmode-primary;
+                border-bottom: 1px solid $color-darkmode-primary-light;
             }
             &--kanji {
                 //Color Styling
-                color: $color-darkmode-primary;
+                color: $color-darkmode-primary-dark;
             }
         }
         &__card {
