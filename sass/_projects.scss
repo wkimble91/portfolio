@@ -247,7 +247,8 @@
 
     //Spacing
     position: relative;
-    height: 50rem;
+    min-height: 50rem;
+    height: auto;
     width: 50%;
 
     //Image Styling
