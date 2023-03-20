@@ -114,13 +114,13 @@
       font-size: 9rem;
     }
     @media only screen and (max-width: $bp-large) {
+      //Spacing
+      margin: 1rem 0 4rem;
+
       //Font Styling
       text-align: center;
     }
     @media only screen and (max-width: $bp-medium) {
-      //Spacing
-      margin: 1rem 0 10rem;
-
       //Font Styling
       text-align: center;
     }
