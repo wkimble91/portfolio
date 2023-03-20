@@ -6,7 +6,7 @@
     align-items: center;
 
     //Spacing
-    height: 95vh;
+    height: 94vh;
     width: 100%;
 
     @media only screen and (max-width: $bp-large) {
@@ -15,7 +15,7 @@
     }
     @media only screen and (max-width: $bp-small) {
       //Spacing
-      height: 90vh;
+      height: 85vh;
     }
 
     &-left {
@@ -73,7 +73,7 @@
 
   &__title {
     //Spacing
-    margin: 4rem 0 10rem;
+    margin: 4rem 0 8rem;
     text-align: right;
 
     //Font Styling
@@ -227,6 +227,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    transition: 3s animation ease;
 
     @media only screen and (max-width: $bp-small) {
       //Spacing
@@ -236,6 +237,7 @@
 
     & svg {
       fill: $color-primary-accent-2;
+      animation: arrow-down 2s infinite;
     }
 
     &__svg--hidden {

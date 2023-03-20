@@ -1,84 +1,171 @@
 //Animation for Title and Subtitle on Hero
 @keyframes moveInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-15rem) translateY(2rem);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0) translateY(0rem);
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(-15rem) translateY(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) translateY(0rem);
+  }
 }
 
 //Animation for waving hand on About
 @keyframes wave {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    15% {
-        transform: rotate(6deg);
-    }
+  15% {
+    transform: rotate(6deg);
+  }
 
-    30% {
-        transform: rotate(-3deg);
-    }
+  30% {
+    transform: rotate(-3deg);
+  }
 
-    45% {
-        transform: rotate(6deg);
-    }
+  45% {
+    transform: rotate(6deg);
+  }
 
-    60% {
-        transform: rotate(-1deg);
-    }
+  60% {
+    transform: rotate(-1deg);
+  }
 
-    75% {
-        transform: rotate(6deg);
-    }
+  75% {
+    transform: rotate(6deg);
+  }
 
-    90% {
-        transform: rotate(0deg);
-    }
+  90% {
+    transform: rotate(0deg);
+  }
 
-    100% {
-        transform: rotate(0deg);
-    }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+//Animation for arrow-down on hero
+@keyframes arrow-down {
+  0% {
+    transform: translateY(0px);
+  }
+
+  5% {
+    transform: translateY(1px);
+  }
+
+  10% {
+    transform: translateY(2px);
+  }
+
+  15% {
+    transform: translateY(3px);
+  }
+
+  20% {
+    transform: translateY(4px);
+  }
+
+  25% {
+    transform: translateY(5px);
+  }
+
+  30% {
+    transform: translateY(6px);
+  }
+
+  35% {
+    transform: translateY(7px);
+  }
+
+  40% {
+    transform: translateY(8px);
+  }
+
+  45% {
+    transform: translateY(9px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  55% {
+    transform: translateY(9px);
+  }
+
+  60% {
+    transform: translateY(8px);
+  }
+
+  65% {
+    transform: translateY(7px);
+  }
+
+  70% {
+    transform: translateY(6px);
+  }
+
+  75% {
+    transform: translateY(5px);
+  }
+
+  80% {
+    transform: translateY(4px);
+  }
+
+  85% {
+    transform: translateY(3px);
+  }
+
+  90% {
+    transform: translateY(2px);
+  }
+
+  95% {
+    transform: translateY(1px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 /*-- -------------------------- -->
 <---   Card Animation Classes   -->
 <--- -------------------------- -*/
 .revealRight {
-    transform: translateX(12rem) translateY(1rem);
-    opacity: 0;
-    transition: 1s transform ease, 1s opacity ease;
+  transform: translateX(12rem) translateY(1rem);
+  opacity: 0;
+  transition: 1s transform ease, 1s opacity ease;
 }
 .revealLeft {
-    transform: translateX(-12rem) translateY(1rem);
-    opacity: 0;
-    transition: 1s transform ease, 1s opacity ease;
+  transform: translateX(-12rem) translateY(1rem);
+  opacity: 0;
+  transition: 1s transform ease, 1s opacity ease;
 }
 .revealFade {
-    opacity: 0;
-    transition: 1s opacity ease;
+  opacity: 0;
+  transition: 1s opacity ease;
 }
 
 .revealRight.active,
 .revealLeft.active,
 .revealFade.active {
-    transform: translateY(0);
-    opacity: 1;
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .waving-hand {
-    margin: 0 0.4rem 0 -3.1rem;
-    font-size: 3rem;
-    animation: wave 2.1s 0.6s infinite;
-    transform-origin: 95% 95%;
-    display: inline-block;
+  margin: 0 0.4rem 0 -3.1rem;
+  font-size: 3rem;
+  animation: wave 2.1s 0.6s infinite;
+  transform-origin: 95% 95%;
+  display: inline-block;
 
-    @media only screen and (max-width: $bp-medium) {
-        //Spacing
-        margin: 0 0.6rem 0 -2rem;
-    }
+  @media only screen and (max-width: $bp-medium) {
+    //Spacing
+    margin: 0 0.6rem 0 -2rem;
+  }
 }
