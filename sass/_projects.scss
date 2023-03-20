@@ -16,7 +16,7 @@
   &__box {
     //Spacing
     width: 60%;
-    padding: 10vh 0 10vh;
+    padding: 8vh 0;
 
     @media only screen and (max-width: $bp-large) {
       //Spacing
@@ -107,7 +107,7 @@
 
     &:not(:last-child) {
       //Spacing
-      margin-bottom: 18rem;
+      margin-bottom: 15rem;
     }
 
     &:hover picture img {
