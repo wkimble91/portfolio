@@ -1,67 +1,68 @@
 .footer {
+  //Display
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  //Color Styling
+  background-color: $color-primary-dark;
+  color: $body-text-light;
+
+  &-box {
     //Display
     display: flex;
-    justify-content: center;
-    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+
+    //Spacing
+    width: 70%;
+    margin: 2rem 0;
+
+    @media only screen and (max-width: $bp-large) {
+      //Spacing
+      width: 100%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      //Font Styling
+      justify-content: center;
+    }
+  }
+
+  &__logo-box {
+    //Spacing
+    height: 4rem;
+    width: 4rem;
+    margin-left: 2rem;
+
+    //Font Styling
+    text-align: center;
+
+    //Image Styling
+    background-image: url(../img/logo_tree-light.png);
+    background-size: cover;
+    background-position: top;
+
+    @media only screen and (max-width: $bp-medium) {
+      //Spacing
+      width: 3rem;
+      height: 3rem;
+      margin-right: 2rem;
+    }
+  }
+
+  &__copyright {
+    //Font Styling
+    text-align: center;
+    font-size: 1.6rem;
 
     //Color Styling
-    background-color: $color-primary-dark;
-    color: $body-text-light;
+    color: whitesmoke;
 
-    &-box {
-        //Display
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-
-        //Spacing
-        width: 70%;
-        margin: 2rem 0;
-
-        @media only screen and (max-width: $bp-large) {
-            //Spacing
-            width: 100%;
-        }
-
-        @media only screen and (max-width: $bp-medium) {
-            //Font Styling
-            justify-content: center;
-        }
+    @media only screen and (max-width: $bp-medium) {
+      span {
+        display: block;
+      }
     }
-
-    &__logo-box {
-        //Spacing
-        height: 4rem;
-        width: 4rem;
-        margin-left: 2rem;
-
-        //Font Styling
-        text-align: center;
-
-        //Image Styling
-        background-image: url(../img/logo_tree-light.png);
-        background-size: cover;
-        background-position: top;
-
-        @media only screen and (max-width: $bp-medium) {
-            //Spacing
-            width: 3rem;
-            height: 3rem;
-            margin-right: 2rem;
-        }
-    }
-
-    &__copyright {
-        //Font Styling
-        text-align: center;
-        font-size: 1.3rem;
-
-        //Color Styling
-        color: whitesmoke;
-
-        @media only screen and (max-width: $bp-medium) {
-            //Font Styling
-            font-size: 1rem;
-        }
-    }
+  }
 }
