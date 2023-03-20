@@ -166,7 +166,7 @@
       letter-spacing: 0.2rem;
 
       //Color Styling
-      color: $background-color-dark;
+      color: black;
 
       @media only screen and (max-width: $bp-large) {
         //Font Styling
@@ -191,16 +191,16 @@
       letter-spacing: 0.2rem;
 
       //Color Styling
-      color: $background-color-dark;
+      color: black;
     }
     h5 {
       //Font Styling
       font-size: 1.6rem;
       font-weight: 300;
-      letter-spacing: 0.2rem;
+      letter-spacing: 0.15rem;
 
       //Color Styling
-      color: $color-grey-dark;
+      color: $background-color-dark;
     }
     p {
       //Spacing
@@ -208,11 +208,11 @@
 
       //Font Styling
       font-size: 1.6rem;
-      font-weight: 300;
+      font-weight: 400;
       letter-spacing: 0.2rem;
 
       //Color Styling
-      color: $background-color-dark;
+      color: black;
 
       @media only screen and (max-width: $bp-medium) {
         //Spacing
