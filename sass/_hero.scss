@@ -1,245 +1,245 @@
 .hero {
-    &__box {
+  &__box {
+    //Display
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    //Spacing
+    height: 95vh;
+    width: 100%;
+
+    @media only screen and (max-width: $bp-large) {
+      //Display
+      flex-direction: column-reverse;
+    }
+    @media only screen and (max-width: $bp-small) {
+      //Spacing
+      height: 90vh;
+    }
+
+    &-left {
+      //Display
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+
+      //Spacing
+      height: 100%;
+      width: 55%;
+      padding: 0 5%;
+
+      @media only screen and (max-width: $bp-large) {
         //Display
-        display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: start;
 
         //Spacing
-        height: 95vh;
         width: 100%;
-
-        @media only screen and (max-width: $bp-large) {
-            //Display
-            flex-direction: column-reverse;
-        }
-        @media only screen and (max-width: $bp-small) {
-            //Spacing
-            height: 90vh;
-        }
-
-        &-left {
-            //Display
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-end;
-
-            //Spacing
-            height: 100%;
-            width: 55%;
-            padding: 0 5%;
-
-            @media only screen and (max-width: $bp-large) {
-                //Display
-                align-items: center;
-                justify-content: start;
-
-                //Spacing
-                width: 100%;
-                height: 35vh;
-            }
-        }
-        &-right {
-            //Display
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            //Spacing
-            height: 100%;
-            width: 45%;
-            padding: 6rem;
-
-            @media only screen and (max-width: $bp-largest) {
-                //Spacing
-                padding: 0 6rem;
-                min-height: 80rem;
-                width: 50%;
-            }
-            @media only screen and (max-width: $bp-large) {
-                //Spacing
-                min-height: 50rem;
-                width: 100%;
-                height: 40vh;
-            }
-            @media only screen and (max-width: $bp-small) {
-                //Spacing
-                padding: 0 3rem;
-            }
-        }
+        height: 35vh;
+      }
     }
+    &-right {
+      //Display
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
-    &__title {
+      //Spacing
+      height: 100%;
+      width: 45%;
+      padding: 6rem;
+
+      @media only screen and (max-width: $bp-largest) {
         //Spacing
-        margin: 4rem 0 10rem;
-        text-align: right;
-
-        //Font Styling
-        font-size: 12rem;
-        font-weight: 900;
-        text-align: right;
-        letter-spacing: 0.4rem;
-        line-height: 1.4;
-
-        //Image Styling
-        background-attachment: scroll;
-        background-image: url(../img/hero-text-day.jpg);
-        background-size: cover;
-        background-position: center center;
-        background-clip: text;
-        background-repeat: no-repeat;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-
-        //Animations
-        animation: moveInLeft 0.8s ease-out;
-
-        &-part {
-            //Font Styling
-            font-family: 'Montserrat', sans-serif;
-
-            &::selection {
-                //Color Styling
-                background-color: rgba(0, 80, 0, 0.5);
-            }
-        }
-
-        @media only screen and (max-width: $bp-largest) {
-            //Spacing
-            margin: 1rem 0 10rem;
-
-            //Font Styling
-            font-size: 9rem;
-        }
-        @media only screen and (max-width: $bp-large) {
-            //Font Styling
-            text-align: center;
-        }
-        @media only screen and (max-width: $bp-medium) {
-            //Spacing
-            margin: 1rem 0 10rem;
-
-            //Font Styling
-            text-align: center;
-        }
-        @media only screen and (max-width: $bp-small) {
-            //Spacing
-            margin: 0 0 2rem;
-
-            //Font Styling
-            font-size: 6rem;
-            letter-spacing: 0.5rem;
-            line-height: 1.3;
-        }
-        @media only screen and (max-width: $bp-smallest) {
-            //Font Styling
-            font-size: 4rem;
-            letter-spacing: 0.4rem;
-            line-height: 1.2;
-        }
+        padding: 0 6rem;
+        min-height: 80rem;
+        width: 50%;
+      }
+      @media only screen and (max-width: $bp-large) {
+        //Spacing
+        min-height: 50rem;
+        width: 100%;
+        height: 40vh;
+      }
+      @media only screen and (max-width: $bp-small) {
+        //Spacing
+        padding: 0 3rem;
+      }
     }
+  }
 
-    &__subtitle {
-        //Spacing
-        width: 80%;
+  &__title {
+    //Spacing
+    margin: 4rem 0 10rem;
+    text-align: right;
 
-        //Font Styling
-        text-align: right;
-        font-size: 2.6rem;
-        font-weight: 200;
-        letter-spacing: 0.2rem;
-        line-height: 1.5;
+    //Font Styling
+    font-size: 12rem;
+    font-weight: 900;
+    text-align: right;
+    letter-spacing: 0.4rem;
+    line-height: 1.4;
 
+    //Image Styling
+    background-attachment: scroll;
+    background-image: url(../img/hero-text-day.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-clip: text;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    //Animations
+    animation: moveInLeft 0.8s ease-out;
+
+    &-part {
+      //Font Styling
+      font-family: 'Montserrat', sans-serif;
+
+      &::selection {
         //Color Styling
-        color: $body-text-light;
-
-        //Animations
-        animation: moveInLeft 0.8s ease-out 0.8s;
-        animation-fill-mode: backwards;
-
-        @media only screen and (min-width: $bp-large) {
-            //Creates ideal break point
-            span.avoidwrap {
-                display: inline-block;
-            }
-        }
-        @media only screen and (max-width: $bp-large) {
-            //Spacing
-            margin: 0 1rem;
-
-            //Font Styling
-            text-align: center;
-        }
-        @media only screen and (max-width: $bp-small) {
-            //Font Styling
-            font-size: 1.3rem;
-            font-weight: 300;
-            letter-spacing: 0.1rem;
-        }
-        @media only screen and (max-width: $bp-smallest) {
-            //Font Styling
-            font-size: 1.1rem;
-        }
+        background-color: rgba(0, 80, 0, 0.5);
+      }
     }
 
-    &__image {
+    @media only screen and (max-width: $bp-largest) {
+      //Spacing
+      margin: 1rem 0 10rem;
+
+      //Font Styling
+      font-size: 9rem;
+    }
+    @media only screen and (max-width: $bp-large) {
+      //Font Styling
+      text-align: center;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      //Spacing
+      margin: 1rem 0 10rem;
+
+      //Font Styling
+      text-align: center;
+    }
+    @media only screen and (max-width: $bp-small) {
+      //Spacing
+      margin: 0 0 2rem;
+
+      //Font Styling
+      font-size: 6rem;
+      letter-spacing: 0.5rem;
+      line-height: 1.3;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      //Font Styling
+      font-size: 4rem;
+      letter-spacing: 0.4rem;
+      line-height: 1.2;
+    }
+  }
+
+  &__subtitle {
+    //Spacing
+    width: 80%;
+
+    //Font Styling
+    text-align: right;
+    font-size: 2.6rem;
+    font-weight: 200;
+    letter-spacing: 0.2rem;
+    line-height: 1.5;
+
+    //Color Styling
+    color: $body-text-light;
+
+    //Animations
+    animation: moveInLeft 0.8s ease-out 0.8s;
+    animation-fill-mode: backwards;
+
+    @media only screen and (min-width: $bp-large) {
+      //Creates ideal break point
+      span.avoidwrap {
+        display: inline-block;
+      }
+    }
+    @media only screen and (max-width: $bp-large) {
+      //Spacing
+      margin: 0 1rem;
+
+      //Font Styling
+      text-align: center;
+    }
+    @media only screen and (max-width: $bp-small) {
+      //Font Styling
+      font-size: 1.6rem;
+      font-weight: 300;
+      letter-spacing: 0.1rem;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      //Font Styling
+      font-size: 1.5rem;
+    }
+  }
+
+  &__image {
+    //Spacing
+    height: 100%;
+    z-index: 20;
+    max-width: 120rem;
+
+    //Image Styling
+    background-image: url(../img/forest-day2x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media only screen and (max-width: $bp-medium) {
+      //Image Styling
+      background-position: bottom center;
+    }
+    @media only screen and (max-width: $bp-small) {
+      //Image Styling
+      background-image: url(../img/forest-day1x.png);
+    }
+
+    &-box {
+      //Spacing
+      width: 100%;
+      height: 100%;
+      padding: 6rem 0 3rem;
+
+      @media only screen and (max-width: $bp-largest) {
         //Spacing
-        height: 100%;
-        z-index: 20;
-        max-width: 120rem;
+        width: 100%;
+        height: 90%;
+        padding: 6rem 0 0;
+      }
+    }
+  }
 
-        //Image Styling
-        background-image: url(../img/forest-day2x.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
+  &-arrow {
+    height: 15vh;
+    width: 6rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 
-        @media only screen and (max-width: $bp-medium) {
-            //Image Styling
-            background-position: bottom center;
-        }
-        @media only screen and (max-width: $bp-small) {
-            //Image Styling
-            background-image: url(../img/forest-day1x.png);
-        }
-
-        &-box {
-            //Spacing
-            width: 100%;
-            height: 100%;
-            padding: 6rem 0 3rem;
-
-            @media only screen and (max-width: $bp-largest) {
-                //Spacing
-                width: 100%;
-                height: 90%;
-                padding: 6rem 0 0;
-            }
-        }
+    @media only screen and (max-width: $bp-small) {
+      //Spacing
+      height: 10vh;
+      width: 4rem;
     }
 
-    &-arrow {
-        height: 15vh;
-        width: 6rem;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-
-        @media only screen and (max-width: $bp-small) {
-            //Spacing
-            height: 10vh;
-            width: 4rem;
-        }
-
-        & svg {
-            fill: $color-primary-accent-2;
-        }
-
-        &__svg--hidden {
-            display: none;
-        }
+    & svg {
+      fill: $color-primary-accent-2;
     }
+
+    &__svg--hidden {
+      display: none;
+    }
+  }
 }
