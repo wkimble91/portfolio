@@ -4,203 +4,203 @@
 <--- -------------------------- -*/
 
 .nightmode-toggle {
-    //Color Styling
-    background-color: inherit;
+  //Color Styling
+  background-color: inherit;
 
-    //Border Styling
-    border: none;
+  //Border Styling
+  border: none;
 
-    & .toggle {
+  & .toggle {
+    //Display
+    display: none;
+
+    & + .toggle-btn {
+      cursor: pointer;
+      user-select: none;
+
+      //Display
+      display: block;
+
+      //Spacing
+      width: 8rem;
+      height: 4rem;
+      position: relative;
+
+      //Border Styling
+      outline: 0;
+
+      @media only screen and (max-width: $bp-small) {
+        height: 6rem;
+        width: 20rem;
+      }
+
+      &:after,
+      &:before {
+        content: '';
+
+        //Display
+        display: block;
+
+        //Spacing
+        position: relative;
+        width: 50%;
+        height: 100%;
+      }
+      &:after {
+        //Spacing
+        left: 0;
+      }
+      &:before {
         //Display
         display: none;
-
-        & + .toggle-btn {
-            cursor: pointer;
-            user-select: none;
-
-            //Display
-            display: block;
-
-            //Spacing
-            width: 8rem;
-            height: 4rem;
-            position: relative;
-
-            //Border Styling
-            outline: 0;
-
-            @media only screen and (max-width: $bp-small) {
-                height: 6rem;
-                width: 20rem;
-            }
-
-            &:after,
-            &:before {
-                content: '';
-
-                //Display
-                display: block;
-
-                //Spacing
-                position: relative;
-                width: 50%;
-                height: 100%;
-            }
-            &:after {
-                //Spacing
-                left: 0;
-            }
-            &:before {
-                //Display
-                display: none;
-            }
-        }
-
-        &:checked + .toggle-btn:after {
-            //Spacing
-            left: 50%;
-        }
-
-        &-skewed {
-            & + .toggle-btn {
-                //Spacing
-                overflow: hidden;
-                backface-visibility: hidden;
-
-                //Font Styling
-                font-family: sans-serif;
-
-                //Color Styling
-                background: $color-primary;
-
-                //Image Styling
-                transform: skew(-10deg);
-
-                //Animations
-                transition: all 0.2s ease;
-
-                &:after,
-                &:before {
-                    //Display
-                    display: inline-block;
-
-                    //Spacing
-                    position: absolute;
-                    width: 100%;
-
-                    //Font Styling
-                    line-height: 4rem;
-                    text-align: center;
-                    font-weight: bold;
-
-                    //Image Styling
-                    transform: skew(10deg);
-
-                    //Border Styling
-                    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
-
-                    //Animations
-                    transition: all 0.2s ease;
-
-                    @media only screen and (max-width: $bp-small) {
-                        //Font Styling
-                        line-height: 5.3rem;
-                    }
-                }
-
-                /* After = Night */
-                &:after {
-                    content: attr(data-tg-on);
-
-                    //Spacing
-                    left: 100%;
-
-                    //Font Styling
-                    font-weight: normal;
-
-                    //Color Styling
-                    color: $background-color-dark;
-
-                    &:hover {
-                        content: '夜';
-                    }
-
-                    @media only screen and (max-width: $bp-small) {
-                        //Font Styling
-                        font-size: 2.5rem;
-                        font-weight: 600;
-                    }
-                }
-
-                /* Before = Day */
-                &:before {
-                    content: attr(data-tg-off);
-
-                    //Spacing
-                    left: 0;
-
-                    //Color Styling
-                    color: $body-text-dark;
-
-                    @media only screen and (max-width: $bp-small) {
-                        //Font Styling
-                        font-weight: normal;
-                        font-size: 2.5rem;
-                        font-weight: 600;
-                    }
-                }
-                &:active {
-                    //Color Styling
-                    background: $color-primary;
-                }
-                &:hover:before {
-                    //Spacing
-                    left: -10%;
-                }
-            }
-
-            &:checked {
-                & + .toggle-btn {
-                    //Color Styling
-                    background: $color-darkmode-primary;
-
-                    &:before {
-                        //Spacing
-                        left: -100%;
-                    }
-                    &:after {
-                        //Spacing
-                        left: 0;
-                    }
-                    &:hover:after {
-                        //Spacing
-                        left: 10%;
-                    }
-                }
-            }
-        }
-
-        &,
-        &:after,
-        &:before,
-        & *,
-        & *:after,
-        & *:before,
-        & + .toggle-btn {
-            //Spacing
-            box-sizing: border-box;
-        }
-        &::selection,
-        &:after::selection,
-        &:before::selection,
-        & *::selection,
-        & *:after::selection,
-        & *:before::selection,
-        & + .toggle-btn::selection {
-            //Color Styling
-            background: none;
-        }
+      }
     }
+
+    &:checked + .toggle-btn:after {
+      //Spacing
+      left: 50%;
+    }
+
+    &-skewed {
+      & + .toggle-btn {
+        //Spacing
+        overflow: hidden;
+        backface-visibility: hidden;
+
+        //Font Styling
+        font-family: sans-serif;
+
+        //Color Styling
+        background: $color-primary;
+
+        //Image Styling
+        transform: skew(-10deg);
+
+        //Animations
+        transition: all 0.2s ease;
+
+        &:after,
+        &:before {
+          //Display
+          display: inline-block;
+
+          //Spacing
+          position: absolute;
+          width: 100%;
+
+          //Font Styling
+          line-height: 4rem;
+          text-align: center;
+          font-weight: bold;
+
+          //Image Styling
+          transform: skew(10deg);
+
+          //Border Styling
+          text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+
+          //Animations
+          transition: all 0.2s ease;
+
+          @media only screen and (max-width: $bp-small) {
+            //Font Styling
+            line-height: 5.3rem;
+          }
+        }
+
+        /* After = Night */
+        &:after {
+          content: attr(data-tg-on);
+
+          //Spacing
+          left: 100%;
+
+          //Font Styling
+          font-weight: normal;
+
+          //Color Styling
+          color: $background-color-dark;
+
+          &:hover {
+            content: '夜';
+          }
+
+          @media only screen and (max-width: $bp-small) {
+            //Font Styling
+            font-size: 2.5rem;
+            font-weight: 600;
+          }
+        }
+
+        /* Before = Day */
+        &:before {
+          content: attr(data-tg-off);
+
+          //Spacing
+          left: 0;
+
+          //Color Styling
+          color: $body-text-dark;
+
+          @media only screen and (max-width: $bp-small) {
+            //Font Styling
+            font-weight: normal;
+            font-size: 2.5rem;
+            font-weight: 600;
+          }
+        }
+        &:active {
+          //Color Styling
+          background: $color-primary;
+        }
+        &:hover:before {
+          //Spacing
+          left: -10%;
+        }
+      }
+
+      &:checked {
+        & + .toggle-btn {
+          //Color Styling
+          background: $color-darkmode-primary;
+
+          &:before {
+            //Spacing
+            left: -100%;
+          }
+          &:after {
+            //Spacing
+            left: 0;
+          }
+          &:hover:after {
+            //Spacing
+            left: 10%;
+          }
+        }
+      }
+    }
+
+    &,
+    &:after,
+    &:before,
+    & *,
+    & *:after,
+    & *:before,
+    & + .toggle-btn {
+      //Spacing
+      box-sizing: border-box;
+    }
+    &::selection,
+    &:after::selection,
+    &:before::selection,
+    & *::selection,
+    & *:after::selection,
+    & *:before::selection,
+    & + .toggle-btn::selection {
+      //Color Styling
+      background: none;
+    }
+  }
 }
 
 /*-- -------------------------- -->
@@ -209,317 +209,305 @@
 <--- -------------------------- -*/
 
 body.dark-mode {
+  //Color Styling
+  background-color: $background-color-dark;
+  color: $body-text-dark;
+
+  .header {
     //Color Styling
     background-color: $background-color-dark;
     color: $body-text-dark;
 
-    .header {
+    &__divider {
+      @media only screen and (max-width: $bp-small) {
+        //Color Styling
+        background-color: $color-grey-dark;
+      }
+    }
+    &-box {
+      @media only screen and (max-width: $bp-small) {
         //Color Styling
         background-color: $background-color-dark;
-        color: $body-text-dark;
-
-        &__divider {
-            @media only screen and (max-width: $bp-small) {
-                //Color Styling
-                background-color: $color-grey-dark;
-            }
-        }
-        &-box {
-            @media only screen and (max-width: $bp-small) {
-                //Color Styling
-                background-color: $background-color-dark;
-            }
-        }
-        &__logo {
-            //Image Styling
-            background-image: url(../img/logo_white.png);
-        }
-        &__nav {
-            & * {
-                & a {
-                    // Hover Lines
-                    &:before {
-                        //Border Styling
-                        border-bottom: 2px solid $color-darkmode-primary-light;
-                    }
-                }
-            }
-            @media only screen and (max-width: $bp-small) {
-                //Color Styling
-                background-color: $background-color-dark;
-            }
-        }
+      }
+    }
+    &__logo {
+      //Image Styling
+      background-image: url(../img/logo_white.png);
+    }
+    &__nav {
+      & * {
         & a {
-            //Color Styling
-            color: $color-darkmode-primary-light;
-        }
-
-        &__hamburger {
-            & .bar {
-                //Color Styling
-                background-color: $body-text-dark;
-            }
-        }
-
-        &-scrolled {
+          // Hover Lines
+          &:before {
             //Border Styling
-            border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+            border-bottom: 2px solid $color-darkmode-primary-light;
+          }
         }
-    }
-
-    .hero {
-        &__title {
-            //Color Styling
-            background-image: url(../img/hero-text-night.jpg);
-
-            &-part {
-                &::selection {
-                    //Color Styling
-                    background-color: rgba(0, 80, 180, 0.3);
-                }
-            }
-        }
-        &__subtitle {
-            //Color Styling
-            color: $body-text-dark;
-        }
-        &__image {
-            //Image Styling
-            background-image: url(../img/forest-night2x.png);
-
-            @media only screen and (max-width: $bp-small) {
-                //Image Styling
-                background-image: url(../img/forest-night1x.png);
-            }
-        }
-
-        & svg {
-            fill: white;
-        }
-    }
-
-    .about {
-        background-color: $color-darkmode-primary-dark;
-        &__box {
-            //Color Styling
-            background-color: rgb(34, 34, 43);
-            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-        }
-        &__header {
-            //Color Styling
-            color: $color-darkmode-primary;
-        }
-        &__description {
-            &-arrow {
-                color: $color-darkmode-primary-light;
-            }
-        }
-
-        &__line {
-            &--dash {
-                //Border Styling
-                border-bottom: 1px solid $color-darkmode-primary-light;
-            }
-            &--kanji {
-                //Color Styling
-                color: $color-darkmode-primary-dark;
-            }
-        }
-
-        &__info-bar {
-            .item {
-                //Color Styling
-                background-color: rgb(34, 34, 43);
-                box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-                &__svg {
-                    //Color Styling
-                    background: $color-darkmode-primary-dark;
-                }
-                h3 {
-                    //Color Styling
-                    color: $color-darkmode-primary;
-                }
-            }
-
-            .item:hover svg {
-                //Color Styling
-                fill: $color-darkmode-primary-dark;
-            }
-            .item:hover .item__svg {
-                //Color Styling
-                background: $color-darkmode-primary-light;
-            }
-        }
-    }
-
-    .projects {
-        &__header {
-            //Color Styling
-            color: $color-darkmode-primary;
-        }
-        &__line {
-            &--dash {
-                //Border Styling
-                border-bottom: 1px solid $color-darkmode-primary-light;
-            }
-            &--kanji {
-                //Color Styling
-                color: $color-darkmode-primary-dark;
-            }
-        }
-        &__card {
-            //Color Styling
-            background-color: rgba(34, 34, 43, 0.9);
-            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-        }
-        &__details {
-            h3 {
-                //Color Styling
-                color: $background-color-light;
-            }
-            h4 {
-                //Color Styling
-                color: $background-color-light;
-            }
-            h5 {
-                //Color Styling
-                color: $background-color-light;
-            }
-            p {
-                //Color Styling
-                color: $background-color-light;
-            }
-        }
-    }
-
-    .contact {
+      }
+      @media only screen and (max-width: $bp-small) {
         //Color Styling
-        background-color: $color-darkmode-primary-dark;
-
-        @media only screen and (max-width: $bp-medium) {
-            //Display
-            background-image: none;
-        }
-
-        &__container {
-            &-right {
-                &--box {
-                    //Color Styling
-                    background-color: rgba(30, 30, 40, 0.9);
-                    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
-
-                    &:hover {
-                        //Color Styling
-                        background-color: rgb(30, 30, 40);
-                    }
-                }
-            }
-        }
-
-        &__info {
-            //Color Styling
-            background-color: rgba(30, 30, 40, 0.9);
-            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
-
-            &:hover {
-                //Color Styling
-                background-color: rgb(30, 30, 40);
-            }
-            h2 {
-                //Color Styling
-                color: $color-darkmode-primary;
-            }
-            h3 {
-                //Color Styling
-                color: $color-darkmode-primary-light;
-            }
-        }
-
-        &-svg {
-            //Color Styling
-            filter: invert(1);
-        }
+        background-color: $background-color-dark;
+      }
+    }
+    & a {
+      //Color Styling
+      color: $color-darkmode-primary-light;
     }
 
-    .bg-blue {
+    &__hamburger {
+      & .bar {
         //Color Styling
-        background: linear-gradient(
-            to right,
-            rgb(80, 93, 191),
-            rgb(25, 168, 150)
-        );
-    }
-    .bg-green {
-        //Color Styling
-        background: linear-gradient(
-            to right,
-            rgb(11, 123, 66),
-            rgb(12, 136, 96)
-        );
-    }
-    .bg-teal {
-        //Color Styling
-        background: linear-gradient(
-            to right,
-            rgb(35, 138, 152),
-            rgb(83, 157, 95)
-        );
-    }
-
-    .footer {
-        //Color Styling
-        background-color: $color-darkmode-primary-dark;
-
-        &__logo-box {
-            //Image Styling
-            background-image: url(../img/logo_tree-light.png);
-        }
-        &__copyright {
-            //Color Styling
-            color: $body-text-dark;
-        }
-    }
-
-    .btn {
-        &-work {
-            //Color Styling
-            background-color: $color-darkmode-primary;
-        }
-
-        &-contact {
-            //Color Styling
-            background-color: $color-darkmode-primary-dark;
-            color: $body-text-dark;
-
-            @media only screen and (max-width: $bp-small) {
-                //Color Styling
-                background-color: transparent;
-                color: $body-text-dark !important;
-            }
-        }
-    }
-
-    //SVG Waves
-    .layerBottom {
-        background-image: url('../img/svg/wave-bottom-dark.svg');
-        @media only screen and (max-width: $bp-small) {
-            //Image Styling
-            background-image: url('../img/svg/wave-bottom-mobile-dark.svg');
-        }
-    }
-
-    .layerTop {
-        background-image: url('../img/svg/wave-top-dark.svg');
-        @media only screen and (max-width: $bp-small) {
-            //Image Styling
-            background-image: url('../img/svg/wave-top-mobile-dark.svg');
-        }
-    }
-
-    ::selection {
-        //Color Styling
-        color: $body-text-light;
         background-color: $body-text-dark;
+      }
     }
+
+    &-scrolled {
+      //Border Styling
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  .hero {
+    &__title {
+      //Color Styling
+      background-image: url(../img/hero-text-night.jpg);
+
+      &-part {
+        &::selection {
+          //Color Styling
+          background-color: rgba(0, 80, 180, 0.3);
+        }
+      }
+    }
+    &__subtitle {
+      //Color Styling
+      color: $body-text-dark;
+    }
+    &__image {
+      //Image Styling
+      background-image: url(../img/forest-night2x.png);
+
+      @media only screen and (max-width: $bp-small) {
+        //Image Styling
+        background-image: url(../img/forest-night1x.png);
+      }
+    }
+
+    & svg {
+      fill: white;
+    }
+  }
+
+  .about {
+    background-color: $color-darkmode-primary-dark;
+    &__box {
+      //Color Styling
+      background-color: rgb(34, 34, 43);
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    }
+    &__header {
+      //Color Styling
+      color: $color-darkmode-primary;
+    }
+    &__description {
+      &-arrow {
+        color: $color-darkmode-primary-light;
+      }
+    }
+
+    &__line {
+      &--dash {
+        //Border Styling
+        border-bottom: 1px solid $color-darkmode-primary-light;
+      }
+      &--kanji {
+        //Color Styling
+        color: $color-darkmode-primary-dark;
+      }
+    }
+
+    &__info-bar {
+      .item {
+        //Color Styling
+        background-color: rgb(34, 34, 43);
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+        &__svg {
+          //Color Styling
+          background: $color-darkmode-primary-dark;
+        }
+        h3 {
+          //Color Styling
+          color: $color-darkmode-primary;
+        }
+      }
+
+      .item:hover svg {
+        //Color Styling
+        fill: $color-darkmode-primary-dark;
+      }
+      .item:hover .item__svg {
+        //Color Styling
+        background: $color-darkmode-primary-light;
+      }
+    }
+  }
+
+  .projects {
+    &__header {
+      //Color Styling
+      color: $color-darkmode-primary;
+    }
+    &__line {
+      &--dash {
+        //Border Styling
+        border-bottom: 1px solid $color-darkmode-primary-light;
+      }
+      &--kanji {
+        //Color Styling
+        color: $color-darkmode-primary-dark;
+      }
+    }
+    &__card {
+      //Color Styling
+      background-color: rgba(34, 34, 43, 0.9);
+      box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+    }
+    &__details {
+      h3 {
+        //Color Styling
+        color: $background-color-light;
+      }
+      h4 {
+        //Color Styling
+        color: $background-color-light;
+      }
+      h5 {
+        //Color Styling
+        color: $background-color-light;
+      }
+      p {
+        //Color Styling
+        color: $background-color-light;
+      }
+    }
+  }
+
+  .contact {
+    //Color Styling
+    background-color: $color-darkmode-primary-dark;
+
+    @media only screen and (max-width: $bp-medium) {
+      //Display
+      background-image: none;
+    }
+
+    &__container {
+      &-right {
+        &--box {
+          //Color Styling
+          background-color: rgba(30, 30, 40, 0.9);
+          box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+
+          &:hover {
+            //Color Styling
+            background-color: rgb(30, 30, 40);
+          }
+        }
+      }
+    }
+
+    &__info {
+      //Color Styling
+      background-color: rgba(30, 30, 40, 0.9);
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+
+      &:hover {
+        //Color Styling
+        background-color: rgb(30, 30, 40);
+      }
+      h2 {
+        //Color Styling
+        color: $color-darkmode-primary;
+      }
+      h3 {
+        //Color Styling
+        color: $color-darkmode-primary-light;
+      }
+    }
+
+    &-svg {
+      //Color Styling
+      filter: invert(1);
+    }
+  }
+
+  .bg-blue {
+    //Color Styling
+    background: linear-gradient(to right, rgb(80, 93, 191), rgb(25, 168, 150));
+  }
+  .bg-green {
+    //Color Styling
+    background: linear-gradient(to right, rgb(11, 123, 66), rgb(12, 136, 96));
+  }
+  .bg-teal {
+    //Color Styling
+    background: linear-gradient(to right, rgb(35, 138, 152), rgb(83, 157, 95));
+  }
+
+  .footer {
+    //Color Styling
+    background-color: $color-darkmode-primary-dark;
+
+    &__logo-box {
+      //Image Styling
+      background-image: url(../img/logo_tree-light.png);
+    }
+    &__copyright {
+      //Color Styling
+      color: $body-text-dark;
+    }
+  }
+
+  .btn {
+    &-work {
+      //Color Styling
+      background-color: $color-darkmode-primary;
+    }
+
+    &-contact {
+      //Color Styling
+      background-color: $color-darkmode-primary-dark;
+      color: $body-text-dark;
+
+      @media only screen and (max-width: $bp-small) {
+        //Color Styling
+        background-color: transparent;
+        color: $body-text-dark !important;
+      }
+    }
+  }
+
+  //SVG Waves
+  .layerBottom {
+    background-image: url('../img/svg/wave-bottom-dark.svg');
+    @media only screen and (max-width: $bp-small) {
+      //Image Styling
+      background-image: url('../img/svg/wave-bottom-mobile-dark.svg');
+    }
+  }
+
+  .layerTop {
+    background-image: url('../img/svg/wave-top-dark.svg');
+    @media only screen and (max-width: $bp-small) {
+      //Image Styling
+      background-image: url('../img/svg/wave-top-mobile-dark.svg');
+    }
+  }
+
+  ::selection {
+    //Color Styling
+    color: $body-text-light;
+    background-color: $body-text-dark;
+  }
 }
