@@ -165,8 +165,8 @@
     }
     .item {
       //Spacing
-      width: 28%;
-      margin-top: 4rem;
+      width: 29%;
+      margin-top: 3rem;
       padding: 4rem 1rem;
 
       //Font Styling
@@ -199,7 +199,7 @@
 
         //Spacing
         width: 100%;
-        padding: 2rem;
+        padding: 3rem;
 
         &:nth-child(even) {
           //Display
@@ -208,12 +208,12 @@
 
         &:nth-child(even) p {
           @media only screen and (max-width: $bp-small) {
-            padding: 0 1rem 0 0;
+            padding: 0 2rem 0 0;
           }
         }
         &:nth-child(odd) p {
           @media only screen and (max-width: $bp-small) {
-            padding: 0 0 0 1rem;
+            padding: 0 0 0 2rem;
           }
         }
       }
@@ -332,15 +332,9 @@
           //Spacing
           width: 80%;
           margin: 0;
-          padding: 0 2rem;
-        }
-        @media only screen and (max-width: $bp-smallest) {
-          //Spacing
-          width: 80%;
-          padding: 0 1rem;
 
           //Font Styling
-          font-size: 1.2rem;
+          font-size: 1.6rem;
         }
       }
     }
