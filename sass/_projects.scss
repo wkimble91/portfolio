@@ -166,7 +166,7 @@
       letter-spacing: 0.2rem;
 
       //Color Styling
-      color: black;
+      color: $background-color-dark;
 
       @media only screen and (max-width: $bp-large) {
         //Font Styling
@@ -191,7 +191,7 @@
       letter-spacing: 0.2rem;
 
       //Color Styling
-      color: black;
+      color: $background-color-dark;
     }
     h5 {
       //Font Styling
@@ -212,7 +212,7 @@
       letter-spacing: 0.2rem;
 
       //Color Styling
-      color: black;
+      color: $background-color-dark;
 
       @media only screen and (max-width: $bp-medium) {
         //Spacing
@@ -231,11 +231,19 @@
 
     @media only screen and (max-width: $bp-small) {
       //Spacing
-      padding-top: 4rem;
+      padding-top: 3rem;
     }
 
     &-shrink {
       @media only screen and (max-width: $bp-largest) {
+        //Spacing
+        font-size: 2.7rem !important;
+      }
+      @media only screen and (max-width: $bp-medium) {
+        //Font Styling
+        font-size: 3.2rem !important;
+      }
+      @media only screen and (max-width: $bp-smallest) {
         //Spacing
         font-size: 2.7rem !important;
       }
@@ -256,7 +264,8 @@
 
     @media only screen and (max-width: $bp-small) {
       //Spacing
-      height: 32rem;
+      min-height: auto;
+      height: 30rem;
       width: 100%;
       margin: auto;
 
@@ -333,14 +342,17 @@
   //Color Styling
   background: linear-gradient(to right, #8893fc, rgb(65, 228, 220));
 }
+
 .bg-green {
   //Color Styling
   background: linear-gradient(to right, rgb(11, 163, 96), rgb(60, 186, 146));
 }
+
 .bg-teal {
   //Color Styling
   background: linear-gradient(to right, rgb(55, 168, 192), rgb(103, 187, 125));
 }
+
 .bg-orange {
   //Color Styling
   background: linear-gradient(to right, #f46b45, #eea849);

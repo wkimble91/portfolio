@@ -114,6 +114,10 @@
     //Display
     display: flex;
 
+    @media only screen and (max-width: $bp-medium) {
+      justify-content: space-evenly;
+    }
+
     & a:not(:last-child) {
       //Spacing
       margin-right: 2rem;
@@ -126,11 +130,11 @@
     margin: 1rem 0;
 
     //Animations
-    transition: scale 0.1s;
+    transition: scale 0.2s ease-in-out;
 
     &:hover {
       //Animations
-      scale: 1.1;
+      scale: 1.2;
     }
   }
 
@@ -165,6 +169,12 @@
 
       //Color Styling
       color: $color-primary-dark;
+
+      @media only screen and (max-width: $bp-medium) {
+        //Font Styling
+        text-align: center;
+        font-size: 3.6rem;
+      }
     }
     h3 {
       //Spacing
@@ -175,6 +185,14 @@
 
       //Color Styling
       color: $color-primary-accent-2;
+
+      @media only screen and (max-width: $bp-medium) {
+        //Spacing
+        margin-bottom: 1rem;
+
+        //Font Styling
+        text-align: center;
+      }
     }
     p {
       //Spacing
@@ -183,6 +201,7 @@
       //Font Styling
       font-size: 2rem;
       font-weight: 300;
+      text-indent: 0.5rem;
 
       @media only screen and (max-width: $bp-medium) {
         //Spacing
