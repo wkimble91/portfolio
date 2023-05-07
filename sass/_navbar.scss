@@ -69,7 +69,7 @@
     align-items: center;
 
     //Spacing
-    height: 7rem;
+    height: 8rem;
     width: 7rem;
     margin: 1rem 0;
     z-index: 200;
@@ -82,6 +82,7 @@
     background-image: url(../img/logo_black.png);
     background-size: cover;
     background-position: top;
+    overflow: visible;
 
     //Animations
     transition: all 0.3s;
