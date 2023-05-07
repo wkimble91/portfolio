@@ -299,7 +299,7 @@ body.dark-mode {
       background-color: rgb(34, 34, 43);
       box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
     }
-    &__header {
+    &__header-box {
       //Color Styling
       background-image: url(../img/about-text-night.jpg);
     }
@@ -347,7 +347,7 @@ body.dark-mode {
   }
 
   .projects {
-    &__header {
+    &__header-box {
       //Color Styling
       background-image: url(../img/project-text-night.jpg);
     }

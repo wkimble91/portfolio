@@ -58,14 +58,16 @@
     flex-direction: column;
     align-items: center;
 
-    background-attachment: scroll;
-    background-image: url(../img/about-text-day.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-clip: text;
-    background-repeat: no-repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    &-box {
+      background-attachment: scroll;
+      background-image: url(../img/about-text-day.jpg);
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
 
     @media only screen and (max-width: $bp-small) {
       //Font Styling
