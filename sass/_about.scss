@@ -68,6 +68,7 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
       -webkit-background-clip: text;
+      overflow: visible;
     }
 
     @media only screen and (max-width: $bp-small) {
