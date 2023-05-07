@@ -101,7 +101,7 @@
       margin: 1rem 0 10rem;
 
       //Font Styling
-      font-size: 12rem;
+      font-size: 10rem;
     }
     @media only screen and (max-width: $bp-large) {
       //Spacing
@@ -146,7 +146,7 @@
     line-height: 1.5;
 
     //Color Styling
-    color: $body-text-light;
+    // color: $body-text-light;
 
     //Animations
     animation: moveInLeft 0.8s ease-out 0.8s;
