@@ -49,13 +49,23 @@
 
   &__header {
     //Font Styling
-    font-size: 6rem;
-    font-weight: 600;
-    letter-spacing: 0.1rem;
+    font-size: 7.5rem;
+    font-weight: 900;
+    letter-spacing: 0.2rem;
     line-height: 1;
+    margin: 0 0 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    //Color Styling
-    color: $color-primary-dark;
+    background-attachment: scroll;
+    background-image: url(../img/about-text-day.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-clip: text;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
     @media only screen and (max-width: $bp-small) {
       //Font Styling
@@ -71,14 +81,7 @@
     //Display
     display: flex;
     align-items: center;
-
-    //Spacing
-    margin: 2rem 0 7rem;
-
-    @media only screen and (max-width: $bp-medium) {
-      //Spacing
-      margin: 2rem 0 3rem;
-    }
+    margin-bottom: 2rem;
 
     &--dash {
       //Spacing
@@ -94,15 +97,15 @@
       display: inline-block;
 
       //Font Styling
-      font-size: 4rem;
-      font-weight: 600;
-
-      //Color Styling
-      color: $color-primary;
-
+      font-size: 8rem;
+      font-weight: 900;
       @media only screen and (max-width: $bp-small) {
         //Font Styling
-        font-size: 3.5rem;
+        font-size: 4.5rem;
+      }
+      @media only screen and (max-width: $bp-smallest) {
+        //Font Styling
+        font-size: 4rem;
       }
     }
   }
@@ -238,7 +241,9 @@
         background: $color-primary;
 
         //Border Styling
+        border: 3px solid white;
         border-radius: 50%;
+        box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.7);
 
         //Animations
         transition: background 0.3s;
@@ -316,6 +321,10 @@
         //Font Styling
         font-size: 1.5rem;
         text-align: left;
+
+        b {
+          font-style: italic;
+        }
 
         @media only screen and (max-width: $bp-largest) {
           //Spacing

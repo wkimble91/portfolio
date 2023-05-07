@@ -96,16 +96,6 @@
     //Animations
     animation: moveInLeft 0.8s ease-out;
 
-    &-part {
-      //Font Styling
-      font-family: 'Montserrat', sans-serif;
-
-      &::selection {
-        //Color Styling
-        background-color: rgba(0, 80, 0, 0.5);
-      }
-    }
-
     @media only screen and (max-width: $bp-largest) {
       //Spacing
       margin: 1rem 0 10rem;

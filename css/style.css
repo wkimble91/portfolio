@@ -33,7 +33,7 @@ html {
 
 body {
   background-color: #f5f5f9;
-  font-family: "Monaco", "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.6;
   width: 100vw;
   overflow-x: hidden;
@@ -83,6 +83,21 @@ a {
 ::selection {
   background-color: #3a5a40;
   color: #fff;
+}
+
+.hero__title-part,
+.about__header,
+.about__line--kanji,
+.projects__header,
+.projects__line--kanji {
+  font-family: "Montserrat", sans-serif;
+}
+.hero__title-part::selection,
+.about__header::selection,
+.about__line--kanji::selection,
+.projects__header::selection,
+.projects__line--kanji::selection {
+  background-color: rgba(0, 80, 0, 0.5);
 }
 
 /*-- -------------------------- -->
@@ -583,12 +598,6 @@ a {
   -webkit-text-fill-color: transparent;
   animation: moveInLeft 0.8s ease-out;
 }
-.hero__title-part {
-  font-family: "Montserrat", sans-serif;
-}
-.hero__title-part::selection {
-  background-color: rgba(0, 80, 0, 0.5);
-}
 @media only screen and (max-width: 112.5em) {
   .hero__title {
     margin: 1rem 0 10rem;
@@ -753,11 +762,22 @@ a {
   }
 }
 .about__header {
-  font-size: 6rem;
-  font-weight: 600;
-  letter-spacing: 0.1rem;
+  font-size: 7.5rem;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
   line-height: 1;
-  color: #3a5a40;
+  margin: 0 0 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-attachment: scroll;
+  background-image: url(../img/about-text-day.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-clip: text;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media only screen and (max-width: 37.5em) {
   .about__header {
@@ -772,12 +792,7 @@ a {
 .about__line {
   display: flex;
   align-items: center;
-  margin: 2rem 0 7rem;
-}
-@media only screen and (max-width: 56.25em) {
-  .about__line {
-    margin: 2rem 0 3rem;
-  }
+  margin-bottom: 2rem;
 }
 .about__line--dash {
   margin: 0 2.5rem;
@@ -787,13 +802,17 @@ a {
 }
 .about__line--kanji {
   display: inline-block;
-  font-size: 4rem;
-  font-weight: 600;
-  color: #588157;
+  font-size: 8rem;
+  font-weight: 900;
 }
 @media only screen and (max-width: 37.5em) {
   .about__line--kanji {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .about__line--kanji {
+    font-size: 4rem;
   }
 }
 .about__description {
@@ -902,7 +921,9 @@ a {
   height: 8rem;
   margin: auto;
   background: #588157;
+  border: 3px solid white;
   border-radius: 50%;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.7);
   transition: background 0.3s;
 }
 @media only screen and (max-width: 37.5em) {
@@ -960,6 +981,9 @@ a {
   font-size: 1.5rem;
   text-align: left;
 }
+.about__info-bar .item p b {
+  font-style: italic;
+}
 @media only screen and (max-width: 112.5em) {
   .about__info-bar .item p {
     margin: 0 2rem;
@@ -1013,12 +1037,22 @@ a {
   }
 }
 .projects__header {
-  font-size: 6rem;
-  font-weight: 600;
+  font-size: 7.5rem;
+  font-weight: 900;
   letter-spacing: 0.2rem;
   line-height: 1;
-  text-align: center;
-  color: #3a5a40;
+  margin: 0 0 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-attachment: scroll;
+  background-image: url(../img/project-text-day.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-clip: text;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media only screen and (max-width: 37.5em) {
   .projects__header {
@@ -1032,41 +1066,39 @@ a {
 }
 .projects__line {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: 4rem 0 10rem;
-}
-@media only screen and (max-width: 25em) {
-  .projects__line {
-    margin: 4rem 0;
-  }
+  margin-bottom: 2rem;
 }
 .projects__line--dash {
-  margin: 0 3rem;
+  margin: 0 2.5rem;
   width: 6rem;
   height: 3px;
   border-bottom: 2px solid #db8e59;
 }
 .projects__line--kanji {
   display: inline-block;
-  font-size: 5rem;
-  font-weight: 600;
-  color: #588157;
+  font-size: 7.5rem;
+  font-weight: 900;
 }
 @media only screen and (max-width: 37.5em) {
   .projects__line--kanji {
     font-size: 4.5rem;
   }
 }
+@media only screen and (max-width: 25em) {
+  .projects__line--kanji {
+    font-size: 4rem;
+  }
+}
 .projects__card {
   display: flex;
   max-width: 120rem;
-  margin: 0 auto;
+  margin: 15rem auto 0;
   background-color: rgb(255, 255, 255);
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
   border-radius: 2rem;
 }
-.projects__card:not(:last-child) {
+.projects__card:last-child {
   margin-bottom: 15rem;
 }
 .projects__card:hover picture img {
@@ -1074,13 +1106,14 @@ a {
 }
 @media only screen and (max-width: 37.5em) {
   .projects__card {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    margin: 10rem auto 0;
   }
   .projects__card:not(:last-child) {
     margin-bottom: 6rem;
   }
   .projects__card:nth-child(2n+1) {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 }
 .projects__description {
@@ -1111,7 +1144,7 @@ a {
 }
 .projects__details h3 {
   font-size: 3.6rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.2rem;
   color: #181818;
 }
@@ -1295,6 +1328,7 @@ a {
 .contact__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 75%;
   margin: 0 5rem;
   padding: 10vh 0;
@@ -1371,7 +1405,7 @@ a {
   scale: 1.2;
 }
 .contact__info {
-  padding: 4rem 2rem 4rem 6rem;
+  padding: 3rem 2rem 3rem 6rem;
   background-color: rgba(255, 255, 255, 0.7);
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
   border-radius: 2rem;
@@ -1384,9 +1418,9 @@ a {
   background-color: rgba(255, 255, 255, 0.9);
 }
 .contact__info h2 {
-  margin: 0 auto 2rem;
+  margin: 0 auto 4rem;
   width: auto;
-  font-size: 3.2rem;
+  font-size: 4rem;
   color: #3a5a40;
 }
 @media only screen and (max-width: 56.25em) {
@@ -1680,9 +1714,6 @@ body.dark-mode .header-scrolled {
 body.dark-mode .hero__title {
   background-image: url(../img/hero-text-night.jpg);
 }
-body.dark-mode .hero__title-part::selection {
-  background-color: rgba(0, 80, 180, 0.3);
-}
 body.dark-mode .hero__subtitle {
   color: #ebebeb;
 }
@@ -1705,7 +1736,7 @@ body.dark-mode .about__box {
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
 body.dark-mode .about__header {
-  color: #3b6986;
+  background-image: url(../img/about-text-night.jpg);
 }
 body.dark-mode .about__description-arrow {
   color: #409da0;
@@ -1733,7 +1764,7 @@ body.dark-mode .about__info-bar .item:hover .item__svg {
   background: #409da0;
 }
 body.dark-mode .projects__header {
-  color: #3b6986;
+  background-image: url(../img/project-text-night.jpg);
 }
 body.dark-mode .projects__line--dash {
   border-bottom: 1px solid #409da0;
@@ -1794,11 +1825,11 @@ body.dark-mode .bg-blue {
 body.dark-mode .bg-green {
   background-image: linear-gradient(to left, #7eb356, #40a083);
 }
-body.dark-mode .bg-teal {
+body.dark-mode .bg-bluegreen {
   background: linear-gradient(to right, rgb(35, 138, 152), rgb(83, 157, 95));
 }
-body.dark-mode .bg-orange {
-  background-image: linear-gradient(to right, #dc8441, #d97930);
+body.dark-mode .bg-greenblue {
+  background: linear-gradient(to right, rgb(83, 157, 95), rgb(35, 138, 152));
 }
 body.dark-mode .footer {
   background-color: #1d3557;
@@ -1841,6 +1872,13 @@ body.dark-mode .layerTop {
 body.dark-mode ::selection {
   color: #16031a;
   background-color: #ebebeb;
+}
+body.dark-mode .hero__title-part::selection,
+body.dark-mode .about__header::selection,
+body.dark-mode .about__line--kanji::selection,
+body.dark-mode .projects__header::selection,
+body.dark-mode .projects__line--kanji::selection {
+  background-color: rgba(0, 80, 180, 0.3);
 }
 
 /*# sourceMappingURL=style.css.map */

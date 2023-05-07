@@ -30,14 +30,23 @@
   }
   &__header {
     //Font Styling
-    font-size: 6rem;
-    font-weight: 600;
+    font-size: 7.5rem;
+    font-weight: 900;
     letter-spacing: 0.2rem;
     line-height: 1;
-    text-align: center;
+    margin: 0 0 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    //Color Styling
-    color: $color-primary-dark;
+    background-attachment: scroll;
+    background-image: url(../img/project-text-day.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-clip: text;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
     @media only screen and (max-width: $bp-small) {
       //Font Styling
@@ -52,20 +61,12 @@
   &__line {
     //Display
     display: flex;
-    justify-content: center;
     align-items: center;
-
-    //Spacing
-    margin: 4rem 0 10rem;
-
-    @media only screen and (max-width: $bp-smallest) {
-      //Font Styling
-      margin: 4rem 0;
-    }
+    margin-bottom: 2rem;
 
     &--dash {
       //Spacing
-      margin: 0 3rem;
+      margin: 0 2.5rem;
       width: 6rem;
       height: 3px;
 
@@ -77,15 +78,16 @@
       display: inline-block;
 
       //Font Styling
-      font-size: 5rem;
-      font-weight: 600;
-
-      //Color Styling
-      color: $color-primary;
+      font-size: 7.5rem;
+      font-weight: 900;
 
       @media only screen and (max-width: $bp-small) {
         //Font Styling
         font-size: 4.5rem;
+      }
+      @media only screen and (max-width: $bp-smallest) {
+        //Font Styling
+        font-size: 4rem;
       }
     }
   }
@@ -96,7 +98,7 @@
 
     //Spacing
     max-width: 120rem;
-    margin: 0 auto;
+    margin: 15rem auto 0;
 
     //Color Styling
     background-color: rgba(255, 255, 255);
@@ -105,7 +107,7 @@
     //Border Styling
     border-radius: $card-border-radius;
 
-    &:not(:last-child) {
+    &:last-child {
       //Spacing
       margin-bottom: 15rem;
     }
@@ -116,7 +118,9 @@
 
     @media only screen and (max-width: $bp-small) {
       //Display
-      flex-direction: column;
+      flex-direction: column-reverse;
+
+      margin: 10rem auto 0;
 
       &:not(:last-child) {
         //Spacing
@@ -125,7 +129,7 @@
 
       &:nth-child(2n + 1) {
         //Display
-        flex-direction: column-reverse;
+        flex-direction: column;
       }
     }
   }
@@ -162,7 +166,7 @@
     h3 {
       //Font Styling
       font-size: 3.6rem;
-      font-weight: 700;
+      font-weight: 600;
       letter-spacing: 0.2rem;
 
       //Color Styling

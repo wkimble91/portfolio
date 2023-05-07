@@ -272,13 +272,6 @@ body.dark-mode {
     &__title {
       //Color Styling
       background-image: url(../img/hero-text-night.jpg);
-
-      &-part {
-        &::selection {
-          //Color Styling
-          background-color: rgba(0, 80, 180, 0.3);
-        }
-      }
     }
     &__subtitle {
       //Color Styling
@@ -308,7 +301,7 @@ body.dark-mode {
     }
     &__header {
       //Color Styling
-      color: $color-darkmode-primary;
+      background-image: url(../img/about-text-night.jpg);
     }
     &__description {
       &-arrow {
@@ -356,7 +349,7 @@ body.dark-mode {
   .projects {
     &__header {
       //Color Styling
-      color: $color-darkmode-primary;
+      background-image: url(../img/project-text-night.jpg);
     }
     &__line {
       &--dash {
@@ -450,13 +443,13 @@ body.dark-mode {
     //Color Styling
     background-image: linear-gradient(to left, #7eb356, #40a083);
   }
-  .bg-teal {
+  .bg-bluegreen {
     //Color Styling
     background: linear-gradient(to right, rgb(35, 138, 152), rgb(83, 157, 95));
   }
-  .bg-orange {
+  .bg-greenblue {
     //Color Styling
-    background-image: linear-gradient(to right, #dc8441, #d97930);
+    background: linear-gradient(to right, rgb(83, 157, 95), rgb(35, 138, 152));
   }
 
   .footer {
@@ -513,5 +506,16 @@ body.dark-mode {
     //Color Styling
     color: $body-text-light;
     background-color: $body-text-dark;
+  }
+
+  .hero__title-part,
+  .about__header,
+  .about__line--kanji,
+  .projects__header,
+  .projects__line--kanji {
+    &::selection {
+      //Color Styling
+      background-color: rgba(0, 80, 180, 0.3);
+    }
   }
 }
