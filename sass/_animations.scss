@@ -136,12 +136,12 @@
 <---   Card Animation Classes   -->
 <--- -------------------------- -*/
 .revealRight {
-  transform: translateX(12rem) translateY(1rem);
+  transform: translateX(12rem);
   opacity: 0;
   transition: 1s transform ease, 1s opacity ease;
 }
 .revealLeft {
-  transform: translateX(-12rem) translateY(1rem);
+  transform: translateX(-12rem);
   opacity: 0;
   transition: 1s transform ease, 1s opacity ease;
 }
@@ -153,7 +153,7 @@
 .revealRight.active,
 .revealLeft.active,
 .revealFade.active {
-  transform: translateY(0);
+  transform: translateX(0);
   opacity: 1;
 }
 

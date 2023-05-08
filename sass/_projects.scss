@@ -7,10 +7,11 @@
   //Spacing
   width: 100%;
   margin: 10vh auto;
+  padding-top: 4rem;
 
   @media only screen and (max-width: $bp-small) {
     //Spacing
-    padding: 0;
+    padding: 4rem 0 0;
   }
 
   &__box {
