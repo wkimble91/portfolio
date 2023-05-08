@@ -61,9 +61,9 @@
     &-box {
       background-attachment: scroll;
       background-image: url(../img/about-text-day.jpg);
-      background-size: cover;
+      background-size: contain;
       background-position: center center;
-      background-repeat: no-repeat;
+      background-repeat: repeat;
       -webkit-text-fill-color: transparent;
       background-clip: text;
       -webkit-background-clip: text;
