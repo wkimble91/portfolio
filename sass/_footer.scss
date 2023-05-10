@@ -31,21 +31,6 @@
     }
   }
 
-  &__logo-box {
-    //Spacing
-    height: 4rem;
-    width: 4rem;
-    margin: 0 2rem;
-
-    //Font Styling
-    text-align: center;
-
-    //Image Styling
-    background-image: url(../img/logo_tree-light.png);
-    background-size: cover;
-    background-position: top;
-  }
-
   &__copyright {
     //Font Styling
     text-align: center;
