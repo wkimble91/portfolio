@@ -50,7 +50,7 @@
       //Spacing
       height: 100%;
       width: 45%;
-      padding: 6rem;
+      padding: 8rem 0 0;
 
       @media only screen and (max-width: $bp-largest) {
         //Spacing
@@ -109,13 +109,14 @@
 
       //Font Styling
       text-align: center;
-      font-size: 7rem;
+      font-size: 10rem;
       letter-spacing: 0.4rem;
-      line-height: 1.2;
+      line-height: 1.1;
     }
     @media only screen and (max-width: $bp-medium) {
       //Font Styling
       text-align: center;
+      font-size: 8rem;
     }
     @media only screen and (max-width: $bp-small) {
       //Spacing
@@ -131,6 +132,10 @@
       font-size: 5rem;
       letter-spacing: 0.4rem;
       line-height: 1.2;
+    }
+
+    &-part {
+      display: block;
     }
   }
 
@@ -199,13 +204,13 @@
       //Spacing
       width: 100%;
       height: 100%;
-      padding: 6rem 0 3rem;
+      padding: 8rem 0 3rem;
 
       @media only screen and (max-width: $bp-largest) {
         //Spacing
         width: 100%;
         height: 90%;
-        padding: 6rem 0 0;
+        padding: 8rem 0 0;
       }
     }
   }
