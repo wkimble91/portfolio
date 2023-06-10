@@ -109,7 +109,7 @@ import '../styles/main.css';
 		}
 	}
 
-	// Initial loading of images on Destinations already on screen
+	// Initial loading depending on screen location
 	revealRight();
 	revealLeft();
 	revealFade();
@@ -118,4 +118,9 @@ import '../styles/main.css';
 	window.addEventListener('scroll', revealRight);
 	window.addEventListener('scroll', revealLeft);
 	window.addEventListener('scroll', revealFade);
+
+	// Insights Analytics
+	import { init, trackPages } from 'insights-js';
+	init('qpnwC3rCrvZ6c7xr');
+	trackPages();
 </script>
