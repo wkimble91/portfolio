@@ -1,4 +1,5 @@
 # willkimble.com Portfolio
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4aac1296-1e19-4b64-b9ff-41655987d0e3/deploy-status)](https://app.netlify.com/sites/precious-crisp-b41562/deploys)
 
 ==================================================
 
