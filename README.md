@@ -2,11 +2,12 @@
 
 ==================================================
 
-Personal portfolio site, built on [SCSS] and [Vanilla Javascript], using no libraries or frameworks.
+Personal portfolio site, built on [SCSS] and [Vanilla Javascript], using [Astro].
 
 Preview images for the projects created with [Spline 3D].
 
 [scss]: https://sass-lang.com/documentation/syntax
+[astro]: https://astro.build/
 [vanilla javascript]: https://www.javascript.com/
 [spline 3d]: https://spline.design/
 
