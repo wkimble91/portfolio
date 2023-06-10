@@ -23,12 +23,14 @@
       //Spacing
       width: 80%;
     }
+
     @media only screen and (max-width: $bp-medium) {
       //Spacing
       width: 100%;
       padding: 0 2rem;
     }
   }
+
   &__header {
     //Font Styling
     font-size: 7.5rem;
@@ -56,6 +58,7 @@
       //Font Styling
       font-size: 5rem;
     }
+
     @media only screen and (max-width: $bp-smallest) {
       //Font Styling
       font-size: 4rem;
@@ -77,6 +80,7 @@
       //Border Styling
       border-bottom: 2px solid $color-primary-accent-1;
     }
+
     &--kanji {
       //Display
       display: inline-block;
@@ -89,6 +93,7 @@
         //Font Styling
         font-size: 4.5rem;
       }
+
       @media only screen and (max-width: $bp-smallest) {
         //Font Styling
         font-size: 4rem;
@@ -105,7 +110,7 @@
     margin: 15rem auto 0;
 
     //Color Styling
-    background-color: rgba(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
 
     //Border Styling
@@ -137,6 +142,7 @@
       }
     }
   }
+
   &__description {
     //Spacing
     width: 50%;
@@ -153,6 +159,7 @@
       width: 100%;
     }
   }
+
   &__details {
     //Display
     display: flex;
@@ -180,15 +187,18 @@
         //Font Styling
         font-size: 3rem;
       }
+
       @media only screen and (max-width: $bp-medium) {
         //Font Styling
         font-size: 3.2rem;
       }
+
       @media only screen and (max-width: $bp-small) {
         //Font Styling
         font-size: 3.6rem;
       }
     }
+
     h4 {
       //Spacing
       margin-bottom: 1rem;
@@ -201,6 +211,7 @@
       //Color Styling
       color: $background-color-dark;
     }
+
     h5 {
       //Font Styling
       font-size: 1.6rem;
@@ -210,6 +221,7 @@
       //Color Styling
       color: $background-color-dark;
     }
+
     p {
       //Spacing
       margin: 3.5rem 0;
@@ -233,6 +245,7 @@
       }
     }
   }
+
   &__title {
     //Font Styling
     text-align: center;
@@ -247,16 +260,19 @@
         //Spacing
         font-size: 2.7rem !important;
       }
+
       @media only screen and (max-width: $bp-medium) {
         //Font Styling
         font-size: 3.2rem !important;
       }
+
       @media only screen and (max-width: $bp-smallest) {
         //Spacing
         font-size: 2.7rem !important;
       }
     }
   }
+
   &__image-box {
     //Display
     display: flex;
@@ -285,6 +301,7 @@
       //Border Styling
       border-radius: 0 $card-border-radius $card-border-radius 0;
     }
+
     &:nth-child(2n + 1) {
       //Border Styling
       border-radius: $card-border-radius 0 0 $card-border-radius;
@@ -294,6 +311,7 @@
         transform: rotate(180deg);
       }
     }
+
     &::before {
       content: '';
 
@@ -327,6 +345,7 @@
       }
     }
   }
+
   &-buttons {
     //Display
     display: flex;

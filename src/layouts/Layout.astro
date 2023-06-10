@@ -1,0 +1,121 @@
+---
+export interface Props {
+	title: string;
+}
+---
+
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='UTF-8' />
+		<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+		<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+		<meta
+			name='description'
+			content='A portfolio for Will Kimble a Front End Web Developer'
+		/>
+		<!-- Favicons -->
+		<link
+			rel='apple-touch-icon'
+			sizes='180x180'
+			href='apple-touch-icon.png'
+		/>
+		<link
+			rel='icon'
+			type='image/png'
+			sizes='32x32'
+			href='favicon-32x32.png'
+		/>
+		<link
+			rel='icon'
+			type='image/png'
+			sizes='16x16'
+			href='favicon-16x16.png'
+		/>
+		<link rel='manifest' href='site.webmanifest' />
+		<!-- Fonts -->
+		<link rel='preconnect' href='https://fonts.googleapis.com' />
+		<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+		<!-- For the Hero Text -->
+		<link
+			href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,800&display=swap'
+			rel='stylesheet'
+		/>
+		<!-- For the body text -->
+		<link
+			href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,800;1,200;1,300;1,400;1,600;1,800&display=swap'
+			rel='stylesheet'
+		/>
+		<!-- Preload Hero Images -->
+		<link
+			rel='preload'
+			as='image'
+			href='./img/forest-night2x.png'
+			media='(min-width: 576px)'
+		/>
+		<link
+			rel='preload'
+			as='image'
+			href='./img/forest-night1x.png'
+			media='(max-width: 575px)'
+		/>
+		<link
+			rel='preload'
+			as='image'
+			href='./img/hero-text-night.jpg'
+			type='image/jpg'
+		/>
+		<!-- Preload Night SVGs -->
+		<link
+			rel='preload'
+			as='image'
+			href='./img/svg/wave-bottom-dark.svg'
+			type='image/svg+xml'
+		/>
+		<link
+			rel='preload'
+			as='image'
+			href='./img/svg/wave-top-dark.svg'
+			type='image/svg+xml'
+		/>
+		<link
+			rel='preload'
+			as='image'
+			href='./img/svg/wave-bottom-mobile-dark.svg'
+			media='(max-width: 575px)'
+			type='image/svg+xml'
+		/>
+		<link
+			rel='preload'
+			as='image'
+			href='./img/svg/wave-top-mobile-dark.svg'
+			media='(max-width: 575px)'
+			type='image/svg+xml'
+		/>
+
+		<!-- Title -->
+		<title>Will Kimble | Front-End Web Developer</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	:root {
+		--accent: 124, 58, 237;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			#da62c4 30%,
+			white 60%
+		);
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		background-color: #f6f6f6;
+	}
+	code {
+		font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+			DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+	}
+</style>

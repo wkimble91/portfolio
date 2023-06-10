@@ -1,0 +1,85 @@
+<header id='header' class='header'>
+    <nav class='header-box'>
+        <a
+            href='#home'
+            rel='home'
+            aria-label='Top of page link'
+            class='header__logo'
+            target='_self'></a>
+        <ul class='header__nav'>
+            <li class='header__nav-item'>
+                <a href='#about' target='_self'>About.</a>
+            </li>
+            <li class='header__divider'></li>
+            <li class='header__nav-item'>
+                <a href='#projects' target='_self'>Projects.</a>
+            </li>
+            <li class='header__divider'></li>
+            <li class='header__nav-item'>
+                <a href='#contact' target='_self'>Contact.</a>
+            </li>
+            <li class='header__nav-toggle'>
+                <button class='nightmode-toggle' aria-label='Nightmode Toggle'>
+                    <input
+                        class='toggle toggle-skewed dark-mode-button'
+                        id='night-toggle'
+                        type='checkbox'
+                    />
+                    <label
+                        class='toggle-btn'
+                        data-tg-off='Day.'
+                        data-tg-on='Night.'
+                        for='night-toggle'></label>
+                </button>
+            </li>
+        </ul>
+        <div class='header__hamburger'>
+            <span class='bar'></span>
+            <span class='bar'></span>
+            <span class='bar'></span>
+        </div>
+    </nav>
+</header>
+
+<script>
+    // Handles Mobile Hamburger Menu
+    const hamburger = document.querySelector('.header__hamburger');
+    const navMenu = document.querySelector('.header__nav');
+    const navLink = document.querySelectorAll('.header__nav-item');
+
+    hamburger.addEventListener('click', mobileMenu);
+
+    function mobileMenu() {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    }
+
+    // Closes Mobile Menu when clicking on a nav item
+    navLink.forEach((n) => n.addEventListener('click', closeMenu));
+
+    function closeMenu() {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+    }
+
+    // Applies scrolled class
+    const header = document.querySelector('#header');
+    const arrow = document.querySelector('#arrow');
+    const scrollWatcher = document.createElement('div');
+
+    scrollWatcher.setAttribute('data-scroll-watcher', '');
+    header.before(scrollWatcher);
+
+    const navObserver = new IntersectionObserver((entries) => {
+        header.classList.toggle(
+            'header-scrolled',
+            entries[0].intersectionRatio < 1
+        );
+        arrow.classList.toggle(
+            'hero-arrow__svg--hidden',
+            entries[0].intersectionRatio < 1
+        );
+    });
+
+    navObserver.observe(scrollWatcher);
+</script>

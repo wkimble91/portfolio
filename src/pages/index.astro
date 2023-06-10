@@ -1,0 +1,121 @@
+---
+import Hero from '../components/Hero.astro';
+import Navbar from '../components/Navbar.astro';
+import About from '../components/About.astro';
+import Projects from '../components/Projects.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+import Layout from '../layouts/Layout.astro';
+import '../styles/main.css';
+---
+
+<Layout title='Welcome to Astro.'>
+	<Navbar />
+	<Hero />
+	<About />
+	<Projects />
+	<Contact />
+	<Footer />
+</Layout>
+
+<script>
+	const body = document.querySelector('body');
+
+	// Dark Mode Action
+	let darkMode = localStorage.getItem('darkMode');
+	const darkModeToggle = document.querySelector('.dark-mode-button');
+
+	// Enable Dark Mode
+	const enableDarkMode = () => {
+		body.classList.add('dark-mode');
+		localStorage.setItem('darkMode', 'enabled');
+	};
+
+	// Disable Dark Mode
+	const disableDarkMode = () => {
+		body.classList.remove('dark-mode');
+		localStorage.setItem('darkMode', null);
+	};
+
+	// Toggle based on button position
+	const nightToggle = document.getElementById(
+		'night-toggle'
+	) as HTMLInputElement;
+	if (darkMode == 'enabled') {
+		enableDarkMode();
+		nightToggle.checked = true;
+	} else {
+		disableDarkMode();
+		nightToggle.checked = false;
+	}
+
+	// Button Event Handler
+	darkModeToggle.addEventListener('click', () => {
+		darkMode = localStorage.getItem('darkMode');
+		if (darkMode !== 'enabled') {
+			enableDarkMode();
+		} else {
+			disableDarkMode();
+		}
+	});
+
+	// Reveal Animations
+	function revealRight() {
+		var reveals = document.querySelectorAll('.revealRight');
+
+		for (var i = 0; i < reveals.length; i++) {
+			var windowHeight = window.innerHeight;
+			var elementTop = reveals[i].getBoundingClientRect().top;
+			var elementVisible = 150;
+
+			if (elementTop < windowHeight - elementVisible) {
+				reveals[i].classList.add('active');
+			}
+			if (elementTop > windowHeight) {
+				reveals[i].classList.remove('active');
+			}
+		}
+	}
+	function revealLeft() {
+		var reveals = document.querySelectorAll('.revealLeft');
+
+		for (var i = 0; i < reveals.length; i++) {
+			var windowHeight = window.innerHeight;
+			var elementTop = reveals[i].getBoundingClientRect().top;
+			var elementVisible = 150;
+
+			if (elementTop < windowHeight - elementVisible) {
+				reveals[i].classList.add('active');
+			}
+			if (elementTop > windowHeight) {
+				reveals[i].classList.remove('active');
+			}
+		}
+	}
+	function revealFade() {
+		var reveals = document.querySelectorAll('.revealFade');
+
+		for (var i = 0; i < reveals.length; i++) {
+			var windowHeight = window.innerHeight;
+			var elementTop = reveals[i].getBoundingClientRect().top;
+			var elementVisible = 150;
+
+			if (elementTop < windowHeight - elementVisible) {
+				reveals[i].classList.add('active');
+			}
+			if (elementTop > windowHeight) {
+				reveals[i].classList.remove('active');
+			}
+		}
+	}
+
+	// Initial loading of images on Destinations already on screen
+	revealRight();
+	revealLeft();
+	revealFade();
+
+	// Add event listeners for scrolling
+	window.addEventListener('scroll', revealRight);
+	window.addEventListener('scroll', revealLeft);
+	window.addEventListener('scroll', revealFade);
+</script>
