@@ -282,9 +282,16 @@ body.dark-mode {
   }
 
   .hero {
-    &__title {
+
+    //Modernizr checks to see if webp is supported
+    .no-webp &__title {
       //Color Styling
       background-image: url(../img/hero-text-night.jpg);
+    }
+
+    .webp &__title {
+      //Color Styling
+      background-image: url(../img/hero-text-night.webp);
     }
 
     &__subtitle {
@@ -325,9 +332,15 @@ body.dark-mode {
       box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
     }
 
-    &__header-box {
+    //Modernizr checks to see if webp is supported
+    .no-webp &__header-box {
       //Color Styling
       background-image: url(../img/about-text-night.jpg);
+    }
+
+    .webp &__header-box {
+      //Color Styling
+      background-image: url(../img/about-text-night.webp);
     }
 
     &__description {
@@ -378,9 +391,16 @@ body.dark-mode {
   }
 
   .projects {
-    &__header-box {
+
+    //Modernizr checks to see if webp is supported
+    .no-webp &__header-box {
       //Color Styling
       background-image: url(../img/project-text-night.jpg);
+    }
+
+    .webp &__header-box {
+      //Color Styling
+      background-image: url(../img/project-text-night.webp);
     }
 
     &__line {
@@ -498,11 +518,6 @@ body.dark-mode {
   .footer {
     //Color Styling
     background-color: $color-darkmode-primary-dark;
-
-    &__logo-box {
-      //Image Styling
-      background-image: url(../img/logo_tree-light.png);
-    }
 
     &__copyright {
       //Color Styling

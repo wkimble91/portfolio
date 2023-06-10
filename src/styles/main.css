@@ -414,7 +414,8 @@ body.dark-mode .header__nav * a:before { border-bottom: 2px solid #409da0; }
 body.dark-mode .header a { color: #409da0; }
 body.dark-mode .header__hamburger .bar { background-color: #ebebeb; }
 body.dark-mode .header-scrolled { border-bottom: 1px solid rgba(0, 0, 0, 0.4); -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4); box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4); }
-body.dark-mode .hero__title { background-image: url(../img/hero-text-night.jpg); }
+.no-webp body.dark-mode .hero__title { background-image: url(../img/hero-text-night.jpg); }
+.webp body.dark-mode .hero__title { background-image: url(../img/hero-text-night.webp); }
 body.dark-mode .hero__subtitle { color: #ebebeb; }
 .no-webp body.dark-mode .hero__image { background-image: url(../img/forest-night2x.png); }
 @media only screen and (max-width: 37.5em) { .no-webp body.dark-mode .hero__image { background-image: url(../img/forest-night1x.png); } }
@@ -423,7 +424,8 @@ body.dark-mode .hero__subtitle { color: #ebebeb; }
 body.dark-mode .hero svg { fill: white; }
 body.dark-mode .about { background-color: #1d3557; }
 body.dark-mode .about__box { background-color: #22222b; -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); }
-body.dark-mode .about__header-box { background-image: url(../img/about-text-night.jpg); }
+.no-webp body.dark-mode .about__header-box { background-image: url(../img/about-text-night.jpg); }
+.webp body.dark-mode .about__header-box { background-image: url(../img/about-text-night.webp); }
 body.dark-mode .about__description-arrow { color: #409da0; }
 body.dark-mode .about__line--dash { border-bottom: 1px solid #409da0; }
 body.dark-mode .about__line--kanji { color: #1d3557; }
@@ -432,7 +434,8 @@ body.dark-mode .about__info-bar .item__svg { background: #1d3557; }
 body.dark-mode .about__info-bar .item h3 { color: #3b6986; }
 body.dark-mode .about__info-bar .item:hover svg { fill: #1d3557; }
 body.dark-mode .about__info-bar .item:hover .item__svg { background: #409da0; }
-body.dark-mode .projects__header-box { background-image: url(../img/project-text-night.jpg); }
+.no-webp body.dark-mode .projects__header-box { background-image: url(../img/project-text-night.jpg); }
+.webp body.dark-mode .projects__header-box { background-image: url(../img/project-text-night.webp); }
 body.dark-mode .projects__line--dash { border-bottom: 1px solid #409da0; }
 body.dark-mode .projects__line--kanji { color: #1d3557; }
 body.dark-mode .projects__card { background-color: rgba(34, 34, 43, 0.9); -webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4); box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4); }
@@ -454,7 +457,6 @@ body.dark-mode .bg-green { background-image: -webkit-gradient(linear, right top,
 body.dark-mode .bg-bluegreen { background: -webkit-gradient(linear, left top, right top, from(#238a98), to(#539d5f)); background: linear-gradient(to right, #238a98, #539d5f); }
 body.dark-mode .bg-greenblue { background: -webkit-gradient(linear, left top, right top, from(#539d5f), to(#238a98)); background: linear-gradient(to right, #539d5f, #238a98); }
 body.dark-mode .footer { background-color: #1d3557; }
-body.dark-mode .footer__logo-box { background-image: url(../img/logo_tree-light.png); }
 body.dark-mode .footer__copyright { color: #ebebeb; }
 body.dark-mode .btn-work { background-color: #3b6986; }
 body.dark-mode .btn-contact { background-color: #1d3557; color: #ebebeb; }
