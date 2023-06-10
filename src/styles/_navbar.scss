@@ -34,6 +34,7 @@
       //Spacing
       width: 100%;
     }
+
     @media only screen and (max-width: $bp-small) {
       //Color Styling
       background-color: $background-color-light;
@@ -61,6 +62,15 @@
     }
   }
 
+  //Modernizr checks to see if webp is supported
+  .no-webp &__logo {
+    background-image: url(../img/logo_black.png);
+  }
+
+  .webp &__logo {
+    background-image: url(../img/logo_black.webp);
+  }
+
   &__logo {
     cursor: pointer;
 
@@ -79,7 +89,6 @@
     font-size: 2.5rem;
 
     //Image Styling
-    background-image: url(../img/logo_black.png);
     background-size: cover;
     background-position: top;
     overflow: visible;
@@ -91,6 +100,7 @@
       //Spacing
       margin-left: 1rem;
     }
+
     @media only screen and (max-width: $bp-small) {
       //Spacing
       height: 6.5rem;
@@ -148,6 +158,7 @@
           transform: translateX(0);
         }
       }
+
       &-item {
         //Spacing
         padding: 3rem 0;
@@ -162,10 +173,12 @@
           //Animations
           transform: translateX(-30%);
         }
+
         &:nth-child(3) {
           //Animations
           transform: translateX(30%);
         }
+
         &:nth-child(5) {
           //Animations
           transform: translateX(-30%);
@@ -186,6 +199,7 @@
           //Spacing
           margin-right: 3rem;
         }
+
         @media only screen and (max-width: $bp-small) {
           //Spacing
           margin-right: 0;
@@ -234,6 +248,7 @@
           //Spacing
           margin-right: 3rem;
         }
+
         @media only screen and (max-width: $bp-small) {
           //Spacing
           width: 100%;

@@ -35,11 +35,13 @@
       width: 80%;
       // padding: 8rem 5rem 6rem;
     }
+
     @media only screen and (max-width: $bp-medium) {
       //Spacing
       width: 95%;
       // padding: 8rem 3rem 4rem;
     }
+
     @media only screen and (max-width: $bp-small) {
       //Spacing
       width: 95%;
@@ -58,6 +60,14 @@
     flex-direction: column;
     align-items: center;
 
+    .no-webp &-box {
+      background-image: url(../img/about-text-day.jpg);
+    }
+
+    .webp &-box {
+      background-image: url(../img/about-text-day.webp);
+    }
+
     &-box {
       background-attachment: scroll;
       background-image: url(../img/about-text-day.jpg);
@@ -75,6 +85,7 @@
       //Font Styling
       font-size: 5rem;
     }
+
     @media only screen and (max-width: $bp-smallest) {
       //Font Styling
       font-size: 4rem;
@@ -96,6 +107,7 @@
       //Border Styling
       border-bottom: 2px solid $color-primary-accent-1;
     }
+
     &--kanji {
       //Display
       display: inline-block;
@@ -103,10 +115,12 @@
       //Font Styling
       font-size: 8rem;
       font-weight: 900;
+
       @media only screen and (max-width: $bp-small) {
         //Font Styling
         font-size: 4.5rem;
       }
+
       @media only screen and (max-width: $bp-smallest) {
         //Font Styling
         font-size: 4rem;
@@ -134,6 +148,7 @@
       width: 100%;
       padding: 0 2rem;
     }
+
     @media only screen and (max-width: $bp-small) {
       //Spacing
       padding: 0 2rem;
@@ -160,16 +175,19 @@
       //Spacing
       width: 80%;
     }
+
     @media only screen and (max-width: $bp-medium) {
       //Spacing
       width: 100%;
       padding: 0 2rem;
     }
+
     @media only screen and (max-width: $bp-small) {
       //Display
       flex-direction: column;
       justify-content: space-evenly;
     }
+
     .item {
       //Spacing
       width: 29%;
@@ -193,11 +211,13 @@
         //Spacing
         padding: 4rem 2rem;
       }
+
       @media only screen and (max-width: $bp-medium) {
         //Spacing
         width: 30%;
         padding: 2rem 1rem;
       }
+
       @media only screen and (max-width: $bp-small) {
         //Display
         display: flex;
@@ -218,6 +238,7 @@
             padding: 0 2rem 0 0;
           }
         }
+
         &:nth-child(odd) p {
           @media only screen and (max-width: $bp-small) {
             padding: 0 0 0 2rem;
@@ -230,6 +251,7 @@
           width: 30%;
         }
       }
+
       &__svg {
         //Display
         display: flex;
@@ -303,6 +325,7 @@
           //Font Styling
           font-size: 2rem;
         }
+
         @media only screen and (max-width: $bp-small) {
           //Display
           flex-shrink: 1;
@@ -313,11 +336,13 @@
           //Font Styling
           font-size: 1.6rem;
         }
+
         @media only screen and (max-width: $bp-smallest) {
           //Font Styling
           font-size: 1.2rem;
         }
       }
+
       p {
         //Spacing
         margin: 0 3rem;
@@ -334,10 +359,12 @@
           //Spacing
           margin: 0 2rem;
         }
+
         @media only screen and (max-width: $bp-large) {
           //Spacing
           margin: 0 1rem;
         }
+
         @media only screen and (max-width: $bp-small) {
           //Display
           flex-shrink: 1;

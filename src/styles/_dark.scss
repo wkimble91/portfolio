@@ -14,7 +14,7 @@
     //Display
     display: none;
 
-    & + .toggle-btn {
+    &+.toggle-btn {
       cursor: pointer;
       user-select: none;
 
@@ -46,23 +46,25 @@
         width: 50%;
         height: 100%;
       }
+
       &:after {
         //Spacing
         left: 0;
       }
+
       &:before {
         //Display
         display: none;
       }
     }
 
-    &:checked + .toggle-btn:after {
+    &:checked+.toggle-btn:after {
       //Spacing
       left: 50%;
     }
 
     &-skewed {
-      & + .toggle-btn {
+      &+.toggle-btn {
         //Spacing
         overflow: hidden;
         backface-visibility: hidden;
@@ -149,10 +151,12 @@
             font-weight: 600;
           }
         }
+
         &:active {
           //Color Styling
           background: $color-primary;
         }
+
         &:hover:before {
           //Spacing
           left: -10%;
@@ -160,7 +164,7 @@
       }
 
       &:checked {
-        & + .toggle-btn {
+        &+.toggle-btn {
           //Color Styling
           background: $color-darkmode-primary;
 
@@ -168,10 +172,12 @@
             //Spacing
             left: -100%;
           }
+
           &:after {
             //Spacing
             left: 0;
           }
+
           &:hover:after {
             //Spacing
             left: 10%;
@@ -186,17 +192,18 @@
     & *,
     & *:after,
     & *:before,
-    & + .toggle-btn {
+    &+.toggle-btn {
       //Spacing
       box-sizing: border-box;
     }
+
     &::selection,
     &:after::selection,
     &:before::selection,
     & *::selection,
     & *:after::selection,
     & *:before::selection,
-    & + .toggle-btn::selection {
+    &+.toggle-btn::selection {
       //Color Styling
       background: none;
     }
@@ -224,19 +231,23 @@ body.dark-mode {
         background-color: $color-grey-dark;
       }
     }
+
     &-box {
       @media only screen and (max-width: $bp-small) {
         //Color Styling
         background-color: $background-color-dark;
       }
     }
+
     &__logo {
       //Image Styling
       background-image: url(../img/logo_white.png);
     }
+
     &__nav {
       & * {
         & a {
+
           // Hover Lines
           &:before {
             //Border Styling
@@ -244,11 +255,13 @@ body.dark-mode {
           }
         }
       }
+
       @media only screen and (max-width: $bp-small) {
         //Color Styling
         background-color: $background-color-dark;
       }
     }
+
     & a {
       //Color Styling
       color: $color-darkmode-primary-light;
@@ -273,17 +286,28 @@ body.dark-mode {
       //Color Styling
       background-image: url(../img/hero-text-night.jpg);
     }
+
     &__subtitle {
       //Color Styling
       color: $body-text-dark;
     }
-    &__image {
-      //Image Styling
+
+    //Modernizr checks to see if webp is supported
+    .no-webp &__image {
       background-image: url(../img/forest-night2x.png);
 
       @media only screen and (max-width: $bp-small) {
         //Image Styling
         background-image: url(../img/forest-night1x.png);
+      }
+    }
+
+    .webp &__image {
+      background-image: url(../img/forest-night2x.webp);
+
+      @media only screen and (max-width: $bp-small) {
+        //Image Styling
+        background-image: url(../img/forest-night1x.webp);
       }
     }
 
@@ -294,15 +318,18 @@ body.dark-mode {
 
   .about {
     background-color: $color-darkmode-primary-dark;
+
     &__box {
       //Color Styling
       background-color: rgb(34, 34, 43);
       box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
     }
+
     &__header-box {
       //Color Styling
       background-image: url(../img/about-text-night.jpg);
     }
+
     &__description {
       &-arrow {
         color: $color-darkmode-primary-light;
@@ -314,6 +341,7 @@ body.dark-mode {
         //Border Styling
         border-bottom: 1px solid $color-darkmode-primary-light;
       }
+
       &--kanji {
         //Color Styling
         color: $color-darkmode-primary-dark;
@@ -325,10 +353,12 @@ body.dark-mode {
         //Color Styling
         background-color: rgb(34, 34, 43);
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+
         &__svg {
           //Color Styling
           background: $color-darkmode-primary-dark;
         }
+
         h3 {
           //Color Styling
           color: $color-darkmode-primary;
@@ -339,6 +369,7 @@ body.dark-mode {
         //Color Styling
         fill: $color-darkmode-primary-dark;
       }
+
       .item:hover .item__svg {
         //Color Styling
         background: $color-darkmode-primary-light;
@@ -351,34 +382,41 @@ body.dark-mode {
       //Color Styling
       background-image: url(../img/project-text-night.jpg);
     }
+
     &__line {
       &--dash {
         //Border Styling
         border-bottom: 1px solid $color-darkmode-primary-light;
       }
+
       &--kanji {
         //Color Styling
         color: $color-darkmode-primary-dark;
       }
     }
+
     &__card {
       //Color Styling
       background-color: rgba(34, 34, 43, 0.9);
       box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
     }
+
     &__details {
       h3 {
         //Color Styling
         color: $background-color-light;
       }
+
       h4 {
         //Color Styling
         color: $background-color-light;
       }
+
       h5 {
         //Color Styling
         color: $background-color-light;
       }
+
       p {
         //Color Styling
         color: $background-color-light;
@@ -419,10 +457,12 @@ body.dark-mode {
         //Color Styling
         background-color: rgb(30, 30, 40);
       }
+
       h2 {
         //Color Styling
         color: $color-darkmode-primary;
       }
+
       h3 {
         //Color Styling
         color: $color-darkmode-primary-light;
@@ -439,14 +479,17 @@ body.dark-mode {
     //Color Styling
     background: linear-gradient(to right, rgb(80, 93, 191), rgb(25, 168, 150));
   }
+
   .bg-green {
     //Color Styling
     background-image: linear-gradient(to left, #7eb356, #40a083);
   }
+
   .bg-bluegreen {
     //Color Styling
     background: linear-gradient(to right, rgb(35, 138, 152), rgb(83, 157, 95));
   }
+
   .bg-greenblue {
     //Color Styling
     background: linear-gradient(to right, rgb(83, 157, 95), rgb(35, 138, 152));
@@ -460,6 +503,7 @@ body.dark-mode {
       //Image Styling
       background-image: url(../img/logo_tree-light.png);
     }
+
     &__copyright {
       //Color Styling
       color: $body-text-dark;
@@ -488,6 +532,7 @@ body.dark-mode {
   //SVG Waves
   .layerBottom {
     background-image: url('../img/svg/wave-bottom-dark.svg');
+
     @media only screen and (max-width: $bp-small) {
       //Image Styling
       background-image: url('../img/svg/wave-bottom-mobile-dark.svg');
@@ -496,6 +541,7 @@ body.dark-mode {
 
   .layerTop {
     background-image: url('../img/svg/wave-top-dark.svg');
+
     @media only screen and (max-width: $bp-small) {
       //Image Styling
       background-image: url('../img/svg/wave-top-mobile-dark.svg');

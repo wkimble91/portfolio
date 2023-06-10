@@ -75,6 +75,15 @@
     }
   }
 
+  //Modernizr checks to see if webp is supported
+  .no-webp &__title {
+    background-image: url(../img/hero-text-day.jpg);
+  }
+
+  .webp &__title {
+    background-image: url(../img/hero-text-day.webp);
+  }
+
   &__title {
     //Spacing
     margin: 4rem 0 8rem;
@@ -89,7 +98,6 @@
 
     //Image Styling
     background-attachment: scroll;
-    background-image: url(../img/hero-text-day.jpg);
     background-size: cover;
     background-position: center center;
     background-clip: text;
@@ -191,6 +199,25 @@
     }
   }
 
+  //Modernizr checks to see if webp is supported
+  .no-webp &__image {
+    background-image: url(../img/forest-day2x.png);
+
+    @media only screen and (max-width: $bp-small) {
+      //Image Styling
+      background-image: url(../img/forest-day1x.png);
+    }
+  }
+
+  .webp &__image {
+    background-image: url(../img/forest-day2x.webp);
+
+    @media only screen and (max-width: $bp-small) {
+      //Image Styling
+      background-image: url(../img/forest-day1x.webp);
+    }
+  }
+
   &__image {
     //Spacing
     height: 100%;
@@ -198,7 +225,6 @@
     max-width: 120rem;
 
     //Image Styling
-    background-image: url(../img/forest-day2x.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -208,10 +234,7 @@
       background-position: bottom center;
     }
 
-    @media only screen and (max-width: $bp-small) {
-      //Image Styling
-      background-image: url(../img/forest-day1x.png);
-    }
+
 
     &-box {
       //Spacing

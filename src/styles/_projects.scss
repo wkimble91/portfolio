@@ -41,9 +41,17 @@
     flex-direction: column;
     align-items: center;
 
+    //Modernizr checks to see if webp is supported
+    .no-webp &-box {
+      background-image: url(../img/project-text-day.jpg);
+    }
+
+    .webp &-box {
+      background-image: url(../img/project-text-day.webp);
+    }
+
     &-box {
       background-attachment: scroll;
-      background-image: url(../img/project-text-day.jpg);
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
@@ -324,11 +332,20 @@
       z-index: 0;
 
       //Image Styling
-      background-image: url(../img/project-pattern.png);
       background-repeat: no-repeat;
       background-size: cover;
       overflow: hidden;
     }
+
+    //Modernizr checks to see if webp is supported
+    .no-webp &::before {
+      background-image: url(../img/project-pattern.png);
+    }
+
+    .webp &::before {
+      background-image: url(../img/project-pattern.webp);
+    }
+
 
     & picture {
       //Spacing
