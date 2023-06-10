@@ -13,15 +13,15 @@ Preview images for the projects created with [Spline 3D].
 
 ## Getting Started
 
-Run the SCSS server:
+Run the dev server:
 
 ```bash
-npm run watch
+npm run dev
 ```
 
 ## Building
 
-Compile, prefix, and compress the SCSS:
+Build for deployment:
 
 ```bash
 npm run build
