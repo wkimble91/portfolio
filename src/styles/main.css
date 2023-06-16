@@ -323,7 +323,7 @@ a { text-decoration: none; }
 
 .bg-grey { background: -webkit-gradient(linear, left top, right top, from(#28313b), to(#485461)); background: linear-gradient(to right, #28313b, #485461); }
 
-.bg-webdev { background: -webkit-gradient(linear, left top, right top, from(#7950f2), to(#B559CC)); background: linear-gradient(to right, #7950f2, #B559CC); }
+.bg-frontend { background: -webkit-gradient(linear, left top, right top, from(#7950f2), to(#B559CC)); background: linear-gradient(to right, #7950f2, #B559CC); }
 
 .contact { width: 100%; margin: auto; padding: 5rem 0 1rem; background-color: #3a5a40; }
 @media only screen and (max-width: 56.25em) { .contact { padding: 0; } }
@@ -458,7 +458,7 @@ body.dark-mode .bg-blue { background: -webkit-gradient(linear, left top, right t
 body.dark-mode .bg-green { background-image: -webkit-gradient(linear, right top, left top, from(#7eb356), to(#40a083)); background-image: linear-gradient(to left, #7eb356, #40a083); }
 body.dark-mode .bg-bluegreen { background: -webkit-gradient(linear, left top, right top, from(#238a98), to(#539d5f)); background: linear-gradient(to right, #238a98, #539d5f); }
 body.dark-mode .bg-greenblue { background: -webkit-gradient(linear, left top, right top, from(#539d5f), to(#238a98)); background: linear-gradient(to right, #539d5f, #238a98); }
-body.dark-mode .bg-webdev { background: -webkit-gradient(linear, left top, right top, from(#603EC7), to(#8F4E9F)); background: linear-gradient(to right, #603EC7, #8F4E9F); }
+body.dark-mode .bg-frontend { background: -webkit-gradient(linear, left top, right top, from(#603EC7), to(#8F4E9F)); background: linear-gradient(to right, #603EC7, #8F4E9F); }
 body.dark-mode .footer { background-color: #1d3557; }
 body.dark-mode .footer__copyright { color: #ebebeb; }
 body.dark-mode .btn-work { background-color: #3b6986; }
