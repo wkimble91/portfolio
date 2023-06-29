@@ -194,19 +194,6 @@
     }
 
     & * {
-      & button {
-        @media only screen and (max-width: $bp-large) {
-          //Spacing
-          margin-right: 3rem;
-        }
-
-        @media only screen and (max-width: $bp-small) {
-          //Spacing
-          margin-right: 0;
-          margin-left: 0;
-        }
-      }
-
       & a {
         //Spacing
         margin-right: 3rem;

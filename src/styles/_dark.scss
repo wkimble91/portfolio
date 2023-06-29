@@ -94,6 +94,7 @@
           line-height: 4rem;
           text-align: center;
           font-weight: bold;
+          font-size: 1.4rem;
 
           //Image Styling
           transform: skew(10deg);
@@ -122,10 +123,6 @@
 
           //Color Styling
           color: $background-color-dark;
-
-          &:hover {
-            content: '夜';
-          }
 
           @media only screen and (max-width: $bp-small) {
             //Font Styling

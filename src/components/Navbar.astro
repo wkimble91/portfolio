@@ -19,18 +19,22 @@
                 <a href='#contact' target='_self'>Contact.</a>
             </li>
             <li class='header__nav-toggle'>
-                <button class='nightmode-toggle' aria-label='Nightmode Toggle'>
+                <label
+                    class='nightmode-toggle'
+                    aria-label='Nightmode Toggle'
+                    title='Toggle theme'
+                    for='night-toggle'>
                     <input
                         class='toggle toggle-skewed dark-mode-button'
                         id='night-toggle'
                         type='checkbox'
                     />
-                    <label
+                    <span
                         class='toggle-btn'
                         data-tg-off='Day.'
-                        data-tg-on='Night.'
-                        for='night-toggle'></label>
-                </button>
+                        data-tg-on='Night.'>
+                    </span>
+                </label>
             </li>
         </ul>
         <div class='header__hamburger'>

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*-- -------------------------- -->
 <---       Color Schemes        -->
 <--- -------------------------- -*/
@@ -154,8 +153,6 @@ a { text-decoration: none; }
   .header__nav-item:nth-child(3) { -webkit-transform: translateX(30%); transform: translateX(30%); }
   .header__nav-item:nth-child(5) { -webkit-transform: translateX(-30%); transform: translateX(-30%); } }
 @media only screen and (max-width: 37.5em) { .header__nav-toggle { padding: 4rem 0; } }
-@media only screen and (max-width: 75em) { .header__nav * button { margin-right: 3rem; } }
-@media only screen and (max-width: 37.5em) { .header__nav * button { margin-right: 0; margin-left: 0; } }
 .header__nav * a { margin-right: 3rem; padding: 1rem 2rem; position: relative; font-size: 1.6rem; -webkit-transition: all 0.1s; transition: all 0.1s; color: #588157; }
 .header__nav * a:before { content: ''; position: absolute; width: 0%; height: 1px; bottom: 4px; border-bottom: 2px solid #db8e59; -webkit-transition: width 0.3s; transition: width 0.3s; }
 .header__nav * a:hover:before { width: 20%; }
@@ -385,10 +382,9 @@ a { text-decoration: none; }
 .nightmode-toggle .toggle + .toggle-btn:before { display: none; }
 .nightmode-toggle .toggle:checked + .toggle-btn:after { left: 50%; }
 .nightmode-toggle .toggle-skewed + .toggle-btn { overflow: hidden; -webkit-backface-visibility: hidden; backface-visibility: hidden; font-family: sans-serif; background: #588157; -webkit-transform: skew(-10deg); transform: skew(-10deg); -webkit-transition: all 0.2s ease; transition: all 0.2s ease; /* After = Night */ /* Before = Day */ }
-.nightmode-toggle .toggle-skewed + .toggle-btn:after, .nightmode-toggle .toggle-skewed + .toggle-btn:before { display: inline-block; position: absolute; width: 100%; line-height: 4rem; text-align: center; font-weight: bold; -webkit-transform: skew(10deg); transform: skew(10deg); text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4); -webkit-transition: all 0.2s ease; transition: all 0.2s ease; }
+.nightmode-toggle .toggle-skewed + .toggle-btn:after, .nightmode-toggle .toggle-skewed + .toggle-btn:before { display: inline-block; position: absolute; width: 100%; line-height: 4rem; text-align: center; font-weight: bold; font-size: 1.4rem; -webkit-transform: skew(10deg); transform: skew(10deg); text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4); -webkit-transition: all 0.2s ease; transition: all 0.2s ease; }
 @media only screen and (max-width: 37.5em) { .nightmode-toggle .toggle-skewed + .toggle-btn:after, .nightmode-toggle .toggle-skewed + .toggle-btn:before { line-height: 5.3rem; } }
 .nightmode-toggle .toggle-skewed + .toggle-btn:after { content: attr(data-tg-on); left: 100%; font-weight: normal; color: #181818; }
-.nightmode-toggle .toggle-skewed + .toggle-btn:after:hover { content: '夜'; }
 @media only screen and (max-width: 37.5em) { .nightmode-toggle .toggle-skewed + .toggle-btn:after { font-size: 2.5rem; font-weight: 600; } }
 .nightmode-toggle .toggle-skewed + .toggle-btn:before { content: attr(data-tg-off); left: 0; color: #ebebeb; }
 @media only screen and (max-width: 37.5em) { .nightmode-toggle .toggle-skewed + .toggle-btn:before { font-weight: normal; font-size: 2.5rem; font-weight: 600; } }
