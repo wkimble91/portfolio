@@ -338,8 +338,8 @@ a { text-decoration: none; }
 .contact__socials { display: -webkit-box; display: -ms-flexbox; display: flex; }
 @media only screen and (max-width: 56.25em) { .contact__socials { -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; } }
 .contact__socials a:not(:last-child) { margin-right: 2rem; }
-.contact-svg { height: 3.6rem; margin: 1rem 0; -webkit-transition: scale 0.2s ease-in-out; transition: scale 0.2s ease-in-out; }
-.contact-svg:hover { scale: 1.2; }
+.contact-svg { height: 3.6rem; margin: 1rem 0; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+.contact-svg:hover { -webkit-transform: scale(1.2); transform: scale(1.2); }
 .contact__info { padding: 3rem 2rem 3rem 6rem; background-color: rgba(255, 255, 255, 0.7); -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); border-radius: 2rem; -webkit-transition: all 0.3s; transition: all 0.3s; }
 .contact__info-below { display: none; }
 .contact__info:hover { background-color: rgba(255, 255, 255, 0.9); }
