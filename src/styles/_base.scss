@@ -118,6 +118,78 @@ a {
   }
 }
 
+// Reused buttons
+.btn {
+  cursor: pointer;
+
+  //Spacing
+  width: auto;
+
+  //Font Styling
+  text-transform: uppercase;
+  text-decoration: none;
+
+  //Border Styling
+  border: none;
+
+  //Animations
+  transition: all 0.2s;
+
+  &-work {
+    //Spacing
+    padding: 1.8rem 3rem;
+    margin-bottom: 2rem;
+
+    //Font Styling
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+
+    //Color Styling
+    background-color: $color-primary;
+    color: white;
+    box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.25);
+
+    //Border Styling
+    border-radius: 5rem;
+
+    //Animations
+    transition: all 0.2s;
+  }
+
+  &-code {
+    //Spacing
+    padding: 0.5rem 2rem;
+    width: fit-content;
+    margin: 0 auto;
+
+    //Font Styling
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+
+    //Color Styling
+    color: $body-text-dark;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+    //Border Styling
+    border-radius: 2rem;
+
+    //Animations
+    transition: all 0.2s;
+
+    &:hover {
+      //Animations
+      transform: scale(1.03) !important;
+    }
+  }
+
+  &:hover {
+    //Animations
+    transform: scale(1.05);
+  }
+}
+
 //Changes highlight coloring
 ::selection {
   background-color: $color-primary-dark;

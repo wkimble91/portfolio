@@ -30,6 +30,12 @@ a { text-decoration: none; }
 .layerTop { background-image: url("../img/svg/wave-top-light.svg"); margin: -2px 0; }
 @media only screen and (max-width: 37.5em) { .layerTop { background-image: url("../img/svg/wave-top-mobile-light.svg"); } }
 
+.btn { cursor: pointer; width: auto; text-transform: uppercase; text-decoration: none; border: none; -webkit-transition: all 0.2s; transition: all 0.2s; }
+.btn-work { padding: 1.8rem 3rem; margin-bottom: 2rem; text-align: center; font-size: 1.8rem; font-weight: 600; background-color: #588157; color: white; -webkit-box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.25); box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.25); border-radius: 5rem; -webkit-transition: all 0.2s; transition: all 0.2s; }
+.btn-code { padding: 0.5rem 2rem; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; margin: 0 auto; text-align: center; font-size: 1.2rem; font-weight: 400; color: #ebebeb; -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); border-radius: 2rem; -webkit-transition: all 0.2s; transition: all 0.2s; }
+.btn-code:hover { -webkit-transform: scale(1.03) !important; transform: scale(1.03) !important; }
+.btn:hover { -webkit-transform: scale(1.05); transform: scale(1.05); }
+
 ::-moz-selection { background-color: #3a5a40; color: #fff; }
 
 ::selection { background-color: #3a5a40; color: #fff; }
@@ -41,22 +47,8 @@ a { text-decoration: none; }
 /*-- -------------------------- -->
 <---       Comment order        -->
 <--- -------------------------- -*/
-.btn { cursor: pointer; width: auto; text-transform: uppercase; text-decoration: none; border: none; -webkit-transition: all 0.2s; transition: all 0.2s; }
-.btn-work { padding: 1.8rem 3rem; margin-bottom: 2rem; text-align: center; font-size: 1.8rem; font-weight: 600; background-color: #588157; color: #ebebeb; -webkit-box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.25); box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.25); border-radius: 5rem; -webkit-transition: all 0.2s; transition: all 0.2s; }
-.btn-code { padding: 0.5rem 2rem; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; margin: 0 auto; text-align: center; font-size: 1.2rem; font-weight: 400; color: #ebebeb; -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); border-radius: 2rem; -webkit-transition: all 0.2s; transition: all 0.2s; }
-.btn-code:hover { -webkit-transform: scale(1.03) !important; transform: scale(1.03) !important; }
-.btn-contact { padding: 1.2rem 2rem; margin: -1.2rem -2rem; text-align: center; -webkit-box-shadow: 0 0.8rem 2.5rem rgba(0, 0, 0, 0.25); box-shadow: 0 0.8rem 2.5rem rgba(0, 0, 0, 0.25); border-radius: 5rem; -webkit-transition: all 0.2s; transition: all 0.2s; }
-.btn-contact, .btn-contact:link, .btn-contact:visited { background-color: #588157; color: #ebebeb; }
-@media only screen and (max-width: 112.5em) { .btn-contact { margin-left: -1.2rem; } }
-@media only screen and (max-width: 37.5em) { .btn-contact { padding: 0; margin: 0; }
-  .btn-contact, .btn-contact:link, .btn-contact:visited { background-color: transparent; color: #3a5a40 !important; -webkit-box-shadow: none; box-shadow: none; border-radius: 0; }
-  .btn-contact:hover { -webkit-transform: none; transform: none; } }
-.btn-contact:hover { -webkit-transform: scale(1.1); transform: scale(1.1); }
-.btn:hover { -webkit-transform: scale(1.05); transform: scale(1.05); }
-
 @-webkit-keyframes moveInLeft { 0% { opacity: 0; -webkit-transform: translateX(-15rem) translateY(2rem); transform: translateX(-15rem) translateY(2rem); }
   100% { opacity: 1; -webkit-transform: translateX(0) translateY(0rem); transform: translateX(0) translateY(0rem); } }
-
 @keyframes moveInLeft { 0% { opacity: 0; -webkit-transform: translateX(-15rem) translateY(2rem); transform: translateX(-15rem) translateY(2rem); }
   100% { opacity: 1; -webkit-transform: translateX(0) translateY(0rem); transform: translateX(0) translateY(0rem); } }
 @-webkit-keyframes wave { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
