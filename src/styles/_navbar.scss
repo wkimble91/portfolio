@@ -207,7 +207,7 @@
         transition: all 0.1s;
 
         //Color Styling
-        color: $color-primary;
+        color: $color-primary-dark;
 
         // Hover Lines
         &:before {
@@ -217,7 +217,7 @@
           position: absolute;
           width: 0%;
           height: 1px;
-          bottom: 4px;
+          bottom: 3px;
 
           //Border Styling
           border-bottom: 2px solid $color-primary-accent-1;
