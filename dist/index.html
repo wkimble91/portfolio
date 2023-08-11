@@ -17,12 +17,12 @@
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
 		<!-- For the body text -->
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,800;1,200;1,300;1,400;1,600;1,800&display=swap" rel="stylesheet">
-		<!-- CSS -->
-		<link rel="stylesheet" href="css/style.css">
 		<!-- Preload Hero Images -->
-		<link rel="preload" as="image" href="./img/forest-night2x.png" media="(min-width: 576px)">
-		<link rel="preload" as="image" href="./img/forest-night1x.png" media="(max-width: 575px)">
-		<link rel="preload" as="image" href="./img/hero-text-night.jpg" type="image/jpg">
+		<link rel="preload" as="image" href="./img/forest-day2x.webp" media="(min-width: 576px)">
+		<link rel="preload" as="image" href="./img/forest-day1x.webp" media="(max-width: 575px)">
+		<link rel="preload" as="image" href="./img/forest-night2x.webp" media="(min-width: 576px)">
+		<link rel="preload" as="image" href="./img/forest-night1x.webp" media="(max-width: 575px)">
+		<link rel="preload" as="image" href="./img/hero-text-night.webp" type="image/jpg">
 		<!-- Preload Night SVGs -->
 		<link rel="preload" as="image" href="./img/svg/wave-bottom-dark.svg" type="image/svg+xml">
 		<link rel="preload" as="image" href="./img/svg/wave-top-dark.svg" type="image/svg+xml">
@@ -31,8 +31,7 @@
 
 		<!-- Title -->
 		<title>Will Kimble | Front-End Web Developer</title>
-	<link rel="stylesheet" href="/_astro/index.05f63919.css" /><script type="module">const d=document.querySelector("body");let c=localStorage.getItem("darkMode");const f=document.querySelector(".dark-mode-button"),i=()=>{d.classList.add("dark-mode"),localStorage.setItem("darkMode","enabled")},v=()=>{d.classList.remove("dark-mode"),localStorage.setItem("darkMode",null)},s=document.getElementById("night-toggle");c=="enabled"?(i(),s.checked=!0):(v(),s.checked=!1);f.addEventListener("click",()=>{c=localStorage.getItem("darkMode"),c!=="enabled"?i():v()});function u(){for(var e=document.querySelectorAll(".revealRight"),t=0;t<e.length;t++){var r=window.innerHeight,a=e[t].getBoundingClientRect().top,o=150;a<r-o&&e[t].classList.add("active"),a>r&&e[t].classList.remove("active")}}function g(){for(var e=document.querySelectorAll(".revealLeft"),t=0;t<e.length;t++){var r=window.innerHeight,a=e[t].getBoundingClientRect().top,o=150;a<r-o&&e[t].classList.add("active"),a>r&&e[t].classList.remove("active")}}function m(){for(var e=document.querySelectorAll(".revealFade"),t=0;t<e.length;t++){var r=window.innerHeight,a=e[t].getBoundingClientRect().top,o=150;a<r-o&&e[t].classList.add("active"),a>r&&e[t].classList.remove("active")}}u();g();m();window.addEventListener("scroll",u);window.addEventListener("scroll",g);window.addEventListener("scroll",m);const n=document.querySelector(".header__hamburger"),L=document.querySelector(".header__nav"),k=document.querySelectorAll(".header__nav-item");n.addEventListener("click",b);function b(){n.classList.toggle("active"),L.classList.toggle("active")}k.forEach(e=>e.addEventListener("click",S));function S(){n.classList.remove("active"),L.classList.remove("active")}const h=document.querySelector("#header"),y=document.querySelector("#arrow"),l=document.createElement("div");l.setAttribute("data-scroll-watcher","");h.before(l);const w=new IntersectionObserver(e=>{h.classList.toggle("header-scrolled",e[0].intersectionRatio<1),y.classList.toggle("hero-arrow__svg--hidden",e[0].intersectionRatio<1)});w.observe(l);
-</script></head>
+	<link rel="stylesheet" href="/_astro/index.c1fdbf55.css" /><script type="module" src="/_astro/hoisted.b10b2ba9.js"></script></head>
 	<body>
 		
 	<header id="header" class="header">
@@ -51,10 +50,11 @@
                 <a href="#contact" target="_self">Contact.</a>
             </li>
             <li class="header__nav-toggle">
-                <button class="nightmode-toggle" aria-label="Nightmode Toggle">
+                <label class="nightmode-toggle" aria-label="Toggle theme" title="Toggle theme" for="night-toggle">
                     <input class="toggle toggle-skewed dark-mode-button" id="night-toggle" type="checkbox">
-                    <label class="toggle-btn" data-tg-off="Day." data-tg-on="Night." for="night-toggle"></label>
-                </button>
+                    <span class="toggle-btn" data-tg-off="Day." data-tg-on="Night.">
+                    </span>
+                </label>
             </li>
         </ul>
         <div class="header__hamburger">
@@ -64,7 +64,7 @@
         </div>
     </nav>
 </header>
-	<section class="hero">
+	<section id="home" class="hero">
     <div class="hero__box">
         <div class="hero__box-left">
             <h1 class="hero__title">
@@ -166,7 +166,7 @@
             <p>
                 I like to code things from scratch, and enjoy bringing ideas to
                 life. I've learned many tools for development including <b>HTML5, SCSS, Bootstrap, TailwindCSS, React.JS, Next.JS,
-                    Visual Studio Code,</b>
+                    Astro, Visual Studio Code,</b>
                 and <b>Git</b>.
             </p>
         </div>
@@ -192,134 +192,125 @@
 </section>
 <div class="spacer layerTop"></div>
 	<section id="projects" class="projects">
-    <div class="projects__box">
-        <div class="projects__header-box">
-            <div class="projects__line">
-                <div class="projects__line--dash revealLeft"></div>
-                <div class="projects__line--kanji revealFade">作品</div>
-                <div class="projects__line--dash revealRight"></div>
-            </div>
-            <h2 class="projects__header revealFade">Recent Work</h2>
-        </div>
-
-        <!-- Project Card 1 -->
-
-        <div class="projects__card revealRight">
-            <div class="projects__description">
-                <div class="projects__details">
-                    <div class="projects__title">
-                        <h3>Park Finder</h3>
-                        <h4>NPS Park Finder</h4>
-                        <h5>SCSS, React.js, Next.js, API</h5>
-                        <p>
-                            An application for National Parks that provides
-                            information about nearby parks.
-                        </p>
-                    </div>
-                    <div class="projects-buttons">
-                        <a class="btn btn-work bg-greenblue" href="https://park-finder-ten.vercel.app/" target="_blank">View Webpage</a>
-                        <a class="btn btn-code bg-grey" href="https://github.com/wkimble91/park-finder/" target="_blank">View Code</a>
-                    </div>
-                </div>
-            </div>
-            <div class="projects__image-box bg-greenblue">
-                <picture aria-hidden="true">
-                    <source media="(max-width: 500px)" srcset="img/parkfinder-m.webp">
-                    <source media="(min-width: 501px)" srcset="img/parkfinder.png">
-                    <img loading="lazy" decoding="async" src="img/parkfinder.png" alt="Thumbnail of Park Finder Webpage" width="414" height="400">
-                </picture>
-            </div>
-        </div>
-
-        <!-- Project Card 2 -->
-
-        <div class="projects__card revealLeft">
-            <div class="projects__image-box bg-blue">
-                <picture aria-hidden="true">
-                    <source media="(max-width: 500px)" srcset="img/minimalist-m.webp">
-                    <source media="(min-width: 501px)" srcset="img/minimalist.png">
-                    <img loading="lazy" decoding="async" src="img/minimalist.png" alt="Thumbnail of Minimalist Nomad Webpage" width="414" height="400">
-                </picture>
-            </div>
-            <div class="projects__description">
-                <div class="projects__details">
-                    <div class="projects__title">
-                        <h3>Minimalist Nomad</h3>
-                        <h4>Travel Blog Mockup</h4>
-                        <h5>SCSS, React.js, Next.js, TailwindCSS, Stripe</h5>
-                        <p>
-                            A travel blog with dynamic blog posts and an
-                            e-commerce store.
-                        </p>
-                    </div>
-                    <div class="projects-buttons">
-                        <a class="btn btn-work bg-blue" href="https://www.minimalistnomad.world/" target="_blank">View Webpage</a>
-                        <a class="btn btn-code bg-grey" href="https://github.com/wkimble91/minimalist_nomad" target="_blank">View Code</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Project Card 3 -->
-
-        <div class="projects__card revealRight">
-            <div class="projects__description">
-                <div class="projects__details">
-                    <div class="projects__title">
-                        <h3 class="projects__title-shrink">
-                            Andy's Foundations, LLC
-                        </h3>
-                        <h4>Local Construction Company</h4>
-                        <h5>SCSS, React.js</h5>
-                        <p>
-                            Website created for a local concrete construction
-                            company.
-                        </p>
-                    </div>
-                    <div class="projects-buttons">
-                        <a class="btn btn-work bg-green" href="https://www.andysfoundation.com" target="_blank">View Webpage</a>
-                        <a class="btn btn-code bg-grey" href="https://github.com/wkimble91/andysfoundation" target="_blank">View Code</a>
-                    </div>
-                </div>
-            </div>
-            <div class="projects__image-box bg-green">
-                <picture aria-hidden="true">
-                    <source media="(max-width: 500px)" srcset="img/andys-m.webp">
-                    <source media="(min-width: 501px)" srcset="img/andys.png">
-                    <img loading="lazy" decoding="async" src="img/andys.png" alt="Thumbnail of Andys Foundations Webpage" width="414" height="400">
-                </picture>
-            </div>
-        </div>
-
-        <!-- Project Card 4 -->
-
-        <div class="projects__card revealLeft">
-            <div class="projects__image-box bg-bluegreen">
-                <picture aria-hidden="true">
-                    <source media="(max-width: 500px)" srcset="img/trailpages-m.webp">
-                    <source media="(min-width: 501px)" srcset="img/trailpages.png">
-                    <img loading="lazy" decoding="async" src="img/trailpages.png" alt="Thumbnail of Trailpages Webpage" width="414" height="400">
-                </picture>
-            </div>
-            <div class="projects__description">
-                <div class="projects__details">
-                    <div class="projects__title">
-                        <h3>TrailPages</h3>
-                        <h4>AllTrails Mockup</h4>
-                        <h5>Bootstrap, Node.js, EJS, MongoDB, Cloudinary</h5>
-                        <p>
-                            A Full-Stack "crowdsourced" trail rating app. Full
-                            CRUD and user profiles.
-                        </p>
-                    </div>
-                    <div class="projects-buttons">
-                        <a class="btn btn-work bg-bluegreen" href="https://trail-pages.herokuapp.com/" target="_blank">View Webpage</a>
-                        <a class="btn btn-code bg-grey" href="https://github.com/wkimble91/trailpages" target="_blank">View Code</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="projects__box">
+    <div class="projects__header-box">
+      <div class="projects__line">
+        <div class="projects__line--dash revealLeft"></div>
+        <div class="projects__line--kanji revealFade">作品</div>
+        <div class="projects__line--dash revealRight"></div>
+      </div>
+      <h2 class="projects__header revealFade">Recent Work</h2>
     </div>
+
+    <!-- Project Card 1 -->
+
+    <article class="projects__card revealRight">
+      <div class="projects__description">
+        <div class="projects__details">
+          <div class="projects__title">
+            <h3>Park Finder</h3>
+            <h4>NPS Park Finder</h4>
+            <h5>SCSS, React.js, Next.js, API</h5>
+            <p>
+              An application for National Parks that provides information about
+              nearby parks.
+            </p>
+          </div>
+          <div class="projects-buttons">
+            <a class="btn btn-work bg-greenblue" href="https://park-finder-ten.vercel.app/">View Webpage</a>
+            <a class="btn btn-code bg-grey" href="https://github.com/wkimble91/park-finder/">View Code</a>
+          </div>
+        </div>
+      </div>
+      <div class="projects__image-box bg-greenblue">
+        <picture aria-hidden="true">
+          <source media="(max-width: 500px)" srcset="img/parkfinder-m.webp">
+          <source media="(min-width: 501px)" srcset="img/parkfinder.png">
+          <img loading="lazy" decoding="async" src="img/parkfinder.png" alt="Thumbnail of Park Finder Webpage" width="414" height="400">
+        </picture>
+      </div>
+    </article>
+
+    <!-- Project Card 2 -->
+
+    <article class="projects__card revealLeft">
+      <div class="projects__image-box bg-webdev">
+        <picture aria-hidden="true">
+          <source media="(max-width: 500px)" srcset="img/webdev-m.webp">
+          <source media="(min-width: 501px)" srcset="img/webdev.png">
+          <img loading="lazy" decoding="async" src="img/webdev.png" alt="Thumbnail of WebDev Essentials Webpage" width="414" height="400">
+        </picture>
+      </div>
+      <div class="projects__description">
+        <div class="projects__details">
+          <div class="projects__title">
+            <h3 class="projects__title">WebDev Essentials</h3>
+            <h4>Web Developer Toolkit</h4>
+            <h5>Astro, JavaScript, SCSS</h5>
+            <p>Website created to save and sort useful front-end tools.</p>
+          </div>
+          <div class="projects-buttons">
+            <a class="btn btn-work bg-webdev" href="https://webdevessentials.willkimble.com/">View Webpage</a>
+            <a class="btn btn-code bg-grey" href="https://github.com/wkimble91/webdevessentials">View Code</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project Card 3 -->
+
+    <article class="projects__card revealRight">
+      <div class="projects__description">
+        <div class="projects__details">
+          <div class="projects__title">
+            <h3>Minimalist Nomad</h3>
+            <h4>Travel Blog Mockup</h4>
+            <h5>SCSS, React.js, Next.js, TailwindCSS, Stripe</h5>
+            <p>
+              A travel blog with dynamic blog posts and an e-commerce store.
+            </p>
+          </div>
+          <div class="projects-buttons">
+            <a class="btn btn-work bg-blue" href="https://www.minimalistnomad.world/">View Webpage</a>
+            <a class="btn btn-code bg-grey" href="https://github.com/wkimble91/minimalist_nomad">View Code</a>
+          </div>
+        </div>
+      </div>
+      <div class="projects__image-box bg-blue">
+        <picture aria-hidden="true">
+          <source media="(max-width: 500px)" srcset="img/minimalist-m.webp">
+          <source media="(min-width: 501px)" srcset="img/minimalist.png">
+          <img loading="lazy" decoding="async" src="img/minimalist.png" alt="Thumbnail of Minimalist Nomad Webpage" width="414" height="400">
+        </picture>
+      </div>
+    </article>
+
+    <!-- Project Card 4 -->
+
+    <article class="projects__card revealLeft">
+      <div class="projects__image-box bg-green">
+        <picture aria-hidden="true">
+          <source media="(max-width: 500px)" srcset="img/andys-m.webp">
+          <source media="(min-width: 501px)" srcset="img/andys.png">
+          <img loading="lazy" decoding="async" src="img/andys.png" alt="Thumbnail of Andys Foundations Webpage" width="414" height="400">
+        </picture>
+      </div>
+      <div class="projects__description">
+        <div class="projects__details">
+          <div class="projects__title">
+            <h3 class="projects__title-shrink">Andy's Foundations, LLC</h3>
+            <h4>Local Construction Company</h4>
+            <h5>SCSS, React.js</h5>
+            <p>Website created for a local concrete construction company.</p>
+          </div>
+          <div class="projects-buttons">
+            <a class="btn btn-work bg-green" href="https://www.andysfoundation.com">View Webpage</a>
+            <a class="btn btn-code bg-grey" href="https://github.com/wkimble91/andysfoundation">View Code</a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
 </section>
 	<div class="spacer layerBottom"></div>
 <section id="contact" class="contact">
@@ -342,11 +333,11 @@
                     <p>Further links to my social media can be found below.</p>
                     <h3>Let's connect!</h3>
                     <div class="contact__socials">
-                        <a href="https://www.linkedin.com/in/william-ian-kimble/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/william-ian-kimble/" rel="noopener noreferrer">
                             <img class="contact-svg" src="img/svg/linkedin.svg" alt="Linkedin"></a>
-                        <a href="https://github.com/wkimble91/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/wkimble91/" rel="noopener noreferrer">
                             <img class="contact-svg" src="img/svg/github.svg" alt="Github"></a>
-                        <a href="https://codepen.io/wkimble91" target="_blank" rel="noopener noreferrer">
+                        <a href="https://codepen.io/wkimble91" rel="noopener noreferrer">
                             <img class="contact-svg" src="img/svg/codepen.svg" alt="Codepen"></a>
                         <a href="mailto:mail@willkimble.com">
                             <img class="contact-svg" src="img/svg/mail.svg" alt="Email"></a>
@@ -357,7 +348,7 @@
             <!-- Contact Form -->
 
             <div class="contact__container-right revealRight">
-                <form class="contact-form" action="https://formsubmit.co/31f93465b64fc3bf45697f90e9728cdd" method="post" autocomplete="off" id="contactForm">
+                <form class="contact-form" data-netlify="true" method="POST" id="contactForm">
                     <div class="contact__container-right--box">
                         <input type="hidden" name="form_type" value="contact">
                         <!-- Name Field -->
@@ -368,7 +359,7 @@
                         <input type="email" name="email" id="email" autocomplete="email" required>
                         <!-- Message Box -->
                         <label for="message">Message</label>
-                        <textarea name="message" id="message" cols="25" rows="4" minlength="10" autocomplete="none" required></textarea>
+                        <textarea name="message" id="message" cols="25" rows="4" minlength="10" autocomplete="off" required></textarea>
                         <!-- Submit Button -->
                         <button type="submit" class="btn btn-work"><span>Send message</span></button>
                     </div>
@@ -386,3 +377,6 @@
 </footer>
 
 	</body></html>
+
+
+
