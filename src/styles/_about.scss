@@ -83,6 +83,11 @@
 
       width: 100%;
       margin-bottom: 5rem;
+
+      @media only screen and (max-width: $bp-small) {
+        -webkit-filter: drop-shadow(1px 1px #444);
+        filter: drop-shadow(1px 1px #444);
+      }
     }
 
     @media only screen and (max-width: $bp-small) {
