@@ -171,7 +171,7 @@ a { text-decoration: none; }
 @media only screen and (max-width: 37.5em) { .hero__box-right { padding: 0 3rem; } }
 .no-webp .hero__title { background-image: url(../img/hero-text-day.jpg); }
 .webp .hero__title { background-image: url(../img/hero-text-day.webp); }
-.hero__title { margin: 4rem 0 8rem; text-align: right; font-size: 12rem; font-weight: 900; text-align: right; letter-spacing: 0.4rem; line-height: 1.3; background-attachment: scroll; background-size: cover; background-position: center center; background-clip: text; background-repeat: no-repeat; -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-filter: drop-shadow(1px 1px #222); filter: drop-shadow(1px 1px #222); -webkit-animation: moveInLeft 0.8s ease-out; animation: moveInLeft 0.8s ease-out; }
+.hero__title { margin: 4rem 0 8rem; text-align: right; font-size: 12rem; font-weight: 900; text-align: right; letter-spacing: 0.4rem; line-height: 1.3; background-attachment: scroll; background-size: cover; background-position: center center; background-clip: text; background-repeat: no-repeat; -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-filter: drop-shadow(2px 2px #333); filter: drop-shadow(2px 2px #333); -webkit-animation: moveInLeft 0.8s ease-out; animation: moveInLeft 0.8s ease-out; }
 @media only screen and (max-width: 112.5em) { .hero__title { margin: 1rem 0 10rem; font-size: 10rem; } }
 @media only screen and (max-width: 75em) { .hero__title { margin: 1rem 0 4rem; text-align: center; font-size: 10rem; letter-spacing: 0.4rem; line-height: 1.1; } }
 @media only screen and (max-width: 56.25em) { .hero__title { text-align: center; font-size: 8rem; } }
