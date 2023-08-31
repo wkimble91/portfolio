@@ -171,7 +171,7 @@ a { text-decoration: none; }
 @media only screen and (max-width: 37.5em) { .hero__box-right { padding: 0 3rem; } }
 .no-webp .hero__title { background-image: url(../img/hero-text-day.jpg); }
 .webp .hero__title { background-image: url(../img/hero-text-day.webp); }
-.hero__title { margin: 4rem 0 8rem; text-align: right; font-size: 12rem; font-weight: 900; text-align: right; letter-spacing: 0.4rem; line-height: 1.3; background-attachment: scroll; background-size: cover; background-position: center center; background-clip: text; background-repeat: no-repeat; -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-animation: moveInLeft 0.8s ease-out; animation: moveInLeft 0.8s ease-out; }
+.hero__title { margin: 4rem 0 8rem; text-align: right; font-size: 12rem; font-weight: 900; text-align: right; letter-spacing: 0.4rem; line-height: 1.3; background-attachment: scroll; background-size: cover; background-position: center center; background-clip: text; background-repeat: no-repeat; -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-filter: drop-shadow(1px 1px #222); filter: drop-shadow(1px 1px #222); -webkit-animation: moveInLeft 0.8s ease-out; animation: moveInLeft 0.8s ease-out; }
 @media only screen and (max-width: 112.5em) { .hero__title { margin: 1rem 0 10rem; font-size: 10rem; } }
 @media only screen and (max-width: 75em) { .hero__title { margin: 1rem 0 4rem; text-align: center; font-size: 10rem; letter-spacing: 0.4rem; line-height: 1.1; } }
 @media only screen and (max-width: 56.25em) { .hero__title { text-align: center; font-size: 8rem; } }
@@ -205,7 +205,7 @@ a { text-decoration: none; }
 .about__header { font-size: 7.5rem; font-weight: 900; letter-spacing: 0.2rem; line-height: 1; margin: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 .no-webp .about__header-box { background-image: url(../img/about-text-day.jpg); }
 .webp .about__header-box { background-image: url(../img/about-text-day.webp); }
-.about__header-box { background-attachment: scroll; background-image: url(../img/about-text-day.jpg); background-size: contain; background-position: center center; background-repeat: repeat; -webkit-text-fill-color: transparent; background-clip: text; -webkit-background-clip: text; width: 100%; margin-bottom: 5rem; }
+.about__header-box { background-attachment: scroll; background-image: url(../img/about-text-day.jpg); background-size: contain; background-position: center center; background-repeat: repeat; -webkit-text-fill-color: transparent; background-clip: text; -webkit-background-clip: text; -webkit-filter: drop-shadow(1px 1px #222); filter: drop-shadow(1px 1px #222); width: 100%; margin-bottom: 5rem; }
 @media only screen and (max-width: 37.5em) { .about__header { font-size: 5rem; } }
 @media only screen and (max-width: 25em) { .about__header { font-size: 4rem; } }
 .about__line { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
@@ -255,7 +255,7 @@ a { text-decoration: none; }
 .projects__header { font-size: 7.5rem; font-weight: 900; letter-spacing: 0.2rem; line-height: 1; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 .no-webp .projects__header-box { background-image: url(../img/project-text-day.jpg); }
 .webp .projects__header-box { background-image: url(../img/project-text-day.webp); }
-.projects__header-box { background-attachment: scroll; background-size: cover; background-position: center center; background-clip: text; background-repeat: no-repeat; -webkit-background-clip: text; -webkit-text-fill-color: transparent; width: 100%; margin-bottom: 5rem; }
+.projects__header-box { background-size: cover; background-position: center; background-clip: text; background-repeat: no-repeat; -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-filter: drop-shadow(1px 1px #222); filter: drop-shadow(1px 1px #222); height: 100%; margin-bottom: 5rem; }
 @media only screen and (max-width: 37.5em) { .projects__header { font-size: 5rem; } }
 @media only screen and (max-width: 25em) { .projects__header { font-size: 4rem; } }
 .projects__line { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
@@ -406,6 +406,7 @@ body.dark-mode .header__nav * a:before { border-bottom: 2px solid #409da0; }
 body.dark-mode .header a { color: #409da0; }
 body.dark-mode .header__hamburger .bar { background-color: #ebebeb; }
 body.dark-mode .header-scrolled { border-bottom: 1px solid rgba(0, 0, 0, 0.4); -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4); box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4); }
+body.dark-mode .hero__title { -webkit-filter: drop-shadow(2px 2px #000); filter: drop-shadow(2px 2px #000); }
 .no-webp body.dark-mode .hero__title { background-image: url(../img/hero-text-night.jpg); }
 .webp body.dark-mode .hero__title { background-image: url(../img/hero-text-night.webp); }
 body.dark-mode .hero__subtitle { color: #ebebeb; }
@@ -416,6 +417,7 @@ body.dark-mode .hero__subtitle { color: #ebebeb; }
 body.dark-mode .hero svg { fill: white; }
 body.dark-mode .about { background-color: #1d3557; }
 body.dark-mode .about__box { background-color: #22222b; -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); }
+body.dark-mode .about__header-box { -webkit-filter: drop-shadow(2px 2px #000); filter: drop-shadow(2px 2px #000); }
 .no-webp body.dark-mode .about__header-box { background-image: url(../img/about-text-night.jpg); }
 .webp body.dark-mode .about__header-box { background-image: url(../img/about-text-night.webp); }
 body.dark-mode .about__description-arrow { color: #409da0; }
@@ -426,6 +428,7 @@ body.dark-mode .about__info-bar .item__svg { background: #1d3557; }
 body.dark-mode .about__info-bar .item h3 { color: #3b6986; }
 body.dark-mode .about__info-bar .item:hover svg { fill: #1d3557; }
 body.dark-mode .about__info-bar .item:hover .item__svg { background: #409da0; }
+body.dark-mode .projects__header-box { -webkit-filter: drop-shadow(2px 2px #000); filter: drop-shadow(2px 2px #000); }
 .no-webp body.dark-mode .projects__header-box { background-image: url(../img/project-text-night.jpg); }
 .webp body.dark-mode .projects__header-box { background-image: url(../img/project-text-night.webp); }
 body.dark-mode .projects__line--dash { border-bottom: 1px solid #409da0; }

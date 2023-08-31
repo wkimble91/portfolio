@@ -280,6 +280,12 @@ body.dark-mode {
 
   .hero {
 
+    &__title {
+      //Color Styling
+      -webkit-filter: drop-shadow(2px 2px #000);
+      filter: drop-shadow(2px 2px #000);
+    }
+
     //Modernizr checks to see if webp is supported
     .no-webp &__title {
       //Color Styling
@@ -327,6 +333,12 @@ body.dark-mode {
       //Color Styling
       background-color: rgb(34, 34, 43);
       box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    &__header-box {
+      //Color Styling
+      -webkit-filter: drop-shadow(2px 2px #000);
+      filter: drop-shadow(2px 2px #000);
     }
 
     //Modernizr checks to see if webp is supported
@@ -390,6 +402,12 @@ body.dark-mode {
   .projects {
 
     //Modernizr checks to see if webp is supported
+    &__header-box {
+      //Color Styling
+      -webkit-filter: drop-shadow(2px 2px #000);
+      filter: drop-shadow(2px 2px #000);
+    }
+
     .no-webp &__header-box {
       //Color Styling
       background-image: url(../img/project-text-night.jpg);

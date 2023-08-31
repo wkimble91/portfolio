@@ -77,6 +77,8 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
       -webkit-background-clip: text;
+      -webkit-filter: drop-shadow(1px 1px #222);
+      filter: drop-shadow(1px 1px #222);
       width: 100%;
       margin-bottom: 5rem;
     }
