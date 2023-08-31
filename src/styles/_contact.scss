@@ -169,7 +169,7 @@
       width: auto;
 
       //Font Styling
-      font-size: 4rem;
+      font-size: 4.6rem;
 
       //Color Styling
       color: $color-primary-dark;
@@ -187,10 +187,12 @@
       margin-top: 6rem;
 
       //Font Styling
-      font-size: 1.6rem;
+      font-size: 1.8rem;
 
       //Color Styling
       color: $color-primary-accent-2;
+      text-shadow: 1px 1px rgba(white, .9), 1px -1px rgba(white, .9), -1px 1px rgba(white, .9), -1px -1px rgba(white, .9);
+
 
       @media only screen and (max-width: $bp-medium) {
         //Spacing
