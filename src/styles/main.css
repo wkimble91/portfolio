@@ -432,7 +432,7 @@ body.dark-mode .about__info-bar .item:hover svg { fill: #1d3557; }
 body.dark-mode .about__info-bar .item:hover .item__svg { background: #409da0; }
 body.dark-mode .projects__header-box { -webkit-filter: drop-shadow(2px 2px #000); filter: drop-shadow(2px 2px #000); }
 .no-webp body.dark-mode .projects__header-box { background-image: url(../img/project-text-night.jpg); }
-.webp body.dark-mode .projects__header-box { background-image: url(../img/project-text-night.webp); }
+.webp body.dark-mode .projects__header-box { background-image: url(../img/project-text-night.jpg); }
 body.dark-mode .projects__line--dash { border-bottom: 1px solid #409da0; }
 body.dark-mode .projects__line--kanji { color: #1d3557; }
 body.dark-mode .projects__card { background-color: rgba(34, 34, 43, 0.9); -webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4); box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4); }

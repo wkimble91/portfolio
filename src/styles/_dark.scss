@@ -417,14 +417,13 @@ body.dark-mode {
   }
 
   .projects {
-
-    //Modernizr checks to see if webp is supported
     &__header-box {
       //Color Styling
       -webkit-filter: drop-shadow(2px 2px #000);
       filter: drop-shadow(2px 2px #000);
     }
 
+    //Modernizr checks to see if webp is supported
     .no-webp &__header-box {
       //Color Styling
       background-image: url(../img/project-text-night.jpg);
@@ -432,7 +431,7 @@ body.dark-mode {
 
     .webp &__header-box {
       //Color Styling
-      background-image: url(../img/project-text-night.webp);
+      background-image: url(../img/project-text-night.jpg);
     }
 
     &__line {
