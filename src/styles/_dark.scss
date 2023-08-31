@@ -314,6 +314,11 @@ body.dark-mode {
       color: $body-text-dark;
     }
 
+    &__image {
+      -webkit-filter: drop-shadow(0 6px 4px rgba(0, 0, 0, 1));
+      filter: drop-shadow(0 6px 4px rgba(0, 0, 0, 1));
+    }
+
     //Modernizr checks to see if webp is supported
     .no-webp &__image {
       background-image: url(../img/forest-night2x.png);

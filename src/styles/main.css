@@ -187,7 +187,7 @@ a { text-decoration: none; }
 @media only screen and (max-width: 37.5em) { .no-webp .hero__image { background-image: url(../img/forest-day1x.png); } }
 .webp .hero__image { background-image: url(../img/forest-day2x.webp); }
 @media only screen and (max-width: 37.5em) { .webp .hero__image { background-image: url(../img/forest-day1x.webp); } }
-.hero__image { height: 100%; z-index: 20; max-width: 120rem; background-size: contain; background-repeat: no-repeat; background-position: center; }
+.hero__image { height: 100%; z-index: 20; max-width: 120rem; background-size: contain; background-repeat: no-repeat; background-position: center; -webkit-filter: drop-shadow(0 6px 4px rgba(0, 0, 0, 0.1)); filter: drop-shadow(0 6px 4px rgba(0, 0, 0, 0.1)); }
 @media only screen and (max-width: 56.25em) { .hero__image { background-position: bottom center; } }
 .hero__image-box { width: 100%; height: 100%; padding: 8rem 0 3rem; }
 @media only screen and (max-width: 112.5em) { .hero__image-box { width: 100%; height: 90%; padding: 8rem 0 0; } }
@@ -411,6 +411,7 @@ body.dark-mode .hero__title { -webkit-filter: drop-shadow(2px 2px #000); filter:
 .no-webp body.dark-mode .hero__title { background-image: url(../img/hero-text-night.jpg); }
 .webp body.dark-mode .hero__title { background-image: url(../img/hero-text-night.webp); }
 body.dark-mode .hero__subtitle { color: #ebebeb; }
+body.dark-mode .hero__image { -webkit-filter: drop-shadow(0 6px 4px black); filter: drop-shadow(0 6px 4px black); }
 .no-webp body.dark-mode .hero__image { background-image: url(../img/forest-night2x.png); }
 @media only screen and (max-width: 37.5em) { .no-webp body.dark-mode .hero__image { background-image: url(../img/forest-night1x.png); } }
 .webp body.dark-mode .hero__image { background-image: url(../img/forest-night2x.webp); }
