@@ -173,6 +173,7 @@
 
       //Color Styling
       color: $color-primary-dark;
+      text-shadow: 1px 1px white, 1px -1px white, -1px 1px white, -1px -1px white;
 
       @media only screen and (max-width: $bp-medium) {
         //Font Styling

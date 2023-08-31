@@ -337,7 +337,7 @@ a { text-decoration: none; }
 .contact__info { padding: 3rem 2rem 3rem 6rem; background-color: rgba(255, 255, 255, 0.7); -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); border-radius: 2rem; -webkit-transition: all 0.3s; transition: all 0.3s; }
 .contact__info-below { display: none; }
 .contact__info:hover { background-color: rgba(255, 255, 255, 0.9); }
-.contact__info h2 { margin: 0 auto 4rem; width: auto; font-size: 4rem; color: #3a5a40; }
+.contact__info h2 { margin: 0 auto 4rem; width: auto; font-size: 4rem; color: #3a5a40; text-shadow: 1px 1px white, 1px -1px white, -1px 1px white, -1px -1px white; }
 @media only screen and (max-width: 56.25em) { .contact__info h2 { text-align: center; font-size: 3.6rem; } }
 .contact__info h3 { margin-top: 6rem; font-size: 1.6rem; color: #9f3535; }
 @media only screen and (max-width: 56.25em) { .contact__info h3 { margin-bottom: 1rem; text-align: center; } }
@@ -445,7 +445,7 @@ body.dark-mode .contact__container-right--box { background-color: rgba(30, 30, 4
 body.dark-mode .contact__container-right--box:hover { background-color: #1e1e28; }
 body.dark-mode .contact__info { background-color: rgba(30, 30, 40, 0.9); -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); }
 body.dark-mode .contact__info:hover { background-color: #1e1e28; }
-body.dark-mode .contact__info h2 { color: #3b6986; }
+body.dark-mode .contact__info h2 { color: #3b6986; text-shadow: 1px 1px rgba(255, 255, 255, 0.9), 1px -1px rgba(255, 255, 255, 0.9), -1px 1px rgba(255, 255, 255, 0.9), -1px -1px rgba(255, 255, 255, 0.9); }
 body.dark-mode .contact__info h3 { color: #409da0; }
 body.dark-mode .contact-svg { -webkit-filter: invert(1); filter: invert(1); }
 body.dark-mode .bg-blue { background: -webkit-gradient(linear, left top, right top, from(#505dbf), to(#19a896)); background: linear-gradient(to right, #505dbf, #19a896); }

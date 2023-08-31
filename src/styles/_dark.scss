@@ -507,6 +507,8 @@ body.dark-mode {
       h2 {
         //Color Styling
         color: $color-darkmode-primary;
+        text-shadow: 1px 1px rgba(white, .9), 1px -1px rgba(white, .9), -1px 1px rgba(white, .9), -1px -1px rgba(white, .9);
+
       }
 
       h3 {
