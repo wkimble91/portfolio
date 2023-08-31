@@ -116,9 +116,11 @@ a { text-decoration: none; }
 
 .revealLeft { -webkit-transform: translateX(-12rem); transform: translateX(-12rem); opacity: 0; -webkit-transition: 1s opacity ease, 1s -webkit-transform ease; transition: 1s opacity ease, 1s -webkit-transform ease; transition: 1s transform ease, 1s opacity ease; transition: 1s transform ease, 1s opacity ease, 1s -webkit-transform ease; }
 
-.revealFade { opacity: 0; -webkit-transition: 1s opacity ease; transition: 1s opacity ease; }
+.revealFade { opacity: 0; transition: 1s opacity ease; -webkit-transition: 1s opacity ease; }
 
-.revealRight.active, .revealLeft.active, .revealFade.active { -webkit-transform: translateX(0); transform: translateX(0); opacity: 1; }
+.revealRight.active, .revealLeft.active { -webkit-transform: translateX(0); transform: translateX(0); opacity: 1; }
+
+.revealFade.active { opacity: 1; }
 
 .waving-hand { margin: 0 0.2rem 0 -1.1rem; font-size: 3rem; -webkit-animation: wave 2.1s 0.6s infinite; animation: wave 2.1s 0.6s infinite; -webkit-transform-origin: 95% 95%; transform-origin: 95% 95%; display: inline-block; }
 @media only screen and (max-width: 56.25em) { .waving-hand { margin: 0 0.6rem 0 -2rem; } }
@@ -253,7 +255,7 @@ a { text-decoration: none; }
 .projects__header { font-size: 7.5rem; font-weight: 900; letter-spacing: 0.2rem; line-height: 1; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 .no-webp .projects__header-box { background-image: url(../img/project-text-day.jpg); }
 .webp .projects__header-box { background-image: url(../img/project-text-day.webp); }
-.projects__header-box { background-attachment: scroll; background-size: cover; background-position: center center; background-repeat: no-repeat; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; width: 100%; margin-bottom: 5rem; }
+.projects__header-box { background-attachment: scroll; background-size: cover; background-position: center center; background-clip: text; background-repeat: no-repeat; -webkit-background-clip: text; -webkit-text-fill-color: transparent; width: 100%; margin-bottom: 5rem; }
 @media only screen and (max-width: 37.5em) { .projects__header { font-size: 5rem; } }
 @media only screen and (max-width: 25em) { .projects__header { font-size: 4rem; } }
 .projects__line { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
