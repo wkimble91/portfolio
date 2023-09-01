@@ -18,6 +18,9 @@
     //Spacing
     width: 60%;
     padding: 8vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     @media only screen and (max-width: $bp-large) {
       //Spacing
@@ -419,11 +422,6 @@
 .bg-greenblue {
   //Color Styling
   background: linear-gradient(to right, #67bb7d, #37a8c0);
-}
-
-.bg-grey {
-  //Color Styling
-  background: linear-gradient(to right, #28313b, #485461);
 }
 
 .bg-webdev {
