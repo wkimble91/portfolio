@@ -54,16 +54,22 @@
     }
 
     &-box {
+      //Spacing
+      height: 100%;
+      margin-bottom: 5rem;
+
+      //Image Styling
       background-size: cover;
       background-position: center;
       background-clip: text;
       background-repeat: no-repeat;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+
+      //Border Styling
       -webkit-filter: drop-shadow(1px 1px #222);
       filter: drop-shadow(1px 1px #222);
-      height: 100%;
-      margin-bottom: 5rem;
+
 
       @media only screen and (max-width: $bp-small) {
         -webkit-filter: drop-shadow(1px 1px #555);
@@ -423,8 +429,3 @@
   //Color Styling
   background: linear-gradient(to right, #7950f2, #B559CC);
 }
-
-// .bg-bluegreen {
-//   //Color Styling
-//   background: linear-gradient(to right, #37a8c0, #67bb7d);
-// }

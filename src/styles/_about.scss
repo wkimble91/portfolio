@@ -2,8 +2,12 @@
   //Display
   display: flex;
   flex-direction: column;
+
+  //Spacing
   padding: 10rem 0;
   align-items: center;
+
+  //Color Styling
   background-color: $color-primary-dark;
 
   @media only screen and (max-width: $bp-small) {
@@ -33,13 +37,11 @@
     @media only screen and (max-width: $bp-large) {
       //Spacing
       width: 80%;
-      // padding: 8rem 5rem 6rem;
     }
 
     @media only screen and (max-width: $bp-medium) {
       //Spacing
       width: 95%;
-      // padding: 8rem 3rem 4rem;
     }
 
     @media only screen and (max-width: $bp-small) {
@@ -50,16 +52,19 @@
   }
 
   &__header {
+    //Spacing
+    margin: 0;
+
+    //Display
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     //Font Styling
     font-size: 7.5rem;
     font-weight: 900;
     letter-spacing: 0.2rem;
     line-height: 1;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
 
     .no-webp &-box {
       background-image: url(../img/about-text-day.jpg);
@@ -70,6 +75,11 @@
     }
 
     &-box {
+      //Spacing
+      width: 100%;
+      margin-bottom: 5rem;
+
+      //Image Styling
       background-attachment: scroll;
       background-image: url(../img/about-text-day.jpg);
       background-size: contain;
@@ -78,11 +88,10 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
       -webkit-background-clip: text;
+
+      //Border Styling
       -webkit-filter: drop-shadow(1px 1px #000);
       filter: drop-shadow(1px 1px #000);
-
-      width: 100%;
-      margin-bottom: 5rem;
 
       @media only screen and (max-width: $bp-small) {
         -webkit-filter: drop-shadow(1px 1px #444);
@@ -112,6 +121,7 @@
       margin: 0 2.5rem;
       width: 6rem;
       height: 3px;
+
       //Border Styling
       border-bottom: 2px solid $color-primary-accent-1;
     }
