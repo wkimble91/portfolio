@@ -255,7 +255,7 @@ a { text-decoration: none; }
 @media only screen and (max-width: 56.25em) { .projects__box { width: 100%; padding: 0 2rem; } }
 .projects__header { font-size: 7.5rem; font-weight: 900; letter-spacing: 0.2rem; line-height: 1; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 .no-webp .projects__header-box { background-image: url(../img/project-text-day.jpg); }
-.webp .projects__header-box { background-image: url(../img/project-text-day.webp); }
+.webp .projects__header-box { background-image: url(../img/project-text-day.jpg); }
 .projects__header-box { height: 100%; margin-bottom: 5rem; background-size: cover; background-position: center; background-clip: text; background-repeat: no-repeat; -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-filter: drop-shadow(1px 1px #222); filter: drop-shadow(1px 1px #222); }
 @media only screen and (max-width: 37.5em) { .projects__header-box { -webkit-filter: drop-shadow(1px 1px #555); filter: drop-shadow(1px 1px #555); } }
 @media only screen and (max-width: 37.5em) { .projects__header { font-size: 5rem; } }
