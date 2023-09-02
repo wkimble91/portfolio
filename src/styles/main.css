@@ -306,13 +306,11 @@ a { text-decoration: none; }
 /*-- -------------------------- -->
 <---       Card Gradients       -->
 <--- -------------------------- -*/
-.bg-blue { background: -webkit-gradient(linear, left top, right top, from(#8893fc), to(#41e4dc)); background: linear-gradient(to right, #8893fc, #41e4dc); }
+.bg-minimalist { background: -webkit-gradient(linear, left top, right top, from(#8893fc), to(#41e4dc)); background: linear-gradient(to right, #8893fc, #41e4dc); }
 
-.bg-green { background-image: -webkit-gradient(linear, right top, left top, from(#90be6d), to(#43aa8b)); background-image: linear-gradient(to left, #90be6d, #43aa8b); }
+.bg-andys { background-image: -webkit-gradient(linear, right top, left top, from(#90be6d), to(#43aa8b)); background-image: linear-gradient(to left, #90be6d, #43aa8b); }
 
-.bg-bluegreen { background: -webkit-gradient(linear, left top, right top, from(#37a8c0), to(#67bb7d)); background: linear-gradient(to right, #37a8c0, #67bb7d); }
-
-.bg-greenblue { background: -webkit-gradient(linear, left top, right top, from(#67bb7d), to(#37a8c0)); background: linear-gradient(to right, #67bb7d, #37a8c0); }
+.bg-parkfinder { background: -webkit-gradient(linear, left top, right top, from(#67bb7d), to(#37a8c0)); background: linear-gradient(to right, #67bb7d, #37a8c0); }
 
 .bg-webdev { background: -webkit-gradient(linear, left top, right top, from(#7950f2), to(#B559CC)); background: linear-gradient(to right, #7950f2, #B559CC); }
 

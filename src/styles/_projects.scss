@@ -404,22 +404,17 @@
 /*-- -------------------------- -->
 <---       Card Gradients       -->
 <--- -------------------------- -*/
-.bg-blue {
+.bg-minimalist {
   //Color Styling
-  background: linear-gradient(to right, #8893fc, rgb(65, 228, 220));
+  background: linear-gradient(to right, #8893fc, #41e4dc);
 }
 
-.bg-green {
+.bg-andys {
   //Color Styling
   background-image: linear-gradient(to left, #90be6d, #43aa8b);
 }
 
-.bg-bluegreen {
-  //Color Styling
-  background: linear-gradient(to right, #37a8c0, #67bb7d);
-}
-
-.bg-greenblue {
+.bg-parkfinder {
   //Color Styling
   background: linear-gradient(to right, #67bb7d, #37a8c0);
 }
@@ -428,3 +423,8 @@
   //Color Styling
   background: linear-gradient(to right, #7950f2, #B559CC);
 }
+
+// .bg-bluegreen {
+//   //Color Styling
+//   background: linear-gradient(to right, #37a8c0, #67bb7d);
+// }
