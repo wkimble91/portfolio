@@ -3,7 +3,7 @@
 
 ==================================================
 
-Personal portfolio site, built on [SCSS] and [JavaScript], using [Astro] for organization.
+Personal portfolio site, built on [SCSS] and vanilla [JavaScript], using [Astro] for organization.
 
 Preview images for the projects created with [Spline 3D].
 
