@@ -321,11 +321,12 @@ a { text-decoration: none; }
 .contact__container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 75%; margin: 0 5rem; padding: 10vh 0; }
 @media only screen and (max-width: 75em) { .contact__container { width: 100%; } }
 @media only screen and (max-width: 56.25em) { .contact__container { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; } }
-@media only screen and (max-width: 37.5em) { .contact__container { padding: 5vh 0 5vh; height: -webkit-min-content; height: -moz-min-content; height: min-content; } }
+@media only screen and (max-width: 37.5em) { .contact__container { padding: 5vh 0 5vh; margin: 0 2rem; height: -webkit-min-content; height: -moz-min-content; height: min-content; } }
 .contact__container-left { -webkit-box-flex: 1; -ms-flex: 1 1 50%; flex: 1 1 50%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; width: 100%; max-width: 90rem; }
 @media only screen and (max-width: 56.25em) { .contact__container-left { background-image: url(../img/svg/Worldmap.svg); background-size: 110% auto; background-repeat: no-repeat; background-position: center; } }
 .contact__container-right { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-flex: 1; -ms-flex: 1 1 50%; flex: 1 1 50%; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; width: 100%; max-width: 90rem; }
 .contact__container-right--box { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; background-color: rgba(255, 255, 255, 0.7); -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); border-radius: 2rem; width: 100%; padding: 5rem; -webkit-transition: all 0.3s; transition: all 0.3s; }
+@media only screen and (max-width: 37.5em) { .contact__container-right--box { padding: 2rem; } }
 .contact__container-right--box:hover { background-color: rgba(255, 255, 255, 0.8); }
 .contact__socials { display: -webkit-box; display: -ms-flexbox; display: flex; }
 @media only screen and (max-width: 56.25em) { .contact__socials { -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; } }

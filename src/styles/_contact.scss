@@ -57,6 +57,7 @@
     @media only screen and (max-width: $bp-small) {
       //Spacing
       padding: 5vh 0 5vh;
+      margin: 0 2rem;
       height: min-content;
     }
 
@@ -105,6 +106,12 @@
         padding: 5rem;
 
         transition: all 0.3s;
+
+
+        @media only screen and (max-width: $bp-small) {
+          //Spacing
+          padding: 2rem;
+        }
 
         &:hover {
           //Color Styling
