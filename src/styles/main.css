@@ -269,7 +269,7 @@ a { text-decoration: none; }
 .projects__card:last-child { margin-bottom: 15rem; }
 .projects__card:hover picture img { -webkit-transform: scale(1.1); transform: scale(1.1); }
 @media only screen and (max-width: 37.5em) { .projects__card { -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; margin: 0 auto; }
-  .projects__card:not(:last-child) { margin-top: 6rem; }
+  .projects__card:not(:last-child) { margin-bottom: 6rem; }
   .projects__card:nth-child(2n + 1) { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; } }
 .projects__description { width: 50%; padding: 5rem; }
 @media only screen and (max-width: 56.25em) { .projects__description { padding: 0; margin: 0; } }
