@@ -80,6 +80,7 @@
     @media only screen and (max-width: $bp-small) {
       //Font Styling
       font-size: 5rem;
+      height: fit-content;
     }
 
     @media only screen and (max-width: $bp-smallest) {
@@ -152,11 +153,11 @@
       //Display
       flex-direction: column-reverse;
 
-      margin: 10rem auto 0;
+      margin: 0 auto;
 
       &:not(:last-child) {
         //Spacing
-        margin-bottom: 6rem;
+        margin-top: 6rem;
       }
 
       &:nth-child(2n + 1) {
