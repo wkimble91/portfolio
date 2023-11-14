@@ -128,11 +128,44 @@
 
     &--kanji {
       //Display
-      display: inline-block;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
       //Font Styling
       font-size: 8rem;
       font-weight: 900;
+      text-indent: none;
+
+      &:hover rt {
+        //Display
+        opacity: 1;
+      }
+
+      & rt:hover {
+        //Display
+        opacity: 1;
+      }
+
+      rp {
+        //Display
+        display: none;
+      }
+
+      rt {
+        //Display
+        opacity: 0;
+
+        //Font Styling
+        letter-spacing: -.1em;
+        font-size: 40%;
+
+        @media only screen and (max-width: $bp-small) {
+          //Font Styling
+          display: none;
+        }
+      }
 
       @media only screen and (max-width: $bp-small) {
         //Font Styling
