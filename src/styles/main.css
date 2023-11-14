@@ -219,7 +219,7 @@ a { text-decoration: none; }
 @media only screen and (max-width: 37.5em) { .about__line--kanji rt { display: none; } }
 @media only screen and (max-width: 37.5em) { .about__line--kanji { font-size: 4.5rem; } }
 @media only screen and (max-width: 25em) { .about__line--kanji { font-size: 4rem; } }
-.about__description { font-size: 2.2rem; font-weight: 300; line-height: 1.7; text-align: left; text-indent: 1.5rem; margin-bottom: 3.5rem; }
+.about__description { font-size: 2rem; font-weight: 300; line-height: 1.6; text-align: left; text-indent: 1.5rem; margin-bottom: 3.5rem; }
 @media only screen and (max-width: 56.25em) { .about__description { line-height: 1.5; text-indent: 3rem; width: 100%; padding: 0 2rem; } }
 @media only screen and (max-width: 37.5em) { .about__description { padding: 0 2rem; } }
 .about__description-arrow { color: #db8e59; font-weight: 300; font-size: 2.2rem; margin-right: 0.5rem; }
