@@ -515,6 +515,14 @@ body.dark-mode {
       background-color: rgba(30, 30, 40, 0.9);
       box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 
+      &-arrow {
+        color: $color-darkmode-primary-light;
+        text-shadow: 1px 1px rgba(black, .6),
+          1px -1px rgba(black, .6),
+          -1px 1px rgba(black, .6),
+          -1px -1px rgba(black, .6);
+      }
+
       &:hover {
         //Color Styling
         background-color: rgb(30, 30, 40);

@@ -165,6 +165,16 @@
       display: none;
     }
 
+    &-arrow {
+      color: $color-primary-accent-2;
+      font-weight: 400;
+      font-size: 2rem;
+      margin-right: 0.5rem;
+      text-shadow: 1px 1px white,
+      1px -1px white,
+      -1px 1px white,
+      -1px -1px white;    }
+
     &:hover {
       //Color Styling
       background-color: rgba(255, 255, 255, 0.9);
